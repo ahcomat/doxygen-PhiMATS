@@ -120,14 +120,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:aac817624fd2e0893f251e3d0f9eacc29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#aac817624fd2e0893f251e3d0f9eacc29">InitializeDirichBC</a> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_in)</td></tr>
 <tr class="memdesc:aac817624fd2e0893f251e3d0f9eacc29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads and initializes Dirichlet BCs.  <a href="class_mech_model.html#aac817624fd2e0893f251e3d0f9eacc29">More...</a><br /></td></tr>
 <tr class="separator:aac817624fd2e0893f251e3d0f9eacc29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36f5a0d7c2b5eabe369fd0707f5a1dad"><td class="memItemLeft" align="right" valign="top"><a id="a36f5a0d7c2b5eabe369fd0707f5a1dad"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SolveSNES</b> ()</td></tr>
-<tr class="separator:a36f5a0d7c2b5eabe369fd0707f5a1dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a746855ff8107832598ed46d6de0a68ed"><td class="memItemLeft" align="right" valign="top"><a id="a746855ff8107832598ed46d6de0a68ed"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupSNES</b> (vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt; elements, vector&lt; <a class="el" href="class_base_mechanics.html">BaseMechanics</a> * &gt; mats, int iStep)</td></tr>
-<tr class="separator:a746855ff8107832598ed46d6de0a68ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93580d37400a61e3f682e7464fbb26fd"><td class="memItemLeft" align="right" valign="top"><a id="a93580d37400a61e3f682e7464fbb26fd"></a>
-PetscErrorCode&#160;</td><td class="memItemRight" valign="bottom"><b>CalcResidual</b> (Vec deltaU, vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt; elements, vector&lt; <a class="el" href="class_base_mechanics.html">BaseMechanics</a> * &gt; mats, int iStep)</td></tr>
+<tr class="memitem:a637ab6c2c7567a001613622ffb7a03ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a637ab6c2c7567a001613622ffb7a03ba">SolveSNES</a> (vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt; elements, vector&lt; <a class="el" href="class_base_mechanics.html">BaseMechanics</a> * &gt; mats, int iStep)</td></tr>
+<tr class="memdesc:a637ab6c2c7567a001613622ffb7a03ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNES solve of the current step.  <a href="class_mech_model.html#a637ab6c2c7567a001613622ffb7a03ba">More...</a><br /></td></tr>
+<tr class="separator:a637ab6c2c7567a001613622ffb7a03ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93580d37400a61e3f682e7464fbb26fd"><td class="memItemLeft" align="right" valign="top">PetscErrorCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a93580d37400a61e3f682e7464fbb26fd">CalcResidual</a> (Vec deltaU, vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt; elements, vector&lt; <a class="el" href="class_base_mechanics.html">BaseMechanics</a> * &gt; mats, int iStep)</td></tr>
+<tr class="memdesc:a93580d37400a61e3f682e7464fbb26fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the residual vector <code>vecR</code>.  <a href="class_mech_model.html#a93580d37400a61e3f682e7464fbb26fd">More...</a><br /></td></tr>
 <tr class="separator:a93580d37400a61e3f682e7464fbb26fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c0bca8607347122912a35102d041cda"><td class="memItemLeft" align="right" valign="top">Vec &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a9c0bca8607347122912a35102d041cda">getB</a> ()</td></tr>
 <tr class="memdesc:a9c0bca8607347122912a35102d041cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass reference of RHS (to solver).  <a href="class_mech_model.html#a9c0bca8607347122912a35102d041cda">More...</a><br /></td></tr>
@@ -147,11 +144,11 @@ PetscErrorCode&#160;</td><td class="memItemRight" valign="bottom"><b>CalcResidua
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac07aeabc99aefe7444aea9eaea43d410"><td class="memItemLeft" align="right" valign="top"><a id="ac07aeabc99aefe7444aea9eaea43d410"></a>
-static PetscErrorCode&#160;</td><td class="memItemRight" valign="bottom"><b>ResidualCallback</b> (SNES <a class="el" href="class_mech_model.html#a794a9051fde02a26a9318a0c58526496">snes</a>, Vec deltaU, Vec R, void *ctx)</td></tr>
+<tr class="memitem:ac07aeabc99aefe7444aea9eaea43d410"><td class="memItemLeft" align="right" valign="top">static PetscErrorCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#ac07aeabc99aefe7444aea9eaea43d410">ResidualCallback</a> (SNES <a class="el" href="class_mech_model.html#a794a9051fde02a26a9318a0c58526496">snes</a>, Vec deltaU, Vec R, void *ctx)</td></tr>
+<tr class="memdesc:ac07aeabc99aefe7444aea9eaea43d410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts <code>CalcResidual</code> to static to pass the residual to the SNES solver.  <a href="class_mech_model.html#ac07aeabc99aefe7444aea9eaea43d410">More...</a><br /></td></tr>
 <tr class="separator:ac07aeabc99aefe7444aea9eaea43d410"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54a04419e0f4625d4f37290259442d0f"><td class="memItemLeft" align="right" valign="top"><a id="a54a04419e0f4625d4f37290259442d0f"></a>
-static PetscErrorCode&#160;</td><td class="memItemRight" valign="bottom"><b>JacobianCallback</b> (SNES <a class="el" href="class_mech_model.html#a794a9051fde02a26a9318a0c58526496">snes</a>, Vec deltaU, Mat J, Mat P, void *ctx)</td></tr>
+<tr class="memitem:a54a04419e0f4625d4f37290259442d0f"><td class="memItemLeft" align="right" valign="top">static PetscErrorCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a54a04419e0f4625d4f37290259442d0f">JacobianCallback</a> (SNES <a class="el" href="class_mech_model.html#a794a9051fde02a26a9318a0c58526496">snes</a>, Vec deltaU, Mat J, Mat P, void *ctx)</td></tr>
+<tr class="memdesc:a54a04419e0f4625d4f37290259442d0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts <code>Assemble</code> to static to pass the Jacobian to the SNES solver.  <a href="class_mech_model.html#a54a04419e0f4625d4f37290259442d0f">More...</a><br /></td></tr>
 <tr class="separator:a54a04419e0f4625d4f37290259442d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -373,6 +370,58 @@ PetscScalar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 
 </div>
 </div>
+<a id="a93580d37400a61e3f682e7464fbb26fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93580d37400a61e3f682e7464fbb26fd">&#9670;&nbsp;</a></span>CalcResidual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PetscErrorCode MechModel::CalcResidual </td>
+          <td>(</td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>deltaU</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt;&#160;</td>
+          <td class="paramname"><em>elements</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="class_base_mechanics.html">BaseMechanics</a> * &gt;&#160;</td>
+          <td class="paramname"><em>mats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iStep</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the residual vector <code>vecR</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deltaU</td><td>Displacement increment (solution vector). </td></tr>
+    <tr><td class="paramname">elements</td><td>Vector of elements. </td></tr>
+    <tr><td class="paramname">mats</td><td>Materials vector. </td></tr>
+    <tr><td class="paramname">iStep</td><td>Current step. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>PetscErrorCode </dd></dl>
+
+</div>
+</div>
 <a id="a2dfa434ccba24cbad4db036c2202dad8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2dfa434ccba24cbad4db036c2202dad8">&#9670;&nbsp;</a></span>CalcStres()</h2>
 
@@ -535,6 +584,177 @@ PetscScalar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">elements</td><td>Vector of elements. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a54a04419e0f4625d4f37290259442d0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54a04419e0f4625d4f37290259442d0f">&#9670;&nbsp;</a></span>JacobianCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PetscErrorCode MechModel::JacobianCallback </td>
+          <td>(</td>
+          <td class="paramtype">SNES&#160;</td>
+          <td class="paramname"><em>snes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>deltaU</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Mat&#160;</td>
+          <td class="paramname"><em>J</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Mat&#160;</td>
+          <td class="paramname"><em>P</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Casts <code>Assemble</code> to static to pass the Jacobian to the SNES solver. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">snes</td><td>SNES solver. </td></tr>
+    <tr><td class="paramname">deltaU</td><td>Solution vector. </td></tr>
+    <tr><td class="paramname">J</td><td>Jacobian matix. </td></tr>
+    <tr><td class="paramname">P</td><td>Preconditoiner matrix. Same as J. </td></tr>
+    <tr><td class="paramname">ctx</td><td>Application context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>PetscErrorCode </dd></dl>
+
+</div>
+</div>
+<a id="ac07aeabc99aefe7444aea9eaea43d410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac07aeabc99aefe7444aea9eaea43d410">&#9670;&nbsp;</a></span>ResidualCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PetscErrorCode MechModel::ResidualCallback </td>
+          <td>(</td>
+          <td class="paramtype">SNES&#160;</td>
+          <td class="paramname"><em>snes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>deltaU</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Casts <code>CalcResidual</code> to static to pass the residual to the SNES solver. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">snes</td><td>SNES solver. </td></tr>
+    <tr><td class="paramname">deltaU</td><td>Solution vector. </td></tr>
+    <tr><td class="paramname">R</td><td>Residual vector </td></tr>
+    <tr><td class="paramname">ctx</td><td>Application context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>PetscErrorCode </dd></dl>
+
+</div>
+</div>
+<a id="a637ab6c2c7567a001613622ffb7a03ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a637ab6c2c7567a001613622ffb7a03ba">&#9670;&nbsp;</a></span>SolveSNES()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MechModel::SolveSNES </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt;&#160;</td>
+          <td class="paramname"><em>elements</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="class_base_mechanics.html">BaseMechanics</a> * &gt;&#160;</td>
+          <td class="paramname"><em>mats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iStep</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SNES solve of the current step. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elements</td><td>Elements vector. </td></tr>
+    <tr><td class="paramname">mats</td><td>Materials vector. </td></tr>
+    <tr><td class="paramname">iStep</td><td>Current step. </td></tr>
   </table>
   </dd>
 </dl>

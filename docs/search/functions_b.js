@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['update_5fdt_379',['Update_dt',['../class_trapping_model.html#a5b10b981f47ca6d7d965242e522c4921',1,'TrappingModel']]],
-  ['update_5ff_380',['Update_F',['../class_trapping_model.html#aa46b31e855b502a2a96342aecc9367f1',1,'TrappingModel']]],
-  ['updatedisp_381',['UpdateDisp',['../class_mech_model.html#a413937361888875043bc1ea9a3128783',1,'MechModel']]],
-  ['updatetemp_382',['UpdateTemp',['../class_trapping_model.html#a3fd042740b03edab5dc0518fbe672df2',1,'TrappingModel']]]
+  ['trapgb_388',['TrapGB',['../class_trap_g_b.html#ac3e9876583b8c0f236fc5974a24ed7c3',1,'TrapGB']]],
+  ['trapphase_389',['TrapPhase',['../class_trap_phase.html#a78b5469c0f8cda015157322c47b1d238',1,'TrapPhase']]]
 ];

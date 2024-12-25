@@ -120,7 +120,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:a5afb146098cde14fb4e39a7eb9b47ac1 inherit pub_methods_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of elements.  <a href="class_base_elements.html#a5afb146098cde14fb4e39a7eb9b47ac1">More...</a><br /></td></tr>
 <tr class="separator:a5afb146098cde14fb4e39a7eb9b47ac1 inherit pub_methods_class_base_elements"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96cec56a28c48dcccba92c23c6008e88 inherit pub_methods_class_base_elements"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_matrix_8h.html#a523acc52416b58cdb5c9c3b1b29dcbfd">T_ElStiffMatx</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a96cec56a28c48dcccba92c23c6008e88">getElStiffMatx</a> () const</td></tr>
-<tr class="memdesc:a96cec56a28c48dcccba92c23c6008e88 inherit pub_methods_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return const reference to the vector of element stiffness matrix k_ll.  <a href="class_base_elements.html#a96cec56a28c48dcccba92c23c6008e88">More...</a><br /></td></tr>
+<tr class="memdesc:a96cec56a28c48dcccba92c23c6008e88 inherit pub_methods_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns const reference to the vector of element stiffness matrix <code>k_ll</code>.  <a href="class_base_elements.html#a96cec56a28c48dcccba92c23c6008e88">More...</a><br /></td></tr>
 <tr class="separator:a96cec56a28c48dcccba92c23c6008e88 inherit pub_methods_class_base_elements"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -155,30 +155,32 @@ vector&lt; vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="b
 <tr class="separator:aeb275a240bc486da0cf89f97ead78b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_base_elements"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_base_elements')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_base_elements.html">BaseElements</a></td></tr>
 <tr class="memitem:a32f7fac66e1d3289c10f5b0dea2359c6 inherit pro_attribs_class_base_elements"><td class="memItemLeft" align="right" valign="top"><a id="a32f7fac66e1d3289c10f5b0dea2359c6"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>nElements</b></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a32f7fac66e1d3289c10f5b0dea2359c6">nElements</a></td></tr>
+<tr class="memdesc:a32f7fac66e1d3289c10f5b0dea2359c6 inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of elements in element set. <br /></td></tr>
 <tr class="separator:a32f7fac66e1d3289c10f5b0dea2359c6 inherit pro_attribs_class_base_elements"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb98b6481c2483f18cfabe8dea68d355 inherit pro_attribs_class_base_elements"><td class="memItemLeft" align="right" valign="top"><a id="abb98b6481c2483f18cfabe8dea68d355"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#abb98b6481c2483f18cfabe8dea68d355">nNodes</a></td></tr>
-<tr class="memdesc:abb98b6481c2483f18cfabe8dea68d355 inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of elements in element set. <br /></td></tr>
+<tr class="memdesc:abb98b6481c2483f18cfabe8dea68d355 inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of nodes for element set. <br /></td></tr>
 <tr class="separator:abb98b6481c2483f18cfabe8dea68d355 inherit pro_attribs_class_base_elements"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41786282398145462d779ad3f49bb221 inherit pro_attribs_class_base_elements"><td class="memItemLeft" align="right" valign="top"><a id="a41786282398145462d779ad3f49bb221"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a41786282398145462d779ad3f49bb221">nDof</a></td></tr>
-<tr class="memdesc:a41786282398145462d779ad3f49bb221 inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of nodes for element set. <br /></td></tr>
+<tr class="memdesc:a41786282398145462d779ad3f49bb221 inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of DOFs for element set. <br /></td></tr>
 <tr class="separator:a41786282398145462d779ad3f49bb221 inherit pro_attribs_class_base_elements"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48cfa56a6087781cf0d12e2b6b54b0fb inherit pro_attribs_class_base_elements"><td class="memItemLeft" align="right" valign="top"><a id="a48cfa56a6087781cf0d12e2b6b54b0fb"></a>
 vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a48cfa56a6087781cf0d12e2b6b54b0fb">gaussPts</a></td></tr>
-<tr class="memdesc:a48cfa56a6087781cf0d12e2b6b54b0fb inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of DOFs for element set. <br /></td></tr>
+<tr class="memdesc:a48cfa56a6087781cf0d12e2b6b54b0fb inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gauss points in natural coordinates. <br /></td></tr>
 <tr class="separator:a48cfa56a6087781cf0d12e2b6b54b0fb inherit pro_attribs_class_base_elements"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1263a94965551105ea0a4e2c98a4e64a inherit pro_attribs_class_base_elements"><td class="memItemLeft" align="right" valign="top"><a id="a1263a94965551105ea0a4e2c98a4e64a"></a>
 vector&lt; vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a1263a94965551105ea0a4e2c98a4e64a">elemNodeConn</a></td></tr>
-<tr class="memdesc:a1263a94965551105ea0a4e2c98a4e64a inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gauss points in natural coordinates. <br /></td></tr>
+<tr class="memdesc:a1263a94965551105ea0a4e2c98a4e64a inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Node connectivity. <br /></td></tr>
 <tr class="separator:a1263a94965551105ea0a4e2c98a4e64a inherit pro_attribs_class_base_elements"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91bdcb2616b396e0505808fa34d58b43 inherit pro_attribs_class_base_elements"><td class="memItemLeft" align="right" valign="top"><a id="a91bdcb2616b396e0505808fa34d58b43"></a>
 vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a91bdcb2616b396e0505808fa34d58b43">elemIDs</a></td></tr>
-<tr class="memdesc:a91bdcb2616b396e0505808fa34d58b43 inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Node connectivity. <br /></td></tr>
+<tr class="memdesc:a91bdcb2616b396e0505808fa34d58b43 inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global element IDs. <br /></td></tr>
 <tr class="separator:a91bdcb2616b396e0505808fa34d58b43 inherit pro_attribs_class_base_elements"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63df30869ec3c409c7e634b6f1283319 inherit pro_attribs_class_base_elements"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_matrix_8h.html#a523acc52416b58cdb5c9c3b1b29dcbfd">T_ElStiffMatx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a63df30869ec3c409c7e634b6f1283319">elStiffMatxVariant</a></td></tr>
-<tr class="memdesc:a63df30869ec3c409c7e634b6f1283319 inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global element IDs.  <a href="class_base_elements.html#a63df30869ec3c409c7e634b6f1283319">More...</a><br /></td></tr>
+<tr class="memitem:a63df30869ec3c409c7e634b6f1283319 inherit pro_attribs_class_base_elements"><td class="memItemLeft" align="right" valign="top"><a id="a63df30869ec3c409c7e634b6f1283319"></a>
+<a class="el" href="_matrix_8h.html#a523acc52416b58cdb5c9c3b1b29dcbfd">T_ElStiffMatx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a63df30869ec3c409c7e634b6f1283319">elStiffMatxVariant</a></td></tr>
+<tr class="memdesc:a63df30869ec3c409c7e634b6f1283319 inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variant for returning elStiffMatx. Passed to <code>Model</code> for assembling global stiffness matrix. <br /></td></tr>
 <tr class="separator:a63df30869ec3c409c7e634b6f1283319 inherit pro_attribs_class_base_elements"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>

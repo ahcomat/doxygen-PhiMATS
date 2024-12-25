@@ -98,36 +98,38 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a5afb146098cde14fb4e39a7eb9b47ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of elements.  <a href="class_base_elements.html#a5afb146098cde14fb4e39a7eb9b47ac1">More...</a><br /></td></tr>
 <tr class="separator:a5afb146098cde14fb4e39a7eb9b47ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96cec56a28c48dcccba92c23c6008e88"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_matrix_8h.html#a523acc52416b58cdb5c9c3b1b29dcbfd">T_ElStiffMatx</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a96cec56a28c48dcccba92c23c6008e88">getElStiffMatx</a> () const</td></tr>
-<tr class="memdesc:a96cec56a28c48dcccba92c23c6008e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return const reference to the vector of element stiffness matrix k_ll.  <a href="class_base_elements.html#a96cec56a28c48dcccba92c23c6008e88">More...</a><br /></td></tr>
+<tr class="memdesc:a96cec56a28c48dcccba92c23c6008e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns const reference to the vector of element stiffness matrix <code>k_ll</code>.  <a href="class_base_elements.html#a96cec56a28c48dcccba92c23c6008e88">More...</a><br /></td></tr>
 <tr class="separator:a96cec56a28c48dcccba92c23c6008e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a32f7fac66e1d3289c10f5b0dea2359c6"><td class="memItemLeft" align="right" valign="top"><a id="a32f7fac66e1d3289c10f5b0dea2359c6"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>nElements</b></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a32f7fac66e1d3289c10f5b0dea2359c6">nElements</a></td></tr>
+<tr class="memdesc:a32f7fac66e1d3289c10f5b0dea2359c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of elements in element set. <br /></td></tr>
 <tr class="separator:a32f7fac66e1d3289c10f5b0dea2359c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb98b6481c2483f18cfabe8dea68d355"><td class="memItemLeft" align="right" valign="top"><a id="abb98b6481c2483f18cfabe8dea68d355"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#abb98b6481c2483f18cfabe8dea68d355">nNodes</a></td></tr>
-<tr class="memdesc:abb98b6481c2483f18cfabe8dea68d355"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of elements in element set. <br /></td></tr>
+<tr class="memdesc:abb98b6481c2483f18cfabe8dea68d355"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of nodes for element set. <br /></td></tr>
 <tr class="separator:abb98b6481c2483f18cfabe8dea68d355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41786282398145462d779ad3f49bb221"><td class="memItemLeft" align="right" valign="top"><a id="a41786282398145462d779ad3f49bb221"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a41786282398145462d779ad3f49bb221">nDof</a></td></tr>
-<tr class="memdesc:a41786282398145462d779ad3f49bb221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of nodes for element set. <br /></td></tr>
+<tr class="memdesc:a41786282398145462d779ad3f49bb221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of DOFs for element set. <br /></td></tr>
 <tr class="separator:a41786282398145462d779ad3f49bb221"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48cfa56a6087781cf0d12e2b6b54b0fb"><td class="memItemLeft" align="right" valign="top"><a id="a48cfa56a6087781cf0d12e2b6b54b0fb"></a>
 vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a48cfa56a6087781cf0d12e2b6b54b0fb">gaussPts</a></td></tr>
-<tr class="memdesc:a48cfa56a6087781cf0d12e2b6b54b0fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of DOFs for element set. <br /></td></tr>
+<tr class="memdesc:a48cfa56a6087781cf0d12e2b6b54b0fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gauss points in natural coordinates. <br /></td></tr>
 <tr class="separator:a48cfa56a6087781cf0d12e2b6b54b0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1263a94965551105ea0a4e2c98a4e64a"><td class="memItemLeft" align="right" valign="top"><a id="a1263a94965551105ea0a4e2c98a4e64a"></a>
 vector&lt; vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a1263a94965551105ea0a4e2c98a4e64a">elemNodeConn</a></td></tr>
-<tr class="memdesc:a1263a94965551105ea0a4e2c98a4e64a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gauss points in natural coordinates. <br /></td></tr>
+<tr class="memdesc:a1263a94965551105ea0a4e2c98a4e64a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Node connectivity. <br /></td></tr>
 <tr class="separator:a1263a94965551105ea0a4e2c98a4e64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91bdcb2616b396e0505808fa34d58b43"><td class="memItemLeft" align="right" valign="top"><a id="a91bdcb2616b396e0505808fa34d58b43"></a>
 vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a91bdcb2616b396e0505808fa34d58b43">elemIDs</a></td></tr>
-<tr class="memdesc:a91bdcb2616b396e0505808fa34d58b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Node connectivity. <br /></td></tr>
+<tr class="memdesc:a91bdcb2616b396e0505808fa34d58b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global element IDs. <br /></td></tr>
 <tr class="separator:a91bdcb2616b396e0505808fa34d58b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63df30869ec3c409c7e634b6f1283319"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_matrix_8h.html#a523acc52416b58cdb5c9c3b1b29dcbfd">T_ElStiffMatx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a63df30869ec3c409c7e634b6f1283319">elStiffMatxVariant</a></td></tr>
-<tr class="memdesc:a63df30869ec3c409c7e634b6f1283319"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global element IDs.  <a href="class_base_elements.html#a63df30869ec3c409c7e634b6f1283319">More...</a><br /></td></tr>
+<tr class="memitem:a63df30869ec3c409c7e634b6f1283319"><td class="memItemLeft" align="right" valign="top"><a id="a63df30869ec3c409c7e634b6f1283319"></a>
+<a class="el" href="_matrix_8h.html#a523acc52416b58cdb5c9c3b1b29dcbfd">T_ElStiffMatx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a63df30869ec3c409c7e634b6f1283319">elStiffMatxVariant</a></td></tr>
+<tr class="memdesc:a63df30869ec3c409c7e634b6f1283319"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variant for returning elStiffMatx. Passed to <code>Model</code> for assembling global stiffness matrix. <br /></td></tr>
 <tr class="separator:a63df30869ec3c409c7e634b6f1283319"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -210,34 +212,8 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 </table>
 </div><div class="memdoc">
 
-<p>Return const reference to the vector of element stiffness matrix k_ll. </p>
+<p>Returns const reference to the vector of element stiffness matrix <code>k_ll</code>. </p>
 <dl class="section return"><dt>Returns</dt><dd>const vector&lt;T_ElStiffMatx&gt;&amp; </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a63df30869ec3c409c7e634b6f1283319"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63df30869ec3c409c7e634b6f1283319">&#9670;&nbsp;</a></span>elStiffMatxVariant</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_matrix_8h.html#a523acc52416b58cdb5c9c3b1b29dcbfd">T_ElStiffMatx</a> BaseElements::elStiffMatxVariant</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Global element IDs. </p>
-<p>Variant for returning elStiffMatx. Passed to <code>Model</code> for assembling global stiffness matrix. </p>
 
 </div>
 </div>
