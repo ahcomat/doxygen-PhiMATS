@@ -74,10 +74,10 @@ $(function() {
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifndef ISOHARD_H</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define ISOHARD_H</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_elastic_8h.html">Elastic.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_solvers_2_linear_elastic_8h.html">LinearElastic.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;H5IO.h&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_iso_hard.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_iso_hard.html">IsoHard</a>: <span class="keyword">public</span> <a class="code" href="class_elastic.html">Elastic</a>{</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_iso_hard.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_iso_hard.html">IsoHard</a>: <span class="keyword">public</span> <a class="code" href="class_linear_elastic.html">LinearElastic</a>{</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
@@ -123,9 +123,8 @@ $(function() {
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;};</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a_elastic_8h_html"><div class="ttname"><a href="_elastic_8h.html">Elastic.h</a></div><div class="ttdoc">Elastic tensor in Voigt notation.</div></div>
 <div class="ttc" id="a_matrix_8h_html_a779bdf6444b5437f5865e98eaaa0481d"><div class="ttname"><a href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">T_DMatx</a></div><div class="ttdeci">std::variant&lt; Matd2x2, Matd3x3, Matd6x6 &gt; T_DMatx</div><div class="ttdoc">Variants DMatx.</div><div class="ttdef"><b>Definition:</b> Matrix.h:83</div></div>
-<div class="ttc" id="aclass_elastic_html"><div class="ttname"><a href="class_elastic.html">Elastic</a></div><div class="ttdef"><b>Definition:</b> Elastic.h:40</div></div>
+<div class="ttc" id="a_solvers_2_linear_elastic_8h_html"><div class="ttname"><a href="_solvers_2_linear_elastic_8h.html">LinearElastic.h</a></div><div class="ttdoc">A wrapper for PETSc linear solver ksp mainly for linear elasticity.</div></div>
 <div class="ttc" id="aclass_h5_i_o_html"><div class="ttname"><a href="class_h5_i_o.html">H5IO</a></div><div class="ttdef"><b>Definition:</b> H5IO.h:36</div></div>
 <div class="ttc" id="aclass_iso_hard_html"><div class="ttname"><a href="class_iso_hard.html">IsoHard</a></div><div class="ttdef"><b>Definition:</b> IsoHard.h:31</div></div>
 <div class="ttc" id="aclass_iso_hard_html_a0a66847d31ce3be5605955de2c396a02"><div class="ttname"><a href="class_iso_hard.html#a0a66847d31ce3be5605955de2c396a02">IsoHard::IsoHard</a></div><div class="ttdeci">IsoHard(string dimensions, H5IO &amp;H5File, int iSet)</div><div class="ttdoc">Constructor, reads plasticity parameters from hdf5 file.</div><div class="ttdef"><b>Definition:</b> IsoHard.cxx:6</div></div>
@@ -142,6 +141,7 @@ $(function() {
 <div class="ttc" id="aclass_iso_hard_html_ad5ca06d3f97bf4326ed938c3ee6ed14d"><div class="ttname"><a href="class_iso_hard.html#ad5ca06d3f97bf4326ed938c3ee6ed14d">IsoHard::I6</a></div><div class="ttdeci">const ColVecd6 I6</div><div class="ttdoc">3D Identity tensor in Voigt notation.</div><div class="ttdef"><b>Definition:</b> IsoHard.h:93</div></div>
 <div class="ttc" id="aclass_iso_hard_html_aec00f81670ff94f1c596dbb95deaa62c"><div class="ttname"><a href="class_iso_hard.html#aec00f81670ff94f1c596dbb95deaa62c">IsoHard::dR_pow</a></div><div class="ttdeci">double dR_pow(const double &amp;eps_eq)</div><div class="ttdoc">Derivative of power-law hardening.</div><div class="ttdef"><b>Definition:</b> IsoHard.cxx:55</div></div>
 <div class="ttc" id="aclass_iso_hard_html_af5b2f1af3f53743077ef8904fa93ce88"><div class="ttname"><a href="class_iso_hard.html#af5b2f1af3f53743077ef8904fa93ce88">IsoHard::HardLaw</a></div><div class="ttdeci">string HardLaw</div><div class="ttdoc">Hardening law.</div><div class="ttdef"><b>Definition:</b> IsoHard.h:102</div></div>
+<div class="ttc" id="aclass_linear_elastic_html"><div class="ttname"><a href="class_linear_elastic.html">LinearElastic</a></div><div class="ttdef"><b>Definition:</b> LinearElastic.h:40</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <p>
     Documentation licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. <br>

@@ -1,5 +1,6 @@
 <map id="BaseSolver" name="BaseSolver">
 <area shape="rect" id="node1" title=" " alt="" coords="73,5,163,32"/>
 <area shape="rect" id="node2" href="$class_linear_elastic.html" title=" " alt="" coords="5,80,103,107"/>
-<area shape="rect" id="node3" href="$class_linear_transport.html" title=" " alt="" coords="127,80,239,107"/>
+<area shape="rect" id="node4" href="$class_linear_transport.html" title=" " alt="" coords="127,80,239,107"/>
+<area shape="rect" id="node3" href="$class_iso_hard.html" title=" " alt="" coords="20,155,88,181"/>
 </map>
