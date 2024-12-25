@@ -83,8 +83,8 @@ Inheritance diagram for Hex8:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a53539258280d07cee3d327e7ec6b7116"><td class="memItemLeft" align="right" valign="top"><a id="a53539258280d07cee3d327e7ec6b7116"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Hex8</b> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_in, <a class="el" href="class_nodes.html">Nodes</a> &amp;<a class="el" href="class_nodes.html">Nodes</a>, int iSet, string matModel=&quot;Elastic&quot;)</td></tr>
+<tr class="memitem:a53539258280d07cee3d327e7ec6b7116"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a53539258280d07cee3d327e7ec6b7116">Hex8</a> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_in, <a class="el" href="class_nodes.html">Nodes</a> &amp;<a class="el" href="class_nodes.html">Nodes</a>, int iSet, string matModel=&quot;Elastic&quot;)</td></tr>
+<tr class="memdesc:a53539258280d07cee3d327e7ec6b7116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. Reads data for element set in the vector and initializes element attributes.  <a href="class_hex8.html#a53539258280d07cee3d327e7ec6b7116">More...</a><br /></td></tr>
 <tr class="separator:a53539258280d07cee3d327e7ec6b7116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7385abee766eb7016e4fe7be86efb708"><td class="memItemLeft" align="right" valign="top"><a id="a7385abee766eb7016e4fe7be86efb708"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a7385abee766eb7016e4fe7be86efb708">InitShapeFunc</a> ()</td></tr>
@@ -154,63 +154,64 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CalcFint</b> (double 
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a1d8d450198df39e4edd3eae1218b9f45"><td class="memItemLeft" align="right" valign="top"><a id="a1d8d450198df39e4edd3eae1218b9f45"></a>
-const vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>wts</b> {1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0}</td></tr>
+const vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a1d8d450198df39e4edd3eae1218b9f45">wts</a> {1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0}</td></tr>
+<tr class="memdesc:a1d8d450198df39e4edd3eae1218b9f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weights of the gauss points [nElGauss]. <br /></td></tr>
 <tr class="separator:a1d8d450198df39e4edd3eae1218b9f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11aa968f40f5c5179b8a6c37abbe4520"><td class="memItemLeft" align="right" valign="top"><a id="a11aa968f40f5c5179b8a6c37abbe4520"></a>
 vector&lt; RowVecd8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a11aa968f40f5c5179b8a6c37abbe4520">shapeFunc</a></td></tr>
-<tr class="memdesc:a11aa968f40f5c5179b8a6c37abbe4520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weights of the gauss points [nElGauss]. <br /></td></tr>
+<tr class="memdesc:a11aa968f40f5c5179b8a6c37abbe4520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values of the shape functions at integration points in natural coordinates [nElNodes]. <br /></td></tr>
 <tr class="separator:a11aa968f40f5c5179b8a6c37abbe4520"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37dc35fb04c8f726e8ba5cc1a4b0c709"><td class="memItemLeft" align="right" valign="top"><a id="a37dc35fb04c8f726e8ba5cc1a4b0c709"></a>
 vector&lt; Matd3x8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a37dc35fb04c8f726e8ba5cc1a4b0c709">shapeFuncDeriv</a></td></tr>
-<tr class="memdesc:a37dc35fb04c8f726e8ba5cc1a4b0c709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values of the shape functions at integration points in natural coordinates [nElNodes]. <br /></td></tr>
+<tr class="memdesc:a37dc35fb04c8f726e8ba5cc1a4b0c709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values of the shape function derivatives at integration points in natural coordinates [nElDim, nElNodes]. <br /></td></tr>
 <tr class="separator:a37dc35fb04c8f726e8ba5cc1a4b0c709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b54d7fe1a6d5770d2298cc057e9440c"><td class="memItemLeft" align="right" valign="top"><a id="a2b54d7fe1a6d5770d2298cc057e9440c"></a>
 vector&lt; Matd8x3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a2b54d7fe1a6d5770d2298cc057e9440c">elemNodCoord</a></td></tr>
-<tr class="memdesc:a2b54d7fe1a6d5770d2298cc057e9440c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values of the shape function derivatives at integration points in natural coordinates [nElDim, nElNodes]. <br /></td></tr>
+<tr class="memdesc:a2b54d7fe1a6d5770d2298cc057e9440c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Node Coordinates [nElDim, nElNodes]. <br /></td></tr>
 <tr class="separator:a2b54d7fe1a6d5770d2298cc057e9440c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01de813b7c838aa39ea3b9b47e29e9e4"><td class="memItemLeft" align="right" valign="top"><a id="a01de813b7c838aa39ea3b9b47e29e9e4"></a>
 vector&lt; vector&lt; RowVecd3 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a01de813b7c838aa39ea3b9b47e29e9e4">gaussPtCart</a></td></tr>
-<tr class="memdesc:a01de813b7c838aa39ea3b9b47e29e9e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Node Coordinates [nElDim, nElNodes]. <br /></td></tr>
+<tr class="memdesc:a01de813b7c838aa39ea3b9b47e29e9e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cartesian coordinates of Gauss points for all elements [nElDim]. <br /></td></tr>
 <tr class="separator:a01de813b7c838aa39ea3b9b47e29e9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae84e0ed7d5c4e6b205fd198499e3382f"><td class="memItemLeft" align="right" valign="top"><a id="ae84e0ed7d5c4e6b205fd198499e3382f"></a>
 vector&lt; vector&lt; ColVecd6 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#ae84e0ed7d5c4e6b205fd198499e3382f">elStran</a></td></tr>
-<tr class="memdesc:ae84e0ed7d5c4e6b205fd198499e3382f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cartesian coordinates of Gauss points for all elements [nElDim]. <br /></td></tr>
+<tr class="memdesc:ae84e0ed7d5c4e6b205fd198499e3382f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt total strains [nElStres]. <br /></td></tr>
 <tr class="separator:ae84e0ed7d5c4e6b205fd198499e3382f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dbbbff5a6d1d951495c0edf4527ffbe"><td class="memItemLeft" align="right" valign="top"><a id="a7dbbbff5a6d1d951495c0edf4527ffbe"></a>
 vector&lt; vector&lt; ColVecd6 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a7dbbbff5a6d1d951495c0edf4527ffbe">elStres</a></td></tr>
-<tr class="memdesc:a7dbbbff5a6d1d951495c0edf4527ffbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt total strains [nElStres]. <br /></td></tr>
+<tr class="memdesc:a7dbbbff5a6d1d951495c0edf4527ffbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt stresses [nElStres]. <br /></td></tr>
 <tr class="separator:a7dbbbff5a6d1d951495c0edf4527ffbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9c7c18224a5541981314fd6461d88d5"><td class="memItemLeft" align="right" valign="top"><a id="ac9c7c18224a5541981314fd6461d88d5"></a>
 vector&lt; vector&lt; ColVecd6 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#ac9c7c18224a5541981314fd6461d88d5">elStran_e</a></td></tr>
-<tr class="memdesc:ac9c7c18224a5541981314fd6461d88d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt stresses [nElStres]. <br /></td></tr>
+<tr class="memdesc:ac9c7c18224a5541981314fd6461d88d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt elastic strain [nElStres]. <br /></td></tr>
 <tr class="separator:ac9c7c18224a5541981314fd6461d88d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5368f863e7fe075d3bcde0500113b8a1"><td class="memItemLeft" align="right" valign="top"><a id="a5368f863e7fe075d3bcde0500113b8a1"></a>
 vector&lt; vector&lt; ColVecd6 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a5368f863e7fe075d3bcde0500113b8a1">elStran_p</a></td></tr>
-<tr class="memdesc:a5368f863e7fe075d3bcde0500113b8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt elastic strain [nElStres]. <br /></td></tr>
+<tr class="memdesc:a5368f863e7fe075d3bcde0500113b8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt plastic strain [nElStres]. <br /></td></tr>
 <tr class="separator:a5368f863e7fe075d3bcde0500113b8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5025c0629ad4b63e3d366e61a31fc5ef"><td class="memItemLeft" align="right" valign="top"><a id="a5025c0629ad4b63e3d366e61a31fc5ef"></a>
 vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a5025c0629ad4b63e3d366e61a31fc5ef">elStran_eq</a></td></tr>
-<tr class="memdesc:a5025c0629ad4b63e3d366e61a31fc5ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt plastic strain [nElStres]. <br /></td></tr>
+<tr class="memdesc:a5025c0629ad4b63e3d366e61a31fc5ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt equivalent plastic strain [nElStres]. <br /></td></tr>
 <tr class="separator:a5025c0629ad4b63e3d366e61a31fc5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b36cc4c850777ed1f6ac0a6ad0580c5"><td class="memItemLeft" align="right" valign="top"><a id="a1b36cc4c850777ed1f6ac0a6ad0580c5"></a>
 vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a1b36cc4c850777ed1f6ac0a6ad0580c5">elStres_eq</a></td></tr>
-<tr class="memdesc:a1b36cc4c850777ed1f6ac0a6ad0580c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt equivalent plastic strain [nElStres]. <br /></td></tr>
+<tr class="memdesc:a1b36cc4c850777ed1f6ac0a6ad0580c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt equivalent stress (vin Mises) [nElStres]. <br /></td></tr>
 <tr class="separator:a1b36cc4c850777ed1f6ac0a6ad0580c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3215dedd66dda3bb011c806bb801eea6"><td class="memItemLeft" align="right" valign="top"><a id="a3215dedd66dda3bb011c806bb801eea6"></a>
 vector&lt; vector&lt; Matd3x8 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a3215dedd66dda3bb011c806bb801eea6">BMat</a></td></tr>
-<tr class="memdesc:a3215dedd66dda3bb011c806bb801eea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt equivalent stress (vin Mises) [nElStres]. <br /></td></tr>
+<tr class="memdesc:a3215dedd66dda3bb011c806bb801eea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derivatives (scalar) matrix [nElDim, nElNodes]. <br /></td></tr>
 <tr class="separator:a3215dedd66dda3bb011c806bb801eea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f8a44d056c3d934f43d929e7c9cdb82"><td class="memItemLeft" align="right" valign="top"><a id="a1f8a44d056c3d934f43d929e7c9cdb82"></a>
 vector&lt; vector&lt; Matd6x24 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a1f8a44d056c3d934f43d929e7c9cdb82">BuMat</a></td></tr>
-<tr class="memdesc:a1f8a44d056c3d934f43d929e7c9cdb82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derivatives (scalar) matrix [nElDim, nElNodes]. <br /></td></tr>
+<tr class="memdesc:a1f8a44d056c3d934f43d929e7c9cdb82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strain matrix [nElStres, nElDispDofs]. <br /></td></tr>
 <tr class="separator:a1f8a44d056c3d934f43d929e7c9cdb82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a514d72c055c743a232fb57bbfd7ff7cf"><td class="memItemLeft" align="right" valign="top"><a id="a514d72c055c743a232fb57bbfd7ff7cf"></a>
 vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a514d72c055c743a232fb57bbfd7ff7cf">intPtVol</a></td></tr>
-<tr class="memdesc:a514d72c055c743a232fb57bbfd7ff7cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strain matrix [nElStres, nElDispDofs]. <br /></td></tr>
+<tr class="memdesc:a514d72c055c743a232fb57bbfd7ff7cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt volume. <br /></td></tr>
 <tr class="separator:a514d72c055c743a232fb57bbfd7ff7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a893aa567b3d1f1290413cf680e977603"><td class="memItemLeft" align="right" valign="top"><a id="a893aa567b3d1f1290413cf680e977603"></a>
 vector&lt; Matd24x24 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a893aa567b3d1f1290413cf680e977603">elStiffMatx</a></td></tr>
-<tr class="memdesc:a893aa567b3d1f1290413cf680e977603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt volume. <br /></td></tr>
+<tr class="memdesc:a893aa567b3d1f1290413cf680e977603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element stiffness matrix [nElDispDofs, nElDispDofs]. <br /></td></tr>
 <tr class="separator:a893aa567b3d1f1290413cf680e977603"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -276,6 +277,58 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 <tr class="memdesc:a63df30869ec3c409c7e634b6f1283319 inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global element IDs. <br /></td></tr>
 <tr class="separator:a63df30869ec3c409c7e634b6f1283319 inherit pro_attribs_class_base_elements"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a53539258280d07cee3d327e7ec6b7116"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53539258280d07cee3d327e7ec6b7116">&#9670;&nbsp;</a></span>Hex8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Hex8::Hex8 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_h5_i_o.html">H5IO</a> &amp;&#160;</td>
+          <td class="paramname"><em>H5File_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_nodes.html">Nodes</a> &amp;&#160;</td>
+          <td class="paramname"><em>Nodes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>matModel</em> = <code>&quot;Elastic&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. Reads data for element set in the vector and initializes element attributes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">H5File_in</td><td>Input hdf5 file </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_nodes.html">Nodes</a></td><td>Node object. Holds element node coordinates. </td></tr>
+    <tr><td class="paramname">iSet</td><td>Element set number. </td></tr>
+    <tr><td class="paramname">matModel</td><td>material model for the element set. Options <code><a class="el" href="class_elastic.html">Elastic</a></code> or <code>ElastoPlastic</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a94ec9ac77cb3d44e6fdf8f27be8a622e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a94ec9ac77cb3d44e6fdf8f27be8a622e">&#9670;&nbsp;</a></span>CalcCartDeriv()</h2>
@@ -661,5 +714,5 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 </div><!-- contents -->
 <p>
     Documentation licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. <br>
-    Source code licensed under <a href="../LICENSE">GNU GPLv3</a>.
+    Source code licensed under <a href="LICENSE">GNU GPLv3</a>.
 </p>

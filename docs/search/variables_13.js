@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['x_497',['x',['../class_mech_trap_model.html#a4709ba8adaf2294160f7be88671db70f',1,'MechTrapModel::x()'],['../class_transport_model.html#ae7de0b1bd3b81aba38b6033d0457d4b0',1,'TransportModel::x()'],['../class_trapping_model.html#a407fc3b76d5d98cc9df34780f0f07193',1,'TrappingModel::x()']]]
+  ['zeta_5fff_500',['zeta_ff',['../class_trap_phase.html#ae789a77e1c46fb44ee145ed75d25f731',1,'TrapPhase']]],
+  ['zeta_5ffm_501',['zeta_fM',['../class_trap_phase.html#a2344b7d3510a3b12bc7528860c751ff9',1,'TrapPhase']]],
+  ['zeta_5fmm_502',['zeta_MM',['../class_trap_phase.html#a020b0d36fce93b766ddaeba23498093d',1,'TrapPhase']]]
 ];

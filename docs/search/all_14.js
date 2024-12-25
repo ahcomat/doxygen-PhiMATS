@@ -9,5 +9,5 @@ var searchData=
   ['writeout_241',['WriteOut',['../class_mech_model.html#a371edd5cb6cddd523d85feabad2875c0',1,'MechModel::WriteOut()'],['../class_mech_trap_model.html#a1554bd802d22caf67c6e437bc6ee3ff7',1,'MechTrapModel::WriteOut()'],['../class_transport_model.html#a57212cf940b026f9a9d8a8f08b36cacb',1,'TransportModel::WriteOut()'],['../class_trapping_model.html#aa9de8dfcfc809fff4a6cc117a483d4ca',1,'TrappingModel::WriteOut()']]],
   ['writescalar_242',['WriteScalar',['../class_h5_i_o.html#af01f14f7c68a01d4bd9ed524e7f5c3a1',1,'H5IO']]],
   ['writetemp_243',['WriteTemp',['../class_trapping_model.html#af579c023928f7a3e35ad37d0f5baf071',1,'TrappingModel']]],
-  ['wts_244',['wts',['../class_tri3_t_h.html#a9916fa9b1e9fb5896bb0567f3daab4c3',1,'Tri3TH']]]
+  ['wts_244',['wts',['../class_hex8.html#a1d8d450198df39e4edd3eae1218b9f45',1,'Hex8::wts()'],['../class_tri3_t_h.html#a9916fa9b1e9fb5896bb0567f3daab4c3',1,'Tri3TH::wts()']]]
 ];
