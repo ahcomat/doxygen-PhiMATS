@@ -90,9 +90,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad20ae424dd4f0c8cfe634161d69c65e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#ad20ae424dd4f0c8cfe634161d69c65e1">MechModel</a> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_in)</td></tr>
-<tr class="memdesc:ad20ae424dd4f0c8cfe634161d69c65e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. Reads main data from hdf5 file.  <a href="class_mech_model.html#ad20ae424dd4f0c8cfe634161d69c65e1">More...</a><br /></td></tr>
-<tr class="separator:ad20ae424dd4f0c8cfe634161d69c65e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ab75313f340e016d09cb11893c33af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#ad5ab75313f340e016d09cb11893c33af">MechModel</a> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_in, const int NR_update=3)</td></tr>
+<tr class="memdesc:ad5ab75313f340e016d09cb11893c33af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. Reads main data from hdf5 file.  <a href="class_mech_model.html#ad5ab75313f340e016d09cb11893c33af">More...</a><br /></td></tr>
+<tr class="separator:ad5ab75313f340e016d09cb11893c33af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4d8de36c8943dbfe1adf8c82ea05530"><td class="memItemLeft" align="right" valign="top"><a id="af4d8de36c8943dbfe1adf8c82ea05530"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#af4d8de36c8943dbfe1adf8c82ea05530">setZeroNodVals</a> ()</td></tr>
 <tr class="memdesc:af4d8de36c8943dbfe1adf8c82ea05530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set nodal quantities <code>nodStres</code>, <code>nodStran</code>, <code>nodCount</code> and <code>Fint</code> to zeros. <br /></td></tr>
@@ -123,9 +123,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a637ab6c2c7567a001613622ffb7a03ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a637ab6c2c7567a001613622ffb7a03ba">SolveSNES</a> (vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt; elements, vector&lt; <a class="el" href="class_base_mechanics.html">BaseMechanics</a> * &gt; mats, int iStep)</td></tr>
 <tr class="memdesc:a637ab6c2c7567a001613622ffb7a03ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNES solve of the current step.  <a href="class_mech_model.html#a637ab6c2c7567a001613622ffb7a03ba">More...</a><br /></td></tr>
 <tr class="separator:a637ab6c2c7567a001613622ffb7a03ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93580d37400a61e3f682e7464fbb26fd"><td class="memItemLeft" align="right" valign="top">PetscErrorCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a93580d37400a61e3f682e7464fbb26fd">CalcResidual</a> (Vec deltaU, vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt; elements, vector&lt; <a class="el" href="class_base_mechanics.html">BaseMechanics</a> * &gt; mats, int iStep)</td></tr>
-<tr class="memdesc:a93580d37400a61e3f682e7464fbb26fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the residual vector <code>vecR</code>.  <a href="class_mech_model.html#a93580d37400a61e3f682e7464fbb26fd">More...</a><br /></td></tr>
-<tr class="separator:a93580d37400a61e3f682e7464fbb26fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7729508e0630870626134f86811a4172"><td class="memItemLeft" align="right" valign="top">PetscErrorCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a7729508e0630870626134f86811a4172">CalcResidual</a> (Vec deltaU, Vec R, vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt; elements, vector&lt; <a class="el" href="class_base_mechanics.html">BaseMechanics</a> * &gt; mats, int iStep)</td></tr>
+<tr class="memdesc:a7729508e0630870626134f86811a4172"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the residual vector <code>vecR</code>.  <a href="class_mech_model.html#a7729508e0630870626134f86811a4172">More...</a><br /></td></tr>
+<tr class="separator:a7729508e0630870626134f86811a4172"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c0bca8607347122912a35102d041cda"><td class="memItemLeft" align="right" valign="top">Vec &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a9c0bca8607347122912a35102d041cda">getB</a> ()</td></tr>
 <tr class="memdesc:a9c0bca8607347122912a35102d041cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass reference of RHS (to solver).  <a href="class_mech_model.html#a9c0bca8607347122912a35102d041cda">More...</a><br /></td></tr>
 <tr class="separator:a9c0bca8607347122912a35102d041cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,7 +158,7 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <tr class="memdesc:ac8d35396489406be1f03b6c81a882011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of iterations. <br /></td></tr>
 <tr class="separator:ac8d35396489406be1f03b6c81a882011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8e63e956a62c5babd281013dd1c338a"><td class="memItemLeft" align="right" valign="top"><a id="ae8e63e956a62c5babd281013dd1c338a"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#ae8e63e956a62c5babd281013dd1c338a">NR_freq</a> = 3</td></tr>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#ae8e63e956a62c5babd281013dd1c338a">NR_freq</a></td></tr>
 <tr class="memdesc:ae8e63e956a62c5babd281013dd1c338a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frequency of updating the stiffness matrix. <br /></td></tr>
 <tr class="separator:ae8e63e956a62c5babd281013dd1c338a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff06429e132ea4aa72aa1d09c7a62b64"><td class="memItemLeft" align="right" valign="top"><a id="aff06429e132ea4aa72aa1d09c7a62b64"></a>
@@ -211,11 +211,6 @@ Vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memdesc:a891cf885bbe024d9779d461b575d6ded"><td class="mdescLeft">&#160;</td><td class="mdescRight">solution vector. <br  />
  <br /></td></tr>
 <tr class="separator:a891cf885bbe024d9779d461b575d6ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad525d39b8838155569c73aa6c537f42f"><td class="memItemLeft" align="right" valign="top"><a id="ad525d39b8838155569c73aa6c537f42f"></a>
-Vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#ad525d39b8838155569c73aa6c537f42f">vecDeltaDisp</a></td></tr>
-<tr class="memdesc:ad525d39b8838155569c73aa6c537f42f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displacement increment vector. <br  />
- <br /></td></tr>
-<tr class="separator:ad525d39b8838155569c73aa6c537f42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f04bffdbd7812aa889aeb3a0cb69971"><td class="memItemLeft" align="right" valign="top"><a id="a5f04bffdbd7812aa889aeb3a0cb69971"></a>
 Vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a5f04bffdbd7812aa889aeb3a0cb69971">vecFint</a></td></tr>
 <tr class="memdesc:a5f04bffdbd7812aa889aeb3a0cb69971"><td class="mdescLeft">&#160;</td><td class="mdescRight">solution vector. <br  />
@@ -279,8 +274,8 @@ PetscScalar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <tr class="separator:a49c717def1182a1012ac6287129d8080 inherit pro_attribs_class_base_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad20ae424dd4f0c8cfe634161d69c65e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad20ae424dd4f0c8cfe634161d69c65e1">&#9670;&nbsp;</a></span>MechModel()</h2>
+<a id="ad5ab75313f340e016d09cb11893c33af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5ab75313f340e016d09cb11893c33af">&#9670;&nbsp;</a></span>MechModel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -289,8 +284,18 @@ PetscScalar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
           <td class="memname">MechModel::MechModel </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_h5_i_o.html">H5IO</a> &amp;&#160;</td>
-          <td class="paramname"><em>H5File_in</em></td><td>)</td>
+          <td class="paramname"><em>H5File_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>NR_update</em> = <code>3</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -299,6 +304,14 @@ PetscScalar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">H5File_in</td><td>Input hdf5 file. </td></tr>
+    <tr><td class="paramname">NR_update</td><td>Frequency of updating the Jacobian and its predonditioner.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Construct a new Mech Model object</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">H5File_in</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -370,8 +383,8 @@ PetscScalar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 
 </div>
 </div>
-<a id="a93580d37400a61e3f682e7464fbb26fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93580d37400a61e3f682e7464fbb26fd">&#9670;&nbsp;</a></span>CalcResidual()</h2>
+<a id="a7729508e0630870626134f86811a4172"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7729508e0630870626134f86811a4172">&#9670;&nbsp;</a></span>CalcResidual()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -381,6 +394,12 @@ PetscScalar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
           <td>(</td>
           <td class="paramtype">Vec&#160;</td>
           <td class="paramname"><em>deltaU</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vec&#160;</td>
+          <td class="paramname"><em>R</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
