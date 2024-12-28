@@ -138,6 +138,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a2dfa434ccba24cbad4db036c2202dad8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a2dfa434ccba24cbad4db036c2202dad8">CalcStres</a> (vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt; elements, vector&lt; <a class="el" href="class_base_mechanics.html">BaseMechanics</a> * &gt; mats)</td></tr>
 <tr class="memdesc:a2dfa434ccba24cbad4db036c2202dad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the Fint, strains and stresses. Also Calculates the stress nodal values.  <a href="class_mech_model.html#a2dfa434ccba24cbad4db036c2202dad8">More...</a><br /></td></tr>
 <tr class="separator:a2dfa434ccba24cbad4db036c2202dad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa5f07a7749058a9a3037c7ed95b2880"><td class="memItemLeft" align="right" valign="top"><a id="afa5f07a7749058a9a3037c7ed95b2880"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CalcNodVals</b> (vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt; elements)</td></tr>
+<tr class="separator:afa5f07a7749058a9a3037c7ed95b2880"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a371edd5cb6cddd523d85feabad2875c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a371edd5cb6cddd523d85feabad2875c0">WriteOut</a> (vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt; elements, <a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_out, const string iStep)</td></tr>
 <tr class="memdesc:a371edd5cb6cddd523d85feabad2875c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write nodal values.  <a href="class_mech_model.html#a371edd5cb6cddd523d85feabad2875c0">More...</a><br /></td></tr>
 <tr class="separator:a371edd5cb6cddd523d85feabad2875c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,6 +184,22 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a9d535b401fc41c625748320f7faf181e">nodStran</a></td></tr>
 <tr class="memdesc:a9d535b401fc41c625748320f7faf181e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodal strain. <br /></td></tr>
 <tr class="separator:a9d535b401fc41c625748320f7faf181e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74187206e24fae408e7aaa0aa638cd00"><td class="memItemLeft" align="right" valign="top"><a id="a74187206e24fae408e7aaa0aa638cd00"></a>
+<a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a74187206e24fae408e7aaa0aa638cd00">nodStran_e</a></td></tr>
+<tr class="memdesc:a74187206e24fae408e7aaa0aa638cd00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodal elastic strain. <br /></td></tr>
+<tr class="separator:a74187206e24fae408e7aaa0aa638cd00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08233b5d00706ec2a75afa16e52898bd"><td class="memItemLeft" align="right" valign="top"><a id="a08233b5d00706ec2a75afa16e52898bd"></a>
+<a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a08233b5d00706ec2a75afa16e52898bd">nodStran_p</a></td></tr>
+<tr class="memdesc:a08233b5d00706ec2a75afa16e52898bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodal plastic strain. <br /></td></tr>
+<tr class="separator:a08233b5d00706ec2a75afa16e52898bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af25e38cd5c451e191e54449667804b8e"><td class="memItemLeft" align="right" valign="top"><a id="af25e38cd5c451e191e54449667804b8e"></a>
+vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#af25e38cd5c451e191e54449667804b8e">nodStran_eq</a></td></tr>
+<tr class="memdesc:af25e38cd5c451e191e54449667804b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodal equivalent plastic strain. <br /></td></tr>
+<tr class="separator:af25e38cd5c451e191e54449667804b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89d377f46aa4e64ed378ae0aaf29a733"><td class="memItemLeft" align="right" valign="top"><a id="a89d377f46aa4e64ed378ae0aaf29a733"></a>
+vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a89d377f46aa4e64ed378ae0aaf29a733">nodStres_eq</a></td></tr>
+<tr class="memdesc:a89d377f46aa4e64ed378ae0aaf29a733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodal equivalent stress (Von Mises). <br /></td></tr>
+<tr class="separator:a89d377f46aa4e64ed378ae0aaf29a733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bb5479a7b9834d937d1df310609fd73"><td class="memItemLeft" align="right" valign="top"><a id="a4bb5479a7b9834d937d1df310609fd73"></a>
 vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a4bb5479a7b9834d937d1df310609fd73">nodCount</a></td></tr>
 <tr class="memdesc:a4bb5479a7b9834d937d1df310609fd73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter for integration points surrounding nodes. <br /></td></tr>

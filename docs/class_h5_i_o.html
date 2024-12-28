@@ -73,41 +73,38 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a193496bccb96c99a535aa81c39238891"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_h5_i_o.html#a193496bccb96c99a535aa81c39238891">H5IO</a> (string H5FileName)</td></tr>
+<tr class="memitem:a193496bccb96c99a535aa81c39238891"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_h5_i_o.html#a193496bccb96c99a535aa81c39238891">H5IO</a> (string <a class="el" href="class_h5_i_o.html#a5757e1b854680ea08e279b854bf3df47">H5FileName</a>)</td></tr>
 <tr class="memdesc:a193496bccb96c99a535aa81c39238891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. Checks if the file exists.  <a href="class_h5_i_o.html#a193496bccb96c99a535aa81c39238891">More...</a><br /></td></tr>
 <tr class="separator:a193496bccb96c99a535aa81c39238891"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17b4f04e394cbf558b83e2ac722e9b1b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_h5_i_o.html#a17b4f04e394cbf558b83e2ac722e9b1b">ReadScalar</a> (const string &amp;dsetName)</td></tr>
-<tr class="memdesc:a17b4f04e394cbf558b83e2ac722e9b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a scalar input from HDF5 file.  <a href="class_h5_i_o.html#a17b4f04e394cbf558b83e2ac722e9b1b">More...</a><br /></td></tr>
+<tr class="memdesc:a17b4f04e394cbf558b83e2ac722e9b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a scalar input from hdf5 file.  <a href="class_h5_i_o.html#a17b4f04e394cbf558b83e2ac722e9b1b">More...</a><br /></td></tr>
 <tr class="separator:a17b4f04e394cbf558b83e2ac722e9b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af01f14f7c68a01d4bd9ed524e7f5c3a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_h5_i_o.html#af01f14f7c68a01d4bd9ed524e7f5c3a1">WriteScalar</a> (const string &amp;dsetName, double val)</td></tr>
-<tr class="memdesc:af01f14f7c68a01d4bd9ed524e7f5c3a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write scalar <code>val</code>.  <a href="class_h5_i_o.html#af01f14f7c68a01d4bd9ed524e7f5c3a1">More...</a><br /></td></tr>
+<tr class="memdesc:af01f14f7c68a01d4bd9ed524e7f5c3a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write scalar.  <a href="class_h5_i_o.html#af01f14f7c68a01d4bd9ed524e7f5c3a1">More...</a><br /></td></tr>
 <tr class="separator:af01f14f7c68a01d4bd9ed524e7f5c3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af203044e744e0c9f6095065852b5a4eb"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_h5_i_o.html#af203044e744e0c9f6095065852b5a4eb">ReadString</a> (const string &amp;dsetName)</td></tr>
 <tr class="memdesc:af203044e744e0c9f6095065852b5a4eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a string variable.  <a href="class_h5_i_o.html#af203044e744e0c9f6095065852b5a4eb">More...</a><br /></td></tr>
 <tr class="separator:af203044e744e0c9f6095065852b5a4eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e826c2dd503297dd148b4bd8bb337d2"><td class="memItemLeft" align="right" valign="top"><a id="a0e826c2dd503297dd148b4bd8bb337d2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadFieldFloat2D</b> (const string &amp;dsetName, const int row, const int col, vector&lt; vector&lt; double &gt;&gt; &amp;Field)</td></tr>
-<tr class="separator:a0e826c2dd503297dd148b4bd8bb337d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a89af819fc0d857c07598aacea15265"><td class="memItemLeft" align="right" valign="top"><a id="a3a89af819fc0d857c07598aacea15265"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadFieldInt2D</b> (const string &amp;dsetName, const int row, const int col, vector&lt; vector&lt; int &gt;&gt; &amp;Field)</td></tr>
-<tr class="separator:a3a89af819fc0d857c07598aacea15265"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2edefe776f41e3acc7e110891c0b784a"><td class="memItemLeft" align="right" valign="top"><a id="a2edefe776f41e3acc7e110891c0b784a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadFieldInt1D</b> (const string &amp;dsetName, vector&lt; int &gt; &amp;Field)</td></tr>
-<tr class="separator:a2edefe776f41e3acc7e110891c0b784a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e57f9d63ac36e62bee305fe5c10e2a8"><td class="memItemLeft" align="right" valign="top"><a id="a1e57f9d63ac36e62bee305fe5c10e2a8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadFieldDoub1D</b> (const string &amp;dsetName, vector&lt; double &gt; &amp;Field)</td></tr>
-<tr class="separator:a1e57f9d63ac36e62bee305fe5c10e2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab24b14ec644fc06a0df973e1945c0fa6"><td class="memItemLeft" align="right" valign="top"><a id="ab24b14ec644fc06a0df973e1945c0fa6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteArray_1D</b> (const string &amp;dsetName, const int xSize, const double *Array)</td></tr>
-<tr class="separator:ab24b14ec644fc06a0df973e1945c0fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6120f8d98a9e6466834f8546c4ceb8a"><td class="memItemLeft" align="right" valign="top"><a id="ad6120f8d98a9e6466834f8546c4ceb8a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteStres</b> (const string &amp;dsetName, const int xSize, const int ySize, const <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;Array)</td></tr>
-<tr class="separator:ad6120f8d98a9e6466834f8546c4ceb8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5e79a8193f756a45928b327d782925"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0e5e79a8193f756a45928b327d782925"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_h5_i_o.html#a0e5e79a8193f756a45928b327d782925">ReadField1D</a> (const std::string &amp;dsetName, std::vector&lt; T &gt; &amp;Field)</td></tr>
+<tr class="memdesc:a0e5e79a8193f756a45928b327d782925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a 1D field data.  <a href="class_h5_i_o.html#a0e5e79a8193f756a45928b327d782925">More...</a><br /></td></tr>
+<tr class="separator:a0e5e79a8193f756a45928b327d782925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfc4522dd3e0fff8968930539d029248"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:acfc4522dd3e0fff8968930539d029248"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_h5_i_o.html#acfc4522dd3e0fff8968930539d029248">ReadField2D</a> (const string &amp;dsetName, const int dim1, const int dim2, vector&lt; vector&lt; T &gt;&gt; &amp;Field)</td></tr>
+<tr class="memdesc:acfc4522dd3e0fff8968930539d029248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a 2D field data.  <a href="class_h5_i_o.html#acfc4522dd3e0fff8968930539d029248">More...</a><br /></td></tr>
+<tr class="separator:acfc4522dd3e0fff8968930539d029248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe9dd056c75a87c44d080b688628454e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_h5_i_o.html#abe9dd056c75a87c44d080b688628454e">WriteArray1D</a> (const string &amp;dsetName, const int xSize, const double *Array)</td></tr>
+<tr class="memdesc:abe9dd056c75a87c44d080b688628454e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes array.  <a href="class_h5_i_o.html#abe9dd056c75a87c44d080b688628454e">More...</a><br /></td></tr>
+<tr class="separator:abe9dd056c75a87c44d080b688628454e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8259d79866c432156b4714980dc281"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_h5_i_o.html#a9f8259d79866c432156b4714980dc281">WriteTensor</a> (const string &amp;dsetName, const int nNodes, const int nStres, const <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;Array)</td></tr>
+<tr class="memdesc:a9f8259d79866c432156b4714980dc281"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a tensor field in Voigt notation.  <a href="class_h5_i_o.html#a9f8259d79866c432156b4714980dc281">More...</a><br /></td></tr>
+<tr class="separator:a9f8259d79866c432156b4714980dc281"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a5757e1b854680ea08e279b854bf3df47"><td class="memItemLeft" align="right" valign="top"><a id="a5757e1b854680ea08e279b854bf3df47"></a>
-const string&#160;</td><td class="memItemRight" valign="bottom"><b>H5FileName</b></td></tr>
+const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_h5_i_o.html#a5757e1b854680ea08e279b854bf3df47">H5FileName</a></td></tr>
+<tr class="memdesc:a5757e1b854680ea08e279b854bf3df47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of HDF file. <br /></td></tr>
 <tr class="separator:a5757e1b854680ea08e279b854bf3df47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -130,7 +127,7 @@ const string&#160;</td><td class="memItemRight" valign="bottom"><b>H5FileName</b
 <p>Constructor. Checks if the file exists. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">H5FileName</td><td></td></tr>
+    <tr><td class="paramname">H5FileName</td><td>Name of hdf5 file. </td></tr>
   </table>
   </dd>
 </dl>
@@ -138,6 +135,126 @@ const string&#160;</td><td class="memItemRight" valign="bottom"><b>H5FileName</b
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0e5e79a8193f756a45928b327d782925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e5e79a8193f756a45928b327d782925">&#9670;&nbsp;</a></span>ReadField1D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void H5IO::ReadField1D </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>dsetName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>Field</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads a 1D field data. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Template type (<code>int</code> or <code>double</code>). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dsetName</td><td>Name of dataset. </td></tr>
+    <tr><td class="paramname">Field</td><td>Initialized vector. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acfc4522dd3e0fff8968930539d029248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfc4522dd3e0fff8968930539d029248">&#9670;&nbsp;</a></span>ReadField2D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void H5IO::ReadField2D </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>dsetName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>dim1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>dim2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; vector&lt; T &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>Field</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads a 2D field data. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Template type (<code>int</code> or <code>double</code>) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dsetName</td><td>Name of dataset. </td></tr>
+    <tr><td class="paramname">dim1</td><td>Number of rows. </td></tr>
+    <tr><td class="paramname">dim2</td><td>Number of columns. </td></tr>
+    <tr><td class="paramname">Field</td><td>Initialized vector. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a17b4f04e394cbf558b83e2ac722e9b1b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a17b4f04e394cbf558b83e2ac722e9b1b">&#9670;&nbsp;</a></span>ReadScalar()</h2>
 
@@ -154,11 +271,10 @@ const string&#160;</td><td class="memItemRight" valign="bottom"><b>H5FileName</b
       </table>
 </div><div class="memdoc">
 
-<p>Reads a scalar input from HDF5 file. </p>
+<p>Reads a scalar input from hdf5 file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dsetName</td><td><br  />
- </td></tr>
+    <tr><td class="paramname">dsetName</td><td>Name of dataset. </td></tr>
   </table>
   </dd>
 </dl>
@@ -192,6 +308,50 @@ const string&#160;</td><td class="memItemRight" valign="bottom"><b>H5FileName</b
 
 </div>
 </div>
+<a id="abe9dd056c75a87c44d080b688628454e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe9dd056c75a87c44d080b688628454e">&#9670;&nbsp;</a></span>WriteArray1D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void H5IO::WriteArray1D </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>dsetName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>xSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>Array</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dsetName</td><td>Name of dataset. </td></tr>
+    <tr><td class="paramname">xSize</td><td>Size of array. </td></tr>
+    <tr><td class="paramname">Array</td><td>The array to write. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="af01f14f7c68a01d4bd9ed524e7f5c3a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af01f14f7c68a01d4bd9ed524e7f5c3a1">&#9670;&nbsp;</a></span>WriteScalar()</h2>
 
@@ -218,11 +378,62 @@ const string&#160;</td><td class="memItemRight" valign="bottom"><b>H5FileName</b
       </table>
 </div><div class="memdoc">
 
-<p>Write scalar <code>val</code>. </p>
+<p>Write scalar. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dsetName</td><td></td></tr>
-    <tr><td class="paramname">val</td><td></td></tr>
+    <tr><td class="paramname">dsetName</td><td>Name of dataset. </td></tr>
+    <tr><td class="paramname">val</td><td>Value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9f8259d79866c432156b4714980dc281"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f8259d79866c432156b4714980dc281">&#9670;&nbsp;</a></span>WriteTensor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void H5IO::WriteTensor </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>dsetName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>nNodes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>nStres</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;&#160;</td>
+          <td class="paramname"><em>Array</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes a tensor field in Voigt notation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dsetName</td><td>Name of data set. </td></tr>
+    <tr><td class="paramname">nNodes</td><td>Total number of nodes. </td></tr>
+    <tr><td class="paramname">nStres</td><td>Sizer of tensor in Voigt notation (<code>2</code>, <code>3</code> or <code>6</code>) </td></tr>
+    <tr><td class="paramname">Array</td><td>The tensor field container. </td></tr>
   </table>
   </dd>
 </dl>

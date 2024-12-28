@@ -111,6 +111,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:acf209e92707393be6befe2efcd7008a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quad4.html#acf209e92707393be6befe2efcd7008a0">CalcStres</a> (<a class="el" href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">T_DMatx</a> DMatx, const double *globalBuffer, double *Fint, <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodStres, <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodStran, vector&lt; int &gt; &amp;nodCount) override</td></tr>
 <tr class="memdesc:acf209e92707393be6befe2efcd7008a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the <code>Fint</code>, strains and stresses. Also evaluates the stress nodal values.  <a href="class_quad4.html#acf209e92707393be6befe2efcd7008a0">More...</a><br /></td></tr>
 <tr class="separator:acf209e92707393be6befe2efcd7008a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8f7949513452bac9498d0d6b48d3417"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quad4.html#ab8f7949513452bac9498d0d6b48d3417">CalcNodVals</a> (<a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodStres, <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodStran, <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodStran_e, <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodStran_p, vector&lt; double &gt; &amp;nodStran_eq, vector&lt; double &gt; &amp;nodStres_eq, vector&lt; int &gt; &amp;nodCount) override</td></tr>
+<tr class="memdesc:ab8f7949513452bac9498d0d6b48d3417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for evaluating int-point values at nodal points.  <a href="class_quad4.html#ab8f7949513452bac9498d0d6b48d3417">More...</a><br /></td></tr>
+<tr class="separator:ab8f7949513452bac9498d0d6b48d3417"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a73751cf8a51174a2038747dd1793ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quad4.html#a4a73751cf8a51174a2038747dd1793ba">CalcElStran</a> (const double *globalBuffer) override</td></tr>
 <tr class="memdesc:a4a73751cf8a51174a2038747dd1793ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the int-pt total strain.  <a href="class_quad4.html#a4a73751cf8a51174a2038747dd1793ba">More...</a><br /></td></tr>
 <tr class="separator:a4a73751cf8a51174a2038747dd1793ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -396,6 +399,88 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 </dl>
 
 <p>Implements <a class="el" href="class_base_elem_mech.html#a1add734b6a0057dc68f257139556f6a8">BaseElemMech</a>.</p>
+
+</div>
+</div>
+<a id="ab8f7949513452bac9498d0d6b48d3417"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8f7949513452bac9498d0d6b48d3417">&#9670;&nbsp;</a></span>CalcNodVals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Quad4::CalcNodVals </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;&#160;</td>
+          <td class="paramname"><em>nodStres</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;&#160;</td>
+          <td class="paramname"><em>nodStran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;&#160;</td>
+          <td class="paramname"><em>nodStran_e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;&#160;</td>
+          <td class="paramname"><em>nodStran_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>nodStran_eq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>nodStres_eq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>nodCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function for evaluating int-point values at nodal points. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodStres</td><td></td></tr>
+    <tr><td class="paramname">nodStran</td><td></td></tr>
+    <tr><td class="paramname">nodStran_e</td><td></td></tr>
+    <tr><td class="paramname">nodStran_p</td><td></td></tr>
+    <tr><td class="paramname">nodStran_eq</td><td></td></tr>
+    <tr><td class="paramname">nodStres_eq</td><td></td></tr>
+    <tr><td class="paramname">nodCount</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_base_elem_mech.html#a42dade57dc5471145a747a79e7364385">BaseElemMech</a>.</p>
 
 </div>
 </div>
