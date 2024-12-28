@@ -113,7 +113,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:aef898865da57419802e0c1deb8ea8c94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the <code>Fint</code>, strains and stresses. Also evaluates the stress nodal values.  <a href="class_hex8.html#aef898865da57419802e0c1deb8ea8c94">More...</a><br /></td></tr>
 <tr class="separator:aef898865da57419802e0c1deb8ea8c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d110c9479f3d3a1facf4949c1db63b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a6d110c9479f3d3a1facf4949c1db63b7">CalcNodVals</a> (<a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodStres, <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodStran, <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodStran_e, <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodStran_p, vector&lt; double &gt; &amp;nodStran_eq, vector&lt; double &gt; &amp;nodStres_eq, vector&lt; int &gt; &amp;nodCount) override</td></tr>
-<tr class="memdesc:a6d110c9479f3d3a1facf4949c1db63b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for evaluating int-point values at nodal points.  <a href="class_hex8.html#a6d110c9479f3d3a1facf4949c1db63b7">More...</a><br /></td></tr>
+<tr class="memdesc:a6d110c9479f3d3a1facf4949c1db63b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for mapping int-point values to nodal points.  <a href="class_hex8.html#a6d110c9479f3d3a1facf4949c1db63b7">More...</a><br /></td></tr>
 <tr class="separator:a6d110c9479f3d3a1facf4949c1db63b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a233654019fba32bfd65fb76d764eaf6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a233654019fba32bfd65fb76d764eaf6b">CalcElStran</a> (const double *globalBuffer) override</td></tr>
 <tr class="memdesc:a233654019fba32bfd65fb76d764eaf6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the int-pt total strain.  <a href="class_hex8.html#a233654019fba32bfd65fb76d764eaf6b">More...</a><br /></td></tr>
@@ -198,8 +198,12 @@ vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign
 <tr class="separator:a5025c0629ad4b63e3d366e61a31fc5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b36cc4c850777ed1f6ac0a6ad0580c5"><td class="memItemLeft" align="right" valign="top"><a id="a1b36cc4c850777ed1f6ac0a6ad0580c5"></a>
 vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a1b36cc4c850777ed1f6ac0a6ad0580c5">elStres_eq</a></td></tr>
-<tr class="memdesc:a1b36cc4c850777ed1f6ac0a6ad0580c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt equivalent stress (vin Mises) [nElStres]. <br /></td></tr>
+<tr class="memdesc:a1b36cc4c850777ed1f6ac0a6ad0580c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt equivalent stress (von Mises) [nElStres]. <br /></td></tr>
 <tr class="separator:a1b36cc4c850777ed1f6ac0a6ad0580c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c2de6011ccba21b4abfa06af737ee47"><td class="memItemLeft" align="right" valign="top"><a id="a6c2de6011ccba21b4abfa06af737ee47"></a>
+vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a6c2de6011ccba21b4abfa06af737ee47">elStres_h</a></td></tr>
+<tr class="memdesc:a6c2de6011ccba21b4abfa06af737ee47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt hydrostatic stress [nElStres]. <br /></td></tr>
+<tr class="separator:a6c2de6011ccba21b4abfa06af737ee47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3215dedd66dda3bb011c806bb801eea6"><td class="memItemLeft" align="right" valign="top"><a id="a3215dedd66dda3bb011c806bb801eea6"></a>
 vector&lt; vector&lt; Matd3x8 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a3215dedd66dda3bb011c806bb801eea6">BMat</a></td></tr>
 <tr class="memdesc:a3215dedd66dda3bb011c806bb801eea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derivatives (scalar) matrix [nElDim, nElNodes]. <br /></td></tr>
@@ -536,7 +540,7 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 </table>
 </div><div class="memdoc">
 
-<p>Function for evaluating int-point values at nodal points. </p>
+<p>Function for mapping int-point values to nodal points. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nodStres</td><td></td></tr>
