@@ -93,33 +93,32 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad5ab75313f340e016d09cb11893c33af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#ad5ab75313f340e016d09cb11893c33af">MechModel</a> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_in, const int NR_update=3)</td></tr>
 <tr class="memdesc:ad5ab75313f340e016d09cb11893c33af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. Reads main data from hdf5 file.  <a href="class_mech_model.html#ad5ab75313f340e016d09cb11893c33af">More...</a><br /></td></tr>
 <tr class="separator:ad5ab75313f340e016d09cb11893c33af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4d8de36c8943dbfe1adf8c82ea05530"><td class="memItemLeft" align="right" valign="top"><a id="af4d8de36c8943dbfe1adf8c82ea05530"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#af4d8de36c8943dbfe1adf8c82ea05530">setZeroNodVals</a> ()</td></tr>
-<tr class="memdesc:af4d8de36c8943dbfe1adf8c82ea05530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set nodal quantities <code>nodStres</code>, <code>nodStran</code>, <code>nodCount</code> and <code>Fint</code> to zeros. <br /></td></tr>
-<tr class="separator:af4d8de36c8943dbfe1adf8c82ea05530"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0d2d67c7130969efe72cf8b2b8e0604"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#ad0d2d67c7130969efe72cf8b2b8e0604">InitializePETSc</a> (vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt; elements)</td></tr>
-<tr class="memdesc:ad0d2d67c7130969efe72cf8b2b8e0604"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes and preallocates PETSc objects.  <a href="class_mech_model.html#ad0d2d67c7130969efe72cf8b2b8e0604">More...</a><br /></td></tr>
-<tr class="separator:ad0d2d67c7130969efe72cf8b2b8e0604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac817624fd2e0893f251e3d0f9eacc29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#aac817624fd2e0893f251e3d0f9eacc29">InitializeDirichBC</a> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_in)</td></tr>
+<tr class="memdesc:aac817624fd2e0893f251e3d0f9eacc29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads and initializes Dirichlet BCs.  <a href="class_mech_model.html#aac817624fd2e0893f251e3d0f9eacc29">More...</a><br /></td></tr>
+<tr class="separator:aac817624fd2e0893f251e3d0f9eacc29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6b983fceae9434e264f0b8366356026"><td class="memItemLeft" align="right" valign="top"><a id="ab6b983fceae9434e264f0b8366356026"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#ab6b983fceae9434e264f0b8366356026">setDirichBC</a> ()</td></tr>
 <tr class="memdesc:ab6b983fceae9434e264f0b8366356026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Dirichlet boundary conditions in the RHS <code>vecFext</code> and global stiffness matrix <code>A</code>. <br /></td></tr>
 <tr class="separator:ab6b983fceae9434e264f0b8366356026"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a413937361888875043bc1ea9a3128783"><td class="memItemLeft" align="right" valign="top"><a id="a413937361888875043bc1ea9a3128783"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a413937361888875043bc1ea9a3128783">UpdateDisp</a> ()</td></tr>
-<tr class="memdesc:a413937361888875043bc1ea9a3128783"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates displacement increment. <br /></td></tr>
-<tr class="separator:a413937361888875043bc1ea9a3128783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0d2d67c7130969efe72cf8b2b8e0604"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#ad0d2d67c7130969efe72cf8b2b8e0604">InitializePETSc</a> (vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt; elements)</td></tr>
+<tr class="memdesc:ad0d2d67c7130969efe72cf8b2b8e0604"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes and preallocates PETSc objects.  <a href="class_mech_model.html#ad0d2d67c7130969efe72cf8b2b8e0604">More...</a><br /></td></tr>
+<tr class="separator:ad0d2d67c7130969efe72cf8b2b8e0604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4d8de36c8943dbfe1adf8c82ea05530"><td class="memItemLeft" align="right" valign="top"><a id="af4d8de36c8943dbfe1adf8c82ea05530"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#af4d8de36c8943dbfe1adf8c82ea05530">setZeroNodVals</a> ()</td></tr>
+<tr class="memdesc:af4d8de36c8943dbfe1adf8c82ea05530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set nodal quantities <code>nodStres</code>, <code>nodStran</code>, <code>nodCount</code> and <code>Fint</code> to zeros. <br /></td></tr>
+<tr class="separator:af4d8de36c8943dbfe1adf8c82ea05530"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b9a21f6e39c0d0c2f9dcb05bdf6063f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a3b9a21f6e39c0d0c2f9dcb05bdf6063f">get_nSteps</a> () const</td></tr>
 <tr class="memdesc:a3b9a21f6e39c0d0c2f9dcb05bdf6063f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of steps to apply load increment.  <a href="class_mech_model.html#a3b9a21f6e39c0d0c2f9dcb05bdf6063f">More...</a><br /></td></tr>
 <tr class="separator:a3b9a21f6e39c0d0c2f9dcb05bdf6063f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a722290ac8b56fc683e2c54b92e68cbfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a722290ac8b56fc683e2c54b92e68cbfb">CalcElemStiffMatx</a> (vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt; elements, vector&lt; <a class="el" href="class_base_mechanics.html">BaseMechanics</a> * &gt; mats)</td></tr>
 <tr class="memdesc:a722290ac8b56fc683e2c54b92e68cbfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the element stiffness matrix.  <a href="class_mech_model.html#a722290ac8b56fc683e2c54b92e68cbfb">More...</a><br /></td></tr>
 <tr class="separator:a722290ac8b56fc683e2c54b92e68cbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a802fae1218562a342e5dfa35a535e436"><td class="memItemLeft" align="right" valign="top"><a id="a802fae1218562a342e5dfa35a535e436"></a>
+PetscErrorCode&#160;</td><td class="memItemRight" valign="bottom"><b>AssembleElementMatrix</b> (const auto *elStiffMatx_ptr, const std::vector&lt; std::vector&lt; int &gt;&gt; &amp;elemDispDof_ptr, PetscInt <a class="el" href="class_mech_model.html#a951de02dc5775e8a1fe83772d9802393">nElDispDofs</a>, PetscInt <a class="el" href="class_base_model.html#a7bd4e9f18324dae8acef17a9a8e2c2cd">nElements</a>)</td></tr>
+<tr class="separator:a802fae1218562a342e5dfa35a535e436"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d70adb0884bb1316b20aa1f495c7013"><td class="memItemLeft" align="right" valign="top">PetscErrorCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a4d70adb0884bb1316b20aa1f495c7013">Assemble</a> (vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt; elements)</td></tr>
 <tr class="memdesc:a4d70adb0884bb1316b20aa1f495c7013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assemble the global stiffness matrix.  <a href="class_mech_model.html#a4d70adb0884bb1316b20aa1f495c7013">More...</a><br /></td></tr>
 <tr class="separator:a4d70adb0884bb1316b20aa1f495c7013"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac817624fd2e0893f251e3d0f9eacc29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#aac817624fd2e0893f251e3d0f9eacc29">InitializeDirichBC</a> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_in)</td></tr>
-<tr class="memdesc:aac817624fd2e0893f251e3d0f9eacc29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads and initializes Dirichlet BCs.  <a href="class_mech_model.html#aac817624fd2e0893f251e3d0f9eacc29">More...</a><br /></td></tr>
-<tr class="separator:aac817624fd2e0893f251e3d0f9eacc29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a637ab6c2c7567a001613622ffb7a03ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a637ab6c2c7567a001613622ffb7a03ba">SolveSNES</a> (vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt; elements, vector&lt; <a class="el" href="class_base_mechanics.html">BaseMechanics</a> * &gt; mats, int iStep)</td></tr>
 <tr class="memdesc:a637ab6c2c7567a001613622ffb7a03ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">SNES solve of the current step.  <a href="class_mech_model.html#a637ab6c2c7567a001613622ffb7a03ba">More...</a><br /></td></tr>
 <tr class="separator:a637ab6c2c7567a001613622ffb7a03ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,8 +137,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a2dfa434ccba24cbad4db036c2202dad8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a2dfa434ccba24cbad4db036c2202dad8">CalcStres</a> (vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt; elements, vector&lt; <a class="el" href="class_base_mechanics.html">BaseMechanics</a> * &gt; mats)</td></tr>
 <tr class="memdesc:a2dfa434ccba24cbad4db036c2202dad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the Fint, strains and stresses. Also Calculates the stress nodal values.  <a href="class_mech_model.html#a2dfa434ccba24cbad4db036c2202dad8">More...</a><br /></td></tr>
 <tr class="separator:a2dfa434ccba24cbad4db036c2202dad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa5f07a7749058a9a3037c7ed95b2880"><td class="memItemLeft" align="right" valign="top"><a id="afa5f07a7749058a9a3037c7ed95b2880"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CalcNodVals</b> (vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt; elements)</td></tr>
+<tr class="memitem:afa5f07a7749058a9a3037c7ed95b2880"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#afa5f07a7749058a9a3037c7ed95b2880">CalcNodVals</a> (vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt; elements)</td></tr>
+<tr class="memdesc:afa5f07a7749058a9a3037c7ed95b2880"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps int-point values to nodes for output.  <a href="class_mech_model.html#afa5f07a7749058a9a3037c7ed95b2880">More...</a><br /></td></tr>
 <tr class="separator:afa5f07a7749058a9a3037c7ed95b2880"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a371edd5cb6cddd523d85feabad2875c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a371edd5cb6cddd523d85feabad2875c0">WriteOut</a> (vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt; elements, <a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_out, const string iStep)</td></tr>
 <tr class="memdesc:a371edd5cb6cddd523d85feabad2875c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write nodal values.  <a href="class_mech_model.html#a371edd5cb6cddd523d85feabad2875c0">More...</a><br /></td></tr>
@@ -214,7 +213,7 @@ PetscInt *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <tr class="separator:a6a562d0551dc6bbfd4b87f5769680f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc22bf88ec69373f9418e4e5aef2baec"><td class="memItemLeft" align="right" valign="top"><a id="acc22bf88ec69373f9418e4e5aef2baec"></a>
 PetscReal *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#acc22bf88ec69373f9418e4e5aef2baec">presZeros</a> = NULL</td></tr>
-<tr class="memdesc:acc22bf88ec69373f9418e4e5aef2baec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prescribed <br  />
+<tr class="memdesc:acc22bf88ec69373f9418e4e5aef2baec"><td class="mdescLeft">&#160;</td><td class="mdescRight">To set the Residual prescribed dofs to zeros. <br  />
  <br /></td></tr>
 <tr class="separator:acc22bf88ec69373f9418e4e5aef2baec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f306243dd44e097279a5a0b52b9f468"><td class="memItemLeft" align="right" valign="top"><a id="a8f306243dd44e097279a5a0b52b9f468"></a>
@@ -227,9 +226,14 @@ Vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="separator:ae5fb775dc6171c2014e42baf0c856f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a891cf885bbe024d9779d461b575d6ded"><td class="memItemLeft" align="right" valign="top"><a id="a891cf885bbe024d9779d461b575d6ded"></a>
 Vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a891cf885bbe024d9779d461b575d6ded">vecDisp</a></td></tr>
-<tr class="memdesc:a891cf885bbe024d9779d461b575d6ded"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displacement (solution) vector. <br  />
+<tr class="memdesc:a891cf885bbe024d9779d461b575d6ded"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displacement vector. <br  />
  <br /></td></tr>
 <tr class="separator:a891cf885bbe024d9779d461b575d6ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad525d39b8838155569c73aa6c537f42f"><td class="memItemLeft" align="right" valign="top"><a id="ad525d39b8838155569c73aa6c537f42f"></a>
+Vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#ad525d39b8838155569c73aa6c537f42f">vecDeltaDisp</a></td></tr>
+<tr class="memdesc:ad525d39b8838155569c73aa6c537f42f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displacement increment (solution) vector. <br  />
+ <br /></td></tr>
+<tr class="separator:ad525d39b8838155569c73aa6c537f42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f04bffdbd7812aa889aeb3a0cb69971"><td class="memItemLeft" align="right" valign="top"><a id="a5f04bffdbd7812aa889aeb3a0cb69971"></a>
 Vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a5f04bffdbd7812aa889aeb3a0cb69971">vecFint</a></td></tr>
 <tr class="memdesc:a5f04bffdbd7812aa889aeb3a0cb69971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal force vector. <br  />
@@ -239,6 +243,14 @@ Vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#ad7d1419f6416101208481cfe60ab9f98">matA</a></td></tr>
 <tr class="memdesc:ad7d1419f6416101208481cfe60ab9f98"><td class="mdescLeft">&#160;</td><td class="mdescRight">The global coefficient (stiffness) matrix. <br /></td></tr>
 <tr class="separator:ad7d1419f6416101208481cfe60ab9f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab264307a614ac0ab2e8a364465ca2d67"><td class="memItemLeft" align="right" valign="top"><a id="ab264307a614ac0ab2e8a364465ca2d67"></a>
+KSP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#ab264307a614ac0ab2e8a364465ca2d67">ksp</a></td></tr>
+<tr class="memdesc:ab264307a614ac0ab2e8a364465ca2d67"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>KSP</code> object for controlling the linear system. <br /></td></tr>
+<tr class="separator:ab264307a614ac0ab2e8a364465ca2d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b4d3fdd3448f4632a6e736eab2a8a90"><td class="memItemLeft" align="right" valign="top"><a id="a6b4d3fdd3448f4632a6e736eab2a8a90"></a>
+PC&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a6b4d3fdd3448f4632a6e736eab2a8a90">pc</a></td></tr>
+<tr class="memdesc:a6b4d3fdd3448f4632a6e736eab2a8a90"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>PC</code> object for controlling the preconditioner. <br /></td></tr>
+<tr class="separator:a6b4d3fdd3448f4632a6e736eab2a8a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a794a9051fde02a26a9318a0c58526496"><td class="memItemLeft" align="right" valign="top"><a id="a794a9051fde02a26a9318a0c58526496"></a>
 SNES&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a794a9051fde02a26a9318a0c58526496">snes</a></td></tr>
 <tr class="memdesc:a794a9051fde02a26a9318a0c58526496"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>SNES</code> object. <br  />
@@ -396,6 +408,32 @@ PetscScalar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
   <table class="params">
     <tr><td class="paramname">elements</td><td>Vector of elements. </td></tr>
     <tr><td class="paramname">mats</td><td>Vector of materials. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afa5f07a7749058a9a3037c7ed95b2880"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa5f07a7749058a9a3037c7ed95b2880">&#9670;&nbsp;</a></span>CalcNodVals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MechModel::CalcNodVals </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt;&#160;</td>
+          <td class="paramname"><em>elements</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maps int-point values to nodes for output. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elements</td><td></td></tr>
   </table>
   </dd>
 </dl>
