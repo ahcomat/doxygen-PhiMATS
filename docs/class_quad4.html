@@ -20,7 +20,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="PhiMATS.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="PHIMATS.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Phase-field Multiphysics Materials Simulator
    </div>
@@ -114,6 +114,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ab8f7949513452bac9498d0d6b48d3417"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quad4.html#ab8f7949513452bac9498d0d6b48d3417">CalcNodVals</a> (<a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodStres, <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodStran, <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodStran_e, <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodStran_p, vector&lt; double &gt; &amp;nodStran_eq, vector&lt; double &gt; &amp;nodStres_eq, vector&lt; int &gt; &amp;nodCount) override</td></tr>
 <tr class="memdesc:ab8f7949513452bac9498d0d6b48d3417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for mapping int-point values to nodal points.  <a href="class_quad4.html#ab8f7949513452bac9498d0d6b48d3417">More...</a><br /></td></tr>
 <tr class="separator:ab8f7949513452bac9498d0d6b48d3417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2197726abfb0207fc981814e1ba6eb64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quad4.html#a2197726abfb0207fc981814e1ba6eb64">CalcElDStran</a> (const double *globalBuffer) override</td></tr>
+<tr class="memdesc:a2197726abfb0207fc981814e1ba6eb64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the int-pt strain increment.  <a href="class_quad4.html#a2197726abfb0207fc981814e1ba6eb64">More...</a><br /></td></tr>
+<tr class="separator:a2197726abfb0207fc981814e1ba6eb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a73751cf8a51174a2038747dd1793ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quad4.html#a4a73751cf8a51174a2038747dd1793ba">CalcElStran</a> (const double *globalBuffer) override</td></tr>
 <tr class="memdesc:a4a73751cf8a51174a2038747dd1793ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the int-pt total strain.  <a href="class_quad4.html#a4a73751cf8a51174a2038747dd1793ba">More...</a><br /></td></tr>
 <tr class="separator:a4a73751cf8a51174a2038747dd1793ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,9 +149,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a8171a8817379b251c840e9a580e7da30 inherit pub_methods_class_base_elem_mech"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_mech.html#a8171a8817379b251c840e9a580e7da30">CalcElemDispDof</a> (int iElem, vector&lt; int &gt; &amp;dispDof)</td></tr>
 <tr class="memdesc:a8171a8817379b251c840e9a580e7da30 inherit pub_methods_class_base_elem_mech"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the displacement dofs associated with element <code>iElem</code>.  <a href="class_base_elem_mech.html#a8171a8817379b251c840e9a580e7da30">More...</a><br /></td></tr>
 <tr class="separator:a8171a8817379b251c840e9a580e7da30 inherit pub_methods_class_base_elem_mech"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dd611f8fd87b343c25d560025ce2fcc inherit pub_methods_class_base_elem_mech"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_mech.html#a4dd611f8fd87b343c25d560025ce2fcc">CalcElDStran</a> (const double *globalBuffer)=0</td></tr>
-<tr class="memdesc:a4dd611f8fd87b343c25d560025ce2fcc inherit pub_methods_class_base_elem_mech"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the int-pt strain increment.  <a href="class_base_elem_mech.html#a4dd611f8fd87b343c25d560025ce2fcc">More...</a><br /></td></tr>
-<tr class="separator:a4dd611f8fd87b343c25d560025ce2fcc inherit pub_methods_class_base_elem_mech"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_base_elements"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_base_elements')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_base_elements.html">BaseElements</a></td></tr>
 <tr class="memitem:a1dc6a8e8255a649a5e37583423df40e2 inherit pub_methods_class_base_elements"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a1dc6a8e8255a649a5e37583423df40e2">get_nDof</a> () const</td></tr>
 <tr class="memdesc:a1dc6a8e8255a649a5e37583423df40e2 inherit pub_methods_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of DOfs for element set.  <a href="class_base_elements.html#a1dc6a8e8255a649a5e37583423df40e2">More...</a><br /></td></tr>
@@ -367,6 +367,42 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a2197726abfb0207fc981814e1ba6eb64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2197726abfb0207fc981814e1ba6eb64">&#9670;&nbsp;</a></span>CalcElDStran()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Quad4::CalcElDStran </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>globalBuffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the int-pt strain increment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">globalBuffer</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_base_elem_mech.html#a4dd611f8fd87b343c25d560025ce2fcc">BaseElemMech</a>.</p>
 
 </div>
 </div>

@@ -1,13 +1,10 @@
 var searchData=
 [
-  ['readelementsdata_203',['ReadElementsData',['../class_base_elem_mech.html#aa3bbd4a6299fe0dd4a08c8d25d91aac1',1,'BaseElemMech::ReadElementsData()'],['../class_base_elem_transport.html#a9e50d6f65e75a8ef8b64bb2fa8ceedfb',1,'BaseElemTransport::ReadElementsData()'],['../class_base_elem_trap.html#a52d9886f690aee28ac9ebebe5b245ea4',1,'BaseElemTrap::ReadElementsData()']]],
-  ['readfield1d_204',['ReadField1D',['../class_h5_i_o.html#a0e5e79a8193f756a45928b327d782925',1,'H5IO']]],
-  ['readfield2d_205',['ReadField2D',['../class_h5_i_o.html#acfc4522dd3e0fff8968930539d029248',1,'H5IO']]],
-  ['readinitialcon_206',['ReadInitialCon',['../class_trapping_model.html#aebbba4ae3cf6a46e53db5bb56760c720',1,'TrappingModel']]],
-  ['readnodes_207',['ReadNodes',['../class_nodes.html#a50107f4270c9d18972e1ca5da90c2b33',1,'Nodes']]],
-  ['readscalar_208',['ReadScalar',['../class_h5_i_o.html#a17b4f04e394cbf558b83e2ac722e9b1b',1,'H5IO']]],
-  ['readstring_209',['ReadString',['../class_h5_i_o.html#af203044e744e0c9f6095065852b5a4eb',1,'H5IO']]],
-  ['residualcallback_210',['ResidualCallback',['../class_mech_model.html#ac07aeabc99aefe7444aea9eaea43d410',1,'MechModel']]],
-  ['returnmapping2d_211',['ReturnMapping2D',['../class_iso_hard.html#a9261ac6c0a59c6b6c24fbb54ad1c5763',1,'IsoHard']]],
-  ['returnmapping3d_212',['ReturnMapping3D',['../class_iso_hard.html#a9f0f1156d99948b3315fa51e3b09cc7d',1,'IsoHard']]]
+  ['pc_206',['pc',['../class_mech_model.html#a6b4d3fdd3448f4632a6e736eab2a8a90',1,'MechModel::pc()'],['../class_base_solver.html#a290ec6ee189ab54883cd95adf90bdf68',1,'BaseSolver::pc()']]],
+  ['permeationx_207',['PermeationX',['../namespace_f_e_m__utils_1_1_boundary_conditions.html#a45202cc048c8e84002b61e7670a1e0c1',1,'FEM_utils::BoundaryConditions']]],
+  ['platicity_208',['Platicity',['../class_iso_hard.html#aac202b064ea0b61fecb292e4ba668774',1,'IsoHard']]],
+  ['preprocessing_209',['PreProcessing',['../class_f_e_m__utils_1_1_pre_processing_1_1_pre_processing.html',1,'FEM_utils::PreProcessing']]],
+  ['presdofs_210',['presDofs',['../class_base_model.html#a69a4f6b8984d974925e7f72ff9c8cc81',1,'BaseModel']]],
+  ['presvals_211',['presVals',['../class_base_model.html#a49c717def1182a1012ac6287129d8080',1,'BaseModel']]],
+  ['preszeros_212',['presZeros',['../class_mech_model.html#acc22bf88ec69373f9418e4e5aef2baec',1,'MechModel']]]
 ];

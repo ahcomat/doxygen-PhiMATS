@@ -20,7 +20,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="PhiMATS.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="PHIMATS.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Phase-field Multiphysics Materials Simulator
    </div>
@@ -82,9 +82,9 @@ Inheritance diagram for TrappingModel:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac11439d3a45c6d7b49b3e2aed418cf3a"><td class="memItemLeft" align="right" valign="top"><a id="ac11439d3a45c6d7b49b3e2aed418cf3a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TrappingModel</b> (vector&lt; <a class="el" href="class_base_elem_trap.html">BaseElemTrap</a> * &gt; elements, <a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_in)</td></tr>
-<tr class="separator:ac11439d3a45c6d7b49b3e2aed418cf3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a353b3088a5873b91e92dd4741d3a2673"><td class="memItemLeft" align="right" valign="top"><a id="a353b3088a5873b91e92dd4741d3a2673"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TrappingModel</b> (vector&lt; <a class="el" href="class_base_elem_trap.html">BaseElemTrap</a> * &gt; elements, <a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_in, <a class="el" href="class_logger.html">Logger</a> &amp;<a class="el" href="class_trapping_model.html#a9a22f2851ee6d135c0b4f355139b1506">logger</a>)</td></tr>
+<tr class="separator:a353b3088a5873b91e92dd4741d3a2673"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a6a3bc9ec0ccf86b6b06346483db0bc"><td class="memItemLeft" align="right" valign="top"><a id="a3a6a3bc9ec0ccf86b6b06346483db0bc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a3a6a3bc9ec0ccf86b6b06346483db0bc">setZero_nodFlux</a> ()</td></tr>
 <tr class="memdesc:a3a6a3bc9ec0ccf86b6b06346483db0bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set nodal quantities <code>nodFlux</code> to zeros. <br /></td></tr>
@@ -107,9 +107,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:abbd747cc207c227f60d0d61a8659acc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#abbd747cc207c227f60d0d61a8659acc5">CalcElemStiffMatx</a> (vector&lt; <a class="el" href="class_base_elem_trap.html">BaseElemTrap</a> * &gt; elements, vector&lt; <a class="el" href="class_base_trapping.html">BaseTrapping</a> * &gt; mats)</td></tr>
 <tr class="memdesc:abbd747cc207c227f60d0d61a8659acc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the element stiffness matrix.  <a href="class_trapping_model.html#abbd747cc207c227f60d0d61a8659acc5">More...</a><br /></td></tr>
 <tr class="separator:abbd747cc207c227f60d0d61a8659acc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85f99faf01b65cb686333c5e4f117fd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a85f99faf01b65cb686333c5e4f117fd3">Assemble</a> (vector&lt; <a class="el" href="class_base_elem_trap.html">BaseElemTrap</a> * &gt; elements, bool updateTemp=false)</td></tr>
-<tr class="memdesc:a85f99faf01b65cb686333c5e4f117fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assemble the global stiffness matrix.  <a href="class_trapping_model.html#a85f99faf01b65cb686333c5e4f117fd3">More...</a><br /></td></tr>
-<tr class="separator:a85f99faf01b65cb686333c5e4f117fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b7f3d1871cb4956908f6c31262eadd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a3b7f3d1871cb4956908f6c31262eadd4">AssembleElementMatrix</a> (const auto *elMatx_ptr, const vector&lt; vector&lt; int &gt;&gt; &amp;elemConDof_ptr, PetscInt <a class="el" href="class_trapping_model.html#a40d345c3fc04806b537c47766b63ff47">nElConDofs</a>, PetscInt <a class="el" href="class_base_model.html#a7bd4e9f18324dae8acef17a9a8e2c2cd">nElements</a>, Mat globalMat)</td></tr>
+<tr class="memdesc:a3b7f3d1871cb4956908f6c31262eadd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for <code>Assemble</code>.  <a href="class_trapping_model.html#a3b7f3d1871cb4956908f6c31262eadd4">More...</a><br /></td></tr>
+<tr class="separator:a3b7f3d1871cb4956908f6c31262eadd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a067fb59d1a42c88311f5ce03cde705b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a067fb59d1a42c88311f5ce03cde705b2">Assemble</a> (vector&lt; <a class="el" href="class_base_elem_trap.html">BaseElemTrap</a> * &gt; elements, bool assembleM=true)</td></tr>
+<tr class="memdesc:a067fb59d1a42c88311f5ce03cde705b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assemble the global stiffness matrix.  <a href="class_trapping_model.html#a067fb59d1a42c88311f5ce03cde705b2">More...</a><br /></td></tr>
+<tr class="separator:a067fb59d1a42c88311f5ce03cde705b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebbba4ae3cf6a46e53db5bb56760c720"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#aebbba4ae3cf6a46e53db5bb56760c720">ReadInitialCon</a> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File, const int iStep)</td></tr>
 <tr class="memdesc:aebbba4ae3cf6a46e53db5bb56760c720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads initial conditions from H5File.  <a href="class_trapping_model.html#aebbba4ae3cf6a46e53db5bb56760c720">More...</a><br /></td></tr>
 <tr class="separator:aebbba4ae3cf6a46e53db5bb56760c720"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,65 +163,70 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteIntPtFlux</b> (<
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a9a22f2851ee6d135c0b4f355139b1506"><td class="memItemLeft" align="right" valign="top"><a id="a9a22f2851ee6d135c0b4f355139b1506"></a>
+<a class="el" href="class_logger.html">Logger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a9a22f2851ee6d135c0b4f355139b1506">logger</a></td></tr>
+<tr class="memdesc:a9a22f2851ee6d135c0b4f355139b1506"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_logger.html">Logger</a> object for handeling interface messages. <br /></td></tr>
+<tr class="separator:a9a22f2851ee6d135c0b4f355139b1506"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40d345c3fc04806b537c47766b63ff47"><td class="memItemLeft" align="right" valign="top"><a id="a40d345c3fc04806b537c47766b63ff47"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>nElConDofs</b></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a40d345c3fc04806b537c47766b63ff47">nElConDofs</a></td></tr>
+<tr class="memdesc:a40d345c3fc04806b537c47766b63ff47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of element concentration (temp) dofs. <br /></td></tr>
 <tr class="separator:a40d345c3fc04806b537c47766b63ff47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16c533c766f2ae5f7fd6a770dec5c0f6"><td class="memItemLeft" align="right" valign="top"><a id="a16c533c766f2ae5f7fd6a770dec5c0f6"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a16c533c766f2ae5f7fd6a770dec5c0f6">nExitNodes</a></td></tr>
-<tr class="memdesc:a16c533c766f2ae5f7fd6a770dec5c0f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of element concentration (temp) dofs. <br /></td></tr>
+<tr class="memdesc:a16c533c766f2ae5f7fd6a770dec5c0f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of exit nodes. <br /></td></tr>
 <tr class="separator:a16c533c766f2ae5f7fd6a770dec5c0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e2f4c0fda9e0405114672eec29f696a"><td class="memItemLeft" align="right" valign="top"><a id="a3e2f4c0fda9e0405114672eec29f696a"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a3e2f4c0fda9e0405114672eec29f696a">dt</a></td></tr>
-<tr class="memdesc:a3e2f4c0fda9e0405114672eec29f696a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of exit nodes. <br /></td></tr>
+<tr class="memdesc:a3e2f4c0fda9e0405114672eec29f696a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time increment. <br /></td></tr>
 <tr class="separator:a3e2f4c0fda9e0405114672eec29f696a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a622af7946626bf5b6d04f9104c89fb3c"><td class="memItemLeft" align="right" valign="top"><a id="a622af7946626bf5b6d04f9104c89fb3c"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a622af7946626bf5b6d04f9104c89fb3c">T0</a></td></tr>
-<tr class="memdesc:a622af7946626bf5b6d04f9104c89fb3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time increment. <br /></td></tr>
+<tr class="memdesc:a622af7946626bf5b6d04f9104c89fb3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initial temperature. <br /></td></tr>
 <tr class="separator:a622af7946626bf5b6d04f9104c89fb3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a221f7357c8660b1329c711715c2d6596"><td class="memItemLeft" align="right" valign="top"><a id="a221f7357c8660b1329c711715c2d6596"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a221f7357c8660b1329c711715c2d6596">T</a></td></tr>
-<tr class="memdesc:a221f7357c8660b1329c711715c2d6596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initial temperature. <br /></td></tr>
+<tr class="memdesc:a221f7357c8660b1329c711715c2d6596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current temperature. <br /></td></tr>
 <tr class="separator:a221f7357c8660b1329c711715c2d6596"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c780799956f9729613bd0a3fbed1541"><td class="memItemLeft" align="right" valign="top"><a id="a3c780799956f9729613bd0a3fbed1541"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a3c780799956f9729613bd0a3fbed1541">TotTime</a> = 0</td></tr>
-<tr class="memdesc:a3c780799956f9729613bd0a3fbed1541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current temperature. <br /></td></tr>
+<tr class="memdesc:a3c780799956f9729613bd0a3fbed1541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total time. <br /></td></tr>
 <tr class="separator:a3c780799956f9729613bd0a3fbed1541"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3235cf70e00bb46d914e14c5c8d6ffcc"><td class="memItemLeft" align="right" valign="top"><a id="a3235cf70e00bb46d914e14c5c8d6ffcc"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a3235cf70e00bb46d914e14c5c8d6ffcc">nTotGuasPts</a> = 0</td></tr>
-<tr class="memdesc:a3235cf70e00bb46d914e14c5c8d6ffcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total time. <br /></td></tr>
+<tr class="memdesc:a3235cf70e00bb46d914e14c5c8d6ffcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of integration points. <br /></td></tr>
 <tr class="separator:a3235cf70e00bb46d914e14c5c8d6ffcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4acbcc1eae4ebc9d598eb870df2567dd"><td class="memItemLeft" align="right" valign="top"><a id="a4acbcc1eae4ebc9d598eb870df2567dd"></a>
 <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a4acbcc1eae4ebc9d598eb870df2567dd">intPtFlux</a></td></tr>
-<tr class="memdesc:a4acbcc1eae4ebc9d598eb870df2567dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of integration points. <br /></td></tr>
+<tr class="memdesc:a4acbcc1eae4ebc9d598eb870df2567dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">int-pt flux. <br /></td></tr>
 <tr class="separator:a4acbcc1eae4ebc9d598eb870df2567dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a468d6aac47db1d574a913483f3ba3c3a"><td class="memItemLeft" align="right" valign="top"><a id="a468d6aac47db1d574a913483f3ba3c3a"></a>
 <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a468d6aac47db1d574a913483f3ba3c3a">nodFlux</a></td></tr>
-<tr class="memdesc:a468d6aac47db1d574a913483f3ba3c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">int-pt flux. <br /></td></tr>
+<tr class="memdesc:a468d6aac47db1d574a913483f3ba3c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodal flux. <br /></td></tr>
 <tr class="separator:a468d6aac47db1d574a913483f3ba3c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab245ed9215f45779a5be577f287b306f"><td class="memItemLeft" align="right" valign="top"><a id="ab245ed9215f45779a5be577f287b306f"></a>
 vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#ab245ed9215f45779a5be577f287b306f">nodCount</a></td></tr>
-<tr class="memdesc:ab245ed9215f45779a5be577f287b306f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodal flux. <br /></td></tr>
+<tr class="memdesc:ab245ed9215f45779a5be577f287b306f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter for integration points surrounding nodes. <br /></td></tr>
 <tr class="separator:ab245ed9215f45779a5be577f287b306f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84945a414c59078ffb82c2c15b1132fe"><td class="memItemLeft" align="right" valign="top"><a id="a84945a414c59078ffb82c2c15b1132fe"></a>
 vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a84945a414c59078ffb82c2c15b1132fe">ExitNodeIDs</a></td></tr>
-<tr class="memdesc:a84945a414c59078ffb82c2c15b1132fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter for integration points surrounding nodes. <br /></td></tr>
+<tr class="memdesc:a84945a414c59078ffb82c2c15b1132fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit nodes IDs. <br /></td></tr>
 <tr class="separator:a84945a414c59078ffb82c2c15b1132fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94aae278cd0be26712e325da1cdb85a3"><td class="memItemLeft" align="right" valign="top"><a id="a94aae278cd0be26712e325da1cdb85a3"></a>
-Vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a94aae278cd0be26712e325da1cdb85a3">F</a></td></tr>
-<tr class="memdesc:a94aae278cd0be26712e325da1cdb85a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit nodes IDs. <br /></td></tr>
-<tr class="separator:a94aae278cd0be26712e325da1cdb85a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a407fc3b76d5d98cc9df34780f0f07193"><td class="memItemLeft" align="right" valign="top"><a id="a407fc3b76d5d98cc9df34780f0f07193"></a>
-Vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a407fc3b76d5d98cc9df34780f0f07193">x</a></td></tr>
-<tr class="memdesc:a407fc3b76d5d98cc9df34780f0f07193"><td class="mdescLeft">&#160;</td><td class="mdescRight">RHS vector. <br /></td></tr>
-<tr class="separator:a407fc3b76d5d98cc9df34780f0f07193"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab38f9041e337f8875bf6ad686dab0b1f"><td class="memItemLeft" align="right" valign="top"><a id="ab38f9041e337f8875bf6ad686dab0b1f"></a>
-Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#ab38f9041e337f8875bf6ad686dab0b1f">K</a></td></tr>
-<tr class="memdesc:ab38f9041e337f8875bf6ad686dab0b1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">solution vector. <br /></td></tr>
-<tr class="separator:ab38f9041e337f8875bf6ad686dab0b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd0441e431fe956d6f0f812291ae7121"><td class="memItemLeft" align="right" valign="top"><a id="abd0441e431fe956d6f0f812291ae7121"></a>
-Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#abd0441e431fe956d6f0f812291ae7121">M</a></td></tr>
-<tr class="memdesc:abd0441e431fe956d6f0f812291ae7121"><td class="mdescLeft">&#160;</td><td class="mdescRight">The global diffusivity matrix. <br /></td></tr>
-<tr class="separator:abd0441e431fe956d6f0f812291ae7121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a824b7bc35bd0eee4c6260603955257c1"><td class="memItemLeft" align="right" valign="top"><a id="a824b7bc35bd0eee4c6260603955257c1"></a>
+Vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a824b7bc35bd0eee4c6260603955257c1">vecF</a></td></tr>
+<tr class="memdesc:a824b7bc35bd0eee4c6260603955257c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">RHS vector. <br /></td></tr>
+<tr class="separator:a824b7bc35bd0eee4c6260603955257c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4785303b4662dadeb3b526abad0c147a"><td class="memItemLeft" align="right" valign="top"><a id="a4785303b4662dadeb3b526abad0c147a"></a>
+Vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a4785303b4662dadeb3b526abad0c147a">vecx</a></td></tr>
+<tr class="memdesc:a4785303b4662dadeb3b526abad0c147a"><td class="mdescLeft">&#160;</td><td class="mdescRight">solution vector. <br /></td></tr>
+<tr class="separator:a4785303b4662dadeb3b526abad0c147a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd6d88018e4cfc97aa4fe645a13ae1bb"><td class="memItemLeft" align="right" valign="top"><a id="afd6d88018e4cfc97aa4fe645a13ae1bb"></a>
+Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#afd6d88018e4cfc97aa4fe645a13ae1bb">matK</a></td></tr>
+<tr class="memdesc:afd6d88018e4cfc97aa4fe645a13ae1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The global stiffness matrix. <br /></td></tr>
+<tr class="separator:afd6d88018e4cfc97aa4fe645a13ae1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b356fdf1cb94064e089dbbf1f5a450b"><td class="memItemLeft" align="right" valign="top"><a id="a3b356fdf1cb94064e089dbbf1f5a450b"></a>
+Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a3b356fdf1cb94064e089dbbf1f5a450b">matM</a></td></tr>
+<tr class="memdesc:a3b356fdf1cb94064e089dbbf1f5a450b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The global [M-KT] matrix. <br /></td></tr>
+<tr class="separator:a3b356fdf1cb94064e089dbbf1f5a450b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -268,8 +276,8 @@ PetscScalar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <tr class="separator:a49c717def1182a1012ac6287129d8080 inherit pro_attribs_class_base_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a85f99faf01b65cb686333c5e4f117fd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85f99faf01b65cb686333c5e4f117fd3">&#9670;&nbsp;</a></span>Assemble()</h2>
+<a id="a067fb59d1a42c88311f5ce03cde705b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a067fb59d1a42c88311f5ce03cde705b2">&#9670;&nbsp;</a></span>Assemble()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -284,7 +292,7 @@ PetscScalar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>updateTemp</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>assembleM</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -297,8 +305,66 @@ PetscScalar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <p>Assemble the global stiffness matrix. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">elements</td><td></td></tr>
-    <tr><td class="paramname">updateTemp</td><td></td></tr>
+    <tr><td class="paramname">elements</td><td>Vector of element set pointers. </td></tr>
+    <tr><td class="paramname">assembleM</td><td>Flag for updating the capacitance matrix, default=true. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3b7f3d1871cb4956908f6c31262eadd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b7f3d1871cb4956908f6c31262eadd4">&#9670;&nbsp;</a></span>AssembleElementMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrappingModel::AssembleElementMatrix </td>
+          <td>(</td>
+          <td class="paramtype">const auto *&#160;</td>
+          <td class="paramname"><em>elMatx_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const vector&lt; vector&lt; int &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>elemConDof_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PetscInt&#160;</td>
+          <td class="paramname"><em>nElConDofs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PetscInt&#160;</td>
+          <td class="paramname"><em>nElements</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Mat&#160;</td>
+          <td class="paramname"><em>globalMat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper function for <code>Assemble</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elMatx_ptr</td><td></td></tr>
+    <tr><td class="paramname">elemConDof_ptr</td><td></td></tr>
+    <tr><td class="paramname">nElConDofs</td><td></td></tr>
+    <tr><td class="paramname">nElements</td><td></td></tr>
+    <tr><td class="paramname">globalMat</td><td></td></tr>
   </table>
   </dd>
 </dl>

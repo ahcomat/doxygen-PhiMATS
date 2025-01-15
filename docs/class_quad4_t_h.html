@@ -20,7 +20,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="PhiMATS.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="PHIMATS.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Phase-field Multiphysics Materials Simulator
    </div>
@@ -119,7 +119,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a666577cb3b357068710e59556f2bc110"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_base_elem_trap"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_base_elem_trap')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_base_elem_trap.html">BaseElemTrap</a></td></tr>
 <tr class="memitem:a9088f4f52d0e47b60463c0e1bc582c77 inherit pub_methods_class_base_elem_trap"><td class="memItemLeft" align="right" valign="top"><a id="a9088f4f52d0e47b60463c0e1bc582c77"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BaseElemTrap</b> (int nElDim, int <a class="el" href="class_base_elem_trap.html#a9629da760143daafa153f0b206795160">nElNodes</a>, int <a class="el" href="class_base_elem_trap.html#a83da047f30311397c61b26ca590cd4d9">nElConDofs</a>, int <a class="el" href="class_base_elem_trap.html#a89914f9d237214355dc31d3f390e57d3">nElGauss</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BaseElemTrap</b> (int <a class="el" href="class_base_elem_trap.html#ae4eca60e5dc56e134a85acd503c66b70">nElDim</a>, int <a class="el" href="class_base_elem_trap.html#a9629da760143daafa153f0b206795160">nElNodes</a>, int <a class="el" href="class_base_elem_trap.html#a83da047f30311397c61b26ca590cd4d9">nElConDofs</a>, int <a class="el" href="class_base_elem_trap.html#a89914f9d237214355dc31d3f390e57d3">nElGauss</a>)</td></tr>
 <tr class="separator:a9088f4f52d0e47b60463c0e1bc582c77 inherit pub_methods_class_base_elem_trap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6af1b245b8c2748bfd45df94f11e03ef inherit pub_methods_class_base_elem_trap"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_trap.html#a6af1b245b8c2748bfd45df94f11e03ef">get_nDim</a> () const</td></tr>
 <tr class="memdesc:a6af1b245b8c2748bfd45df94f11e03ef inherit pub_methods_class_base_elem_trap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get dimensions of the element.  <a href="class_base_elem_trap.html#a6af1b245b8c2748bfd45df94f11e03ef">More...</a><br /></td></tr>
@@ -216,42 +216,47 @@ vector&lt; Matd4x4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a cl
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_base_elem_trap"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_base_elem_trap')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_base_elem_trap.html">BaseElemTrap</a></td></tr>
+<tr class="memitem:a320a7e8a1190c45e74a276edeb7e9843 inherit pro_attribs_class_base_elem_trap"><td class="memItemLeft" align="right" valign="top"><a id="a320a7e8a1190c45e74a276edeb7e9843"></a>
+const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_trap.html#a320a7e8a1190c45e74a276edeb7e9843">R</a> = 8.31446261815324</td></tr>
+<tr class="memdesc:a320a7e8a1190c45e74a276edeb7e9843 inherit pro_attribs_class_base_elem_trap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Universal gas constant [J/mol.K]. <br /></td></tr>
+<tr class="separator:a320a7e8a1190c45e74a276edeb7e9843 inherit pro_attribs_class_base_elem_trap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4eca60e5dc56e134a85acd503c66b70 inherit pro_attribs_class_base_elem_trap"><td class="memItemLeft" align="right" valign="top"><a id="ae4eca60e5dc56e134a85acd503c66b70"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>nElDim</b></td></tr>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_trap.html#ae4eca60e5dc56e134a85acd503c66b70">nElDim</a></td></tr>
+<tr class="memdesc:ae4eca60e5dc56e134a85acd503c66b70 inherit pro_attribs_class_base_elem_trap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spatial dimensions of the element. <br /></td></tr>
 <tr class="separator:ae4eca60e5dc56e134a85acd503c66b70 inherit pro_attribs_class_base_elem_trap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9629da760143daafa153f0b206795160 inherit pro_attribs_class_base_elem_trap"><td class="memItemLeft" align="right" valign="top"><a id="a9629da760143daafa153f0b206795160"></a>
 const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_trap.html#a9629da760143daafa153f0b206795160">nElNodes</a></td></tr>
-<tr class="memdesc:a9629da760143daafa153f0b206795160 inherit pro_attribs_class_base_elem_trap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spatial dimensions of the element. <br /></td></tr>
+<tr class="memdesc:a9629da760143daafa153f0b206795160 inherit pro_attribs_class_base_elem_trap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of nodes per element. <br /></td></tr>
 <tr class="separator:a9629da760143daafa153f0b206795160 inherit pro_attribs_class_base_elem_trap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83da047f30311397c61b26ca590cd4d9 inherit pro_attribs_class_base_elem_trap"><td class="memItemLeft" align="right" valign="top"><a id="a83da047f30311397c61b26ca590cd4d9"></a>
 const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_trap.html#a83da047f30311397c61b26ca590cd4d9">nElConDofs</a></td></tr>
-<tr class="memdesc:a83da047f30311397c61b26ca590cd4d9 inherit pro_attribs_class_base_elem_trap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of nodes per element. <br /></td></tr>
+<tr class="memdesc:a83da047f30311397c61b26ca590cd4d9 inherit pro_attribs_class_base_elem_trap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of element concentration (temperature) dofs. <br /></td></tr>
 <tr class="separator:a83da047f30311397c61b26ca590cd4d9 inherit pro_attribs_class_base_elem_trap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89914f9d237214355dc31d3f390e57d3 inherit pro_attribs_class_base_elem_trap"><td class="memItemLeft" align="right" valign="top"><a id="a89914f9d237214355dc31d3f390e57d3"></a>
 const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_trap.html#a89914f9d237214355dc31d3f390e57d3">nElGauss</a></td></tr>
-<tr class="memdesc:a89914f9d237214355dc31d3f390e57d3 inherit pro_attribs_class_base_elem_trap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of element concentration (temperature) dofs. <br /></td></tr>
+<tr class="memdesc:a89914f9d237214355dc31d3f390e57d3 inherit pro_attribs_class_base_elem_trap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of gauss points. <br /></td></tr>
 <tr class="separator:a89914f9d237214355dc31d3f390e57d3 inherit pro_attribs_class_base_elem_trap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a591ebae646deaf6f993c446035435578 inherit pro_attribs_class_base_elem_trap"><td class="memItemLeft" align="right" valign="top"><a id="a591ebae646deaf6f993c446035435578"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_trap.html#a591ebae646deaf6f993c446035435578">dt</a></td></tr>
-<tr class="memdesc:a591ebae646deaf6f993c446035435578 inherit pro_attribs_class_base_elem_trap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of gauss points. <br /></td></tr>
+<tr class="memdesc:a591ebae646deaf6f993c446035435578 inherit pro_attribs_class_base_elem_trap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time increment. <br  />
+ <br /></td></tr>
 <tr class="separator:a591ebae646deaf6f993c446035435578 inherit pro_attribs_class_base_elem_trap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c520727b9372f03d9cc0fed2ac543ad inherit pro_attribs_class_base_elem_trap"><td class="memItemLeft" align="right" valign="top"><a id="a6c520727b9372f03d9cc0fed2ac543ad"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_trap.html#a6c520727b9372f03d9cc0fed2ac543ad">Trapping</a></td></tr>
-<tr class="memdesc:a6c520727b9372f03d9cc0fed2ac543ad inherit pro_attribs_class_base_elem_trap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time increment. <br  />
- <br /></td></tr>
+<tr class="memdesc:a6c520727b9372f03d9cc0fed2ac543ad inherit pro_attribs_class_base_elem_trap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag for trapping type. <br /></td></tr>
 <tr class="separator:a6c520727b9372f03d9cc0fed2ac543ad inherit pro_attribs_class_base_elem_trap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f67760f35afc989b52b0039b627a7a2 inherit pro_attribs_class_base_elem_trap"><td class="memItemLeft" align="right" valign="top"><a id="a1f67760f35afc989b52b0039b627a7a2"></a>
 vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_trap.html#a1f67760f35afc989b52b0039b627a7a2">intPtVol</a></td></tr>
-<tr class="memdesc:a1f67760f35afc989b52b0039b627a7a2 inherit pro_attribs_class_base_elem_trap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag for trapping type. <br /></td></tr>
+<tr class="memdesc:a1f67760f35afc989b52b0039b627a7a2 inherit pro_attribs_class_base_elem_trap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt volume. <br  />
+ <br /></td></tr>
 <tr class="separator:a1f67760f35afc989b52b0039b627a7a2 inherit pro_attribs_class_base_elem_trap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ca1f2b45bf9ae1c59d7447712f2168d inherit pro_attribs_class_base_elem_trap"><td class="memItemLeft" align="right" valign="top"><a id="a7ca1f2b45bf9ae1c59d7447712f2168d"></a>
 vector&lt; vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_trap.html#a7ca1f2b45bf9ae1c59d7447712f2168d">elemConDof</a></td></tr>
-<tr class="memdesc:a7ca1f2b45bf9ae1c59d7447712f2168d inherit pro_attribs_class_base_elem_trap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt volume. <br  />
- <br /></td></tr>
+<tr class="memdesc:a7ca1f2b45bf9ae1c59d7447712f2168d inherit pro_attribs_class_base_elem_trap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element concentration (temperature) dofs. In this case, it is identical to <code>elemNodeConn</code>. <br /></td></tr>
 <tr class="separator:a7ca1f2b45bf9ae1c59d7447712f2168d inherit pro_attribs_class_base_elem_trap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa814a5b271a10d5ff6646e6d2d9441c inherit pro_attribs_class_base_elem_trap"><td class="memItemLeft" align="right" valign="top"><a id="afa814a5b271a10d5ff6646e6d2d9441c"></a>
 <a class="el" href="_matrix_8h.html#a523acc52416b58cdb5c9c3b1b29dcbfd">T_ElStiffMatx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_trap.html#afa814a5b271a10d5ff6646e6d2d9441c">elCapMatxVariant</a></td></tr>
-<tr class="memdesc:afa814a5b271a10d5ff6646e6d2d9441c inherit pro_attribs_class_base_elem_trap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element concentration (temperature) dofs. In this case, it is identical to <code>elemNodeConn</code>. <br /></td></tr>
+<tr class="memdesc:afa814a5b271a10d5ff6646e6d2d9441c inherit pro_attribs_class_base_elem_trap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variant for returning elCapMatx. <br /></td></tr>
 <tr class="separator:afa814a5b271a10d5ff6646e6d2d9441c inherit pro_attribs_class_base_elem_trap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_base_elements"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_base_elements')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_base_elements.html">BaseElements</a></td></tr>
 <tr class="memitem:a32f7fac66e1d3289c10f5b0dea2359c6 inherit pro_attribs_class_base_elements"><td class="memItemLeft" align="right" valign="top"><a id="a32f7fac66e1d3289c10f5b0dea2359c6"></a>

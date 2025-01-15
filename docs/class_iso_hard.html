@@ -20,7 +20,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="PhiMATS.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="PHIMATS.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Phase-field Multiphysics Materials Simulator
    </div>
@@ -106,12 +106,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aabc311f27028b7b16eae26caef7040b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Von Mises stress for 3D models.  <a href="class_iso_hard.html#aabc311f27028b7b16eae26caef7040b4">More...</a><br /></td></tr>
 <tr class="separator:aabc311f27028b7b16eae26caef7040b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f0f1156d99948b3315fa51e3b09cc7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#a9f0f1156d99948b3315fa51e3b09cc7d">ReturnMapping3D</a> (ColVecd6 &amp;deps, ColVecd6 &amp;sig, ColVecd6 &amp;eps_e, ColVecd6 &amp;eps_p, double &amp;eps_eq, double &amp;sig_eq, const ColVecd6 &amp;eps_e_old, const ColVecd6 &amp;eps_p_old, const double &amp;eps_eq_old, const int iStep)</td></tr>
-<tr class="memdesc:a9f0f1156d99948b3315fa51e3b09cc7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return mapping algorithm for isotropic hardening plasticity.  <a href="class_iso_hard.html#a9f0f1156d99948b3315fa51e3b09cc7d">More...</a><br /></td></tr>
+<tr class="memdesc:a9f0f1156d99948b3315fa51e3b09cc7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return mapping algorithm for 3D isotropic hardening plasticity.  <a href="class_iso_hard.html#a9f0f1156d99948b3315fa51e3b09cc7d">More...</a><br /></td></tr>
 <tr class="separator:a9f0f1156d99948b3315fa51e3b09cc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9261ac6c0a59c6b6c24fbb54ad1c5763"><td class="memItemLeft" align="right" valign="top"><a id="a9261ac6c0a59c6b6c24fbb54ad1c5763"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#a9261ac6c0a59c6b6c24fbb54ad1c5763">ReturnMapping2D</a> (ColVecd3 &amp;sig, ColVecd3 &amp;eps, ColVecd3 &amp;eps_e, ColVecd3 &amp;eps_p, double &amp;eps_eq, double &amp;sig_eq, const int iStep)</td></tr>
-<tr class="memdesc:a9261ac6c0a59c6b6c24fbb54ad1c5763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select appropriate template specialization. <br /></td></tr>
-<tr class="separator:a9261ac6c0a59c6b6c24fbb54ad1c5763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3161898417330e4cb78cc81e2fc94454"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#a3161898417330e4cb78cc81e2fc94454">ReturnMapping2D</a> (ColVecd3 &amp;deps, ColVecd3 &amp;sig, ColVecd3 &amp;eps_e, ColVecd3 &amp;eps_p, double &amp;eps_eq, double &amp;sig_eq, const ColVecd3 &amp;eps_e_old, const ColVecd3 &amp;eps_p_old, const double &amp;eps_eq_old, const int iStep)</td></tr>
+<tr class="memdesc:a3161898417330e4cb78cc81e2fc94454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return mapping algorithm for 2D isotropic hardening plasticity.  <a href="class_iso_hard.html#a3161898417330e4cb78cc81e2fc94454">More...</a><br /></td></tr>
+<tr class="separator:a3161898417330e4cb78cc81e2fc94454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7152986007a171569d11e3b733a09760"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">T_DMatx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#a7152986007a171569d11e3b733a09760">getDMatx</a> () const override</td></tr>
 <tr class="memdesc:a7152986007a171569d11e3b733a09760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stiffness matrix in Voigt notation.  <a href="class_iso_hard.html#a7152986007a171569d11e3b733a09760">More...</a><br /></td></tr>
 <tr class="separator:a7152986007a171569d11e3b733a09760"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +144,9 @@ Private Types</h2></td></tr>
 <tr class="memitem:ad4ca7298a79c4e7c4e75f2503b6c4243"><td class="memItemLeft" align="right" valign="top"><a id="ad4ca7298a79c4e7c4e75f2503b6c4243"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>RM3DFn</b> = void(IsoHard::*)(ColVecd6 &amp;, ColVecd6 &amp;, ColVecd6 &amp;, ColVecd6 &amp;, double &amp;, double &amp;, const ColVecd6 &amp;, const ColVecd6 &amp;, const double &amp;, const int)</td></tr>
 <tr class="separator:ad4ca7298a79c4e7c4e75f2503b6c4243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3042bd296db1d72eeb1e2144b2691b9"><td class="memItemLeft" align="right" valign="top"><a id="aa3042bd296db1d72eeb1e2144b2691b9"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>RM2DFn</b> = void(IsoHard::*)(ColVecd3 &amp;, ColVecd3 &amp;, ColVecd3 &amp;, ColVecd3 &amp;, double &amp;, double &amp;, const ColVecd3 &amp;, const ColVecd3 &amp;, const double &amp;, const int)</td></tr>
+<tr class="separator:aa3042bd296db1d72eeb1e2144b2691b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -152,25 +154,33 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a7c12638b7e4146612929cc9c50104313"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#a7c12638b7e4146612929cc9c50104313">UHard</a> (const double &amp;eqpl, double &amp;syield, double &amp;hard)</td></tr>
 <tr class="memdesc:a7c12638b7e4146612929cc9c50104313"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate update in plastic stress and hardening modulus.  <a href="class_iso_hard.html#a7c12638b7e4146612929cc9c50104313">More...</a><br /></td></tr>
 <tr class="separator:a7c12638b7e4146612929cc9c50104313"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0494b086e3d46610344029753699c77"><td class="memTemplParams" colspan="2"><a id="ab0494b086e3d46610344029753699c77"></a>
-template&lt;typename HardeningLaw &gt; </td></tr>
-<tr class="memitem:ab0494b086e3d46610344029753699c77"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>RM3D</b> (ColVecd6 &amp;deps, ColVecd6 &amp;sig, ColVecd6 &amp;eps_e, ColVecd6 &amp;eps_p, double &amp;eps_eq, double &amp;sig_eq, const ColVecd6 &amp;eps_e_old, const ColVecd6 &amp;eps_p_old, const double &amp;eps_eq_old, const int iStep)</td></tr>
+<tr class="memitem:ab0494b086e3d46610344029753699c77"><td class="memTemplParams" colspan="2">template&lt;typename HardeningLaw &gt; </td></tr>
+<tr class="memitem:ab0494b086e3d46610344029753699c77"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#ab0494b086e3d46610344029753699c77">RM3D</a> (ColVecd6 &amp;deps, ColVecd6 &amp;sig, ColVecd6 &amp;eps_e, ColVecd6 &amp;eps_p, double &amp;eps_eq, double &amp;sig_eq, const ColVecd6 &amp;eps_e_old, const ColVecd6 &amp;eps_p_old, const double &amp;eps_eq_old, const int iStep)</td></tr>
+<tr class="memdesc:ab0494b086e3d46610344029753699c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D Return-mapping to handle different hardening laws  <a href="class_iso_hard.html#ab0494b086e3d46610344029753699c77">More...</a><br /></td></tr>
 <tr class="separator:ab0494b086e3d46610344029753699c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf591629d4c2c294808d4e58a777997b"><td class="memTemplParams" colspan="2">template&lt;typename AnalysisType &gt; </td></tr>
 <tr class="memitem:adf591629d4c2c294808d4e58a777997b"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#adf591629d4c2c294808d4e58a777997b">Mises2D</a> (const ColVecd3 &amp;sig2D)</td></tr>
 <tr class="memdesc:adf591629d4c2c294808d4e58a777997b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template for 2D von Mises stress. Works for plane stress and plane strain. <br  />
   <a href="class_iso_hard.html#adf591629d4c2c294808d4e58a777997b">More...</a><br /></td></tr>
 <tr class="separator:adf591629d4c2c294808d4e58a777997b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae431f8e5a0305c1694f2df9ee2f7ebee"><td class="memTemplParams" colspan="2"><a id="ae431f8e5a0305c1694f2df9ee2f7ebee"></a>
+<tr class="memitem:ab6fb51b0df8dd780a785a97333c74fef"><td class="memTemplParams" colspan="2">template&lt;typename AnalysisType &gt; </td></tr>
+<tr class="memitem:ab6fb51b0df8dd780a785a97333c74fef"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#ab6fb51b0df8dd780a785a97333c74fef">Shydro2D</a> (const ColVecd3 &amp;sig2D)</td></tr>
+<tr class="memdesc:ab6fb51b0df8dd780a785a97333c74fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template for 2D hydrostatic stress. Works for plane stress and plane strain. <br  />
+  <a href="class_iso_hard.html#ab6fb51b0df8dd780a785a97333c74fef">More...</a><br /></td></tr>
+<tr class="separator:ab6fb51b0df8dd780a785a97333c74fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5576b79fc50203dc2c72644d85bd990f"><td class="memTemplParams" colspan="2"><a id="a5576b79fc50203dc2c72644d85bd990f"></a>
 template&lt;typename AnalysisType , typename HardeningLaw &gt; </td></tr>
-<tr class="memitem:ae431f8e5a0305c1694f2df9ee2f7ebee"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ReturnMapping2D</b> (ColVecd3 &amp;sig, ColVecd3 &amp;eps, ColVecd3 &amp;eps_e, ColVecd3 &amp;eps_p, double &amp;eps_eq, double &amp;sig_eq, int iStep)</td></tr>
-<tr class="separator:ae431f8e5a0305c1694f2df9ee2f7ebee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5576b79fc50203dc2c72644d85bd990f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>RM2D</b> (ColVecd3 &amp;deps, ColVecd3 &amp;sig, ColVecd3 &amp;eps_e, ColVecd3 &amp;eps_p, double &amp;eps_eq, double &amp;sig_eq, const ColVecd3 &amp;eps_e_old, const ColVecd3 &amp;eps_p_old, const double &amp;eps_eq_old, const int iStep)</td></tr>
+<tr class="separator:a5576b79fc50203dc2c72644d85bd990f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:ae5a2fbde4992801b7ff8bbed25553ad2"><td class="memItemLeft" align="right" valign="top"><a id="ae5a2fbde4992801b7ff8bbed25553ad2"></a>
 static RM3DFn&#160;</td><td class="memItemRight" valign="bottom"><b>selectRM3D</b> (HardeningLaw <a class="el" href="class_iso_hard.html#acb3bc63f7b1290185ad48cc24a946e58">hardening</a>)</td></tr>
 <tr class="separator:ae5a2fbde4992801b7ff8bbed25553ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9edb7816ec1a023ab7edcf895d45d198"><td class="memItemLeft" align="right" valign="top"><a id="a9edb7816ec1a023ab7edcf895d45d198"></a>
+static RM2DFn&#160;</td><td class="memItemRight" valign="bottom"><b>selectRM2D</b> (AnalysisType <a class="el" href="class_iso_hard.html#aaecb6b9fb4022aae8b58f4084556130d">analysis2D</a>, HardeningLaw <a class="el" href="class_iso_hard.html#acb3bc63f7b1290185ad48cc24a946e58">hardening</a>)</td></tr>
+<tr class="separator:a9edb7816ec1a023ab7edcf895d45d198"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -226,6 +236,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <tr class="memitem:ac33a570e917b8ac44b0c1d64e9d8833d"><td class="memItemLeft" align="right" valign="top"><a id="ac33a570e917b8ac44b0c1d64e9d8833d"></a>
 RM3DFn&#160;</td><td class="memItemRight" valign="bottom"><b>selectedRM3D</b></td></tr>
 <tr class="separator:ac33a570e917b8ac44b0c1d64e9d8833d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5b5f24ce8b823dfea81c1e3b2d1759e"><td class="memItemLeft" align="right" valign="top"><a id="aa5b5f24ce8b823dfea81c1e3b2d1759e"></a>
+RM2DFn&#160;</td><td class="memItemRight" valign="bottom"><b>selectedRM2D</b></td></tr>
+<tr class="separator:aa5b5f24ce8b823dfea81c1e3b2d1759e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -413,6 +426,100 @@ template&lt;typename AnalysisType &gt; </div>
 
 </div>
 </div>
+<a id="a3161898417330e4cb78cc81e2fc94454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3161898417330e4cb78cc81e2fc94454">&#9670;&nbsp;</a></span>ReturnMapping2D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IsoHard::ReturnMapping2D </td>
+          <td>(</td>
+          <td class="paramtype">ColVecd3 &amp;&#160;</td>
+          <td class="paramname"><em>deps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ColVecd3 &amp;&#160;</td>
+          <td class="paramname"><em>sig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ColVecd3 &amp;&#160;</td>
+          <td class="paramname"><em>eps_e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ColVecd3 &amp;&#160;</td>
+          <td class="paramname"><em>eps_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>eps_eq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>sig_eq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ColVecd3 &amp;&#160;</td>
+          <td class="paramname"><em>eps_e_old</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ColVecd3 &amp;&#160;</td>
+          <td class="paramname"><em>eps_p_old</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>eps_eq_old</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iStep</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return mapping algorithm for 2D isotropic hardening plasticity. </p>
+<p>Select appropriate template specialization.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deps</td><td>Strain increment </td></tr>
+    <tr><td class="paramname">sig</td><td>Stress tensor. </td></tr>
+    <tr><td class="paramname">eps_e</td><td>Elastic strain. </td></tr>
+    <tr><td class="paramname">eps_p</td><td>Plastic strain. </td></tr>
+    <tr><td class="paramname">eps_eq</td><td>Equivalent plastic strain </td></tr>
+    <tr><td class="paramname">sig_eq</td><td>Equivalent stress. </td></tr>
+    <tr><td class="paramname">eps_e_old</td><td></td></tr>
+    <tr><td class="paramname">eps_p_old</td><td></td></tr>
+    <tr><td class="paramname">eps_eq_old</td><td></td></tr>
+    <tr><td class="paramname">iStep</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9f0f1156d99948b3315fa51e3b09cc7d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9f0f1156d99948b3315fa51e3b09cc7d">&#9670;&nbsp;</a></span>ReturnMapping3D()</h2>
 
@@ -487,7 +594,7 @@ template&lt;typename AnalysisType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Return mapping algorithm for isotropic hardening plasticity. </p>
+<p>Return mapping algorithm for 3D isotropic hardening plasticity. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">deps</td><td>Strain increment </td></tr>
@@ -504,6 +611,159 @@ template&lt;typename AnalysisType &gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ab0494b086e3d46610344029753699c77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0494b086e3d46610344029753699c77">&#9670;&nbsp;</a></span>RM3D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename HardeningLaw &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IsoHard::RM3D </td>
+          <td>(</td>
+          <td class="paramtype">ColVecd6 &amp;&#160;</td>
+          <td class="paramname"><em>deps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ColVecd6 &amp;&#160;</td>
+          <td class="paramname"><em>sig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ColVecd6 &amp;&#160;</td>
+          <td class="paramname"><em>eps_e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ColVecd6 &amp;&#160;</td>
+          <td class="paramname"><em>eps_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>eps_eq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>sig_eq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ColVecd6 &amp;&#160;</td>
+          <td class="paramname"><em>eps_e_old</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ColVecd6 &amp;&#160;</td>
+          <td class="paramname"><em>eps_p_old</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>eps_eq_old</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iStep</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>3D Return-mapping to handle different hardening laws </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">HardeningLaw</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deps</td><td></td></tr>
+    <tr><td class="paramname">sig</td><td></td></tr>
+    <tr><td class="paramname">eps_e</td><td></td></tr>
+    <tr><td class="paramname">eps_p</td><td></td></tr>
+    <tr><td class="paramname">eps_eq</td><td></td></tr>
+    <tr><td class="paramname">sig_eq</td><td></td></tr>
+    <tr><td class="paramname">eps_e_old</td><td></td></tr>
+    <tr><td class="paramname">eps_p_old</td><td></td></tr>
+    <tr><td class="paramname">eps_eq_old</td><td></td></tr>
+    <tr><td class="paramname">iStep</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab6fb51b0df8dd780a785a97333c74fef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6fb51b0df8dd780a785a97333c74fef">&#9670;&nbsp;</a></span>Shydro2D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename AnalysisType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double IsoHard::Shydro2D </td>
+          <td>(</td>
+          <td class="paramtype">const ColVecd3 &amp;&#160;</td>
+          <td class="paramname"><em>sig2D</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Template for 2D hydrostatic stress. Works for plane stress and plane strain. <br  />
+ </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">AnalysisType</td><td><code>enmum</code> class to store analysis type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sig2D</td><td>Stress vector </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
 
 </div>
 </div>
