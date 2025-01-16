@@ -79,12 +79,14 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a32a2411061a50037cc0873c1f0366f5f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_e_m__utils_1_1_pre_processing_1_1_pre_processing.html#a32a2411061a50037cc0873c1f0366f5f">__init__</a> (self, inputData)</td></tr>
 <tr class="separator:a32a2411061a50037cc0873c1f0366f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0b67bbd9c2f382f0eb6ae4fed41b345"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_e_m__utils_1_1_pre_processing_1_1_pre_processing.html#ae0b67bbd9c2f382f0eb6ae4fed41b345">WriteFileHDF5</a> (self)</td></tr>
-<tr class="separator:ae0b67bbd9c2f382f0eb6ae4fed41b345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28267ee44505843d507844a2dd5763af"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_e_m__utils_1_1_pre_processing_1_1_pre_processing.html#a28267ee44505843d507844a2dd5763af">OpenFileHDF5</a> (self, mode=&quot;w&quot;)</td></tr>
-<tr class="separator:a28267ee44505843d507844a2dd5763af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a37defdd37611bb58a771101909246"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_e_m__utils_1_1_pre_processing_1_1_pre_processing.html#af5a37defdd37611bb58a771101909246">WriteInputFile</a> (self)</td></tr>
+<tr class="separator:af5a37defdd37611bb58a771101909246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a551f176739f5e40805fd2955150f7674"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_e_m__utils_1_1_pre_processing_1_1_pre_processing.html#a551f176739f5e40805fd2955150f7674">OpenFileHDF5</a> (self, overwrite=True)</td></tr>
+<tr class="separator:a551f176739f5e40805fd2955150f7674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5850c428936781d0ccd76bc5390d09a3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_e_m__utils_1_1_pre_processing_1_1_pre_processing.html#a5850c428936781d0ccd76bc5390d09a3">CloseFileHDF5</a> (self)</td></tr>
 <tr class="separator:a5850c428936781d0ccd76bc5390d09a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33d53c8a70bb5cf1cf653e93699ebfea"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_e_m__utils_1_1_pre_processing_1_1_pre_processing.html#a33d53c8a70bb5cf1cf653e93699ebfea">WriteOutputFile</a> (self, FName=None, overwrite=False, AvCon=True, ExitFlux=False, TDS=False, Plasticity=True)</td></tr>
+<tr class="separator:a33d53c8a70bb5cf1cf653e93699ebfea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -233,12 +235,15 @@ Args:
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Closes HDF5 file
+<pre class="fragment">Closes the currently open _in.hdf5 input file.
+
+Raises:
+    RuntimeError: If no file is open or an error occurs during closing.
 </pre> 
 </div>
 </div>
-<a id="a28267ee44505843d507844a2dd5763af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28267ee44505843d507844a2dd5763af">&#9670;&nbsp;</a></span>OpenFileHDF5()</h2>
+<a id="a551f176739f5e40805fd2955150f7674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a551f176739f5e40805fd2955150f7674">&#9670;&nbsp;</a></span>OpenFileHDF5()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,7 +258,7 @@ Args:
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>mode</em> = <code>&quot;w&quot;</code>&#160;</td>
+          <td class="paramname"><em>overwrite</em> = <code>True</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -262,18 +267,24 @@ Args:
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Opens HDF5 file
+<pre class="fragment">Creates _in.hdf5 input file. If the file exists, behavior depends on `overwrite`.
+
+Args:
+    overwrite (bool): Overwrite the file if it exists. Defaults to True.
+
+Raises:
+    OSError: If the file exists and overwrite is set to False.
 </pre> 
 </div>
 </div>
-<a id="ae0b67bbd9c2f382f0eb6ae4fed41b345"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0b67bbd9c2f382f0eb6ae4fed41b345">&#9670;&nbsp;</a></span>WriteFileHDF5()</h2>
+<a id="af5a37defdd37611bb58a771101909246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5a37defdd37611bb58a771101909246">&#9670;&nbsp;</a></span>WriteInputFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def FEM_utils.PreProcessing.PreProcessing.WriteFileHDF5 </td>
+          <td class="memname">def FEM_utils.PreProcessing.PreProcessing.WriteInputFile </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em></td><td>)</td>
@@ -281,8 +292,77 @@ Args:
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Creates and writes data to hdf5 input file
+<pre class="fragment">Creates the _in.hdf5 input file.
 </pre> 
+</div>
+</div>
+<a id="a33d53c8a70bb5cf1cf653e93699ebfea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33d53c8a70bb5cf1cf653e93699ebfea">&#9670;&nbsp;</a></span>WriteOutputFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def FEM_utils.PreProcessing.PreProcessing.WriteOutputFile </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>FName</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>overwrite</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>AvCon</em> = <code>True</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>ExitFlux</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>TDS</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>Plasticity</em> = <code>True</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Creates the _out.hdf5 file.
+
+Args:
+    FName (str, optional): The base name of the output file. Defaults to `self.Simul`.
+    overwrite (bool, optional): Flag for overwriting the file. Defaults to False.
+    AvCon (bool, optional): Average concentration flag. Defaults to True.
+    ExitFlux (bool, optional): Exit flux flag. Defaults to False.
+    TDS (bool, optional): TDS simulation flag. Defaults to False.
+    Plasticity (bool, optional): Plasticity parameters flag. Defaults to True.
+
+Raises:
+    OSError: If file exists anr overwrite==False</pre> 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Phase-field Multiphysics Materials Simulator: src/include/Models/MechModel.h File Reference</title>
+<title>Phase-field Multiphysics Materials Simulator: src/include/FiniteElements/Trapping/Tri6TH.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,50 +62,35 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b0856f6b0d80ccb263b2f415c91f9e17.html">include</a></li><li class="navelem"><a class="el" href="dir_441996d6b23754b4b2e67399a40a9f20.html">Models</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b0856f6b0d80ccb263b2f415c91f9e17.html">include</a></li><li class="navelem"><a class="el" href="dir_c1e6625cc15ba47e94635e247931150b.html">FiniteElements</a></li><li class="navelem"><a class="el" href="dir_5301af144ed3fd5950ea2ed619b0d580.html">Trapping</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">MechModel.h File Reference</div>  </div>
+<div class="title">Tri6TH.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A class based on mechanical models to interface with PETSc based global stiffness matrix <code>A</code>, solution vector <code>x</code> and RHS <code>a</code>.  
+<p>Class for managing Tri6TH elements for full-fileld hydrogen trapping.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;petscvec.h&gt;</code><br />
-<code>#include &lt;petscmat.h&gt;</code><br />
-<code>#include &lt;petscsnes.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="_base_model_8h_source.html">BaseModel.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_h5_i_o_8h_source.html">H5IO.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_base_elem_mech_8h_source.html">FiniteElements/Mechanics/BaseElemMech.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_base_mechanics_8h_source.html">Materials/Mechanics/BaseMechanics.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_base_elem_trap_8h_source.html">BaseElemTrap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_nodes_8h_source.html">Nodes.h</a>&quot;</code><br />
+<code>#include &quot;Version.h&quot;</code><br />
 </div>
-<p><a href="_mech_model_8h_source.html">Go to the source code of this file.</a></p>
+<p><a href="_tri6_t_h_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html">MechModel</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mech_model_1_1_app_ctx.html">MechModel::AppCtx</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define application context structure for SNES.  <a href="struct_mech_model_1_1_app_ctx.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html">Tri3TH</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class based on mechanical models to interface with PETSc based global stiffness matrix <code>A</code>, solution vector <code>x</code> and RHS <code>a</code>. </p>
-<p>Main functions:</p><ul>
-<li>Calls <code><a class="el" href="class_base_elem_mech.html#a4196a7724865338c4f076ae991d2c25c" title="Calculates the element stiffness matrix.">BaseElemMech::CalcElemStiffMatx</a></code> to build the local stiffness matrix.</li>
-<li>Assembles the global stiffness matrix.</li>
-<li>Initializes and applies boundary conditions.</li>
-<li><p class="startli">Manages the output by writing to H5file_out.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd></dd></dl>
-</li>
-</ul>
+<div class="textblock"><p>Class for managing Tri6TH elements for full-fileld hydrogen trapping. </p>
 <dl class="section author"><dt>Author</dt><dd>Abdelrahman Hussein (<a href="#" onclick="location.href='mai'+'lto:'+'a.h'+'.a'+'.hu'+'ss'+'ein'+'@o'+'utl'+'oo'+'k.c'+'om'; return false;">a.h.a<span style="display: none;">.nosp@m.</span>.hus<span style="display: none;">.nosp@m.</span>sein@<span style="display: none;">.nosp@m.</span>outl<span style="display: none;">.nosp@m.</span>ook.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2024-05-24</dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (C) 2024 Abdelrahman Hussein</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2024-01-16</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>COPYRIGHT_NOTICE Abdelrahman Hussein</dd></dl>
 <p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
 <p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
 <p>You should have received a copy of the GNU General Public License along with this program. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>. </p>

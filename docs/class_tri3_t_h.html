@@ -120,6 +120,43 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a7eb49950de56caefcfce43b948303810"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a7eb49950de56caefcfce43b948303810">CalcFlux</a> (<a class="el" href="class_base_trapping.html">BaseTrapping</a> *mat, const double *globalBuffer, <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodFlux, <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;intPtFlux, vector&lt; double &gt; &amp;nodCount, const double T) override</td></tr>
 <tr class="memdesc:a7eb49950de56caefcfce43b948303810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the int-pt flux vector. Also evaluates the flux at the nodes.  <a href="class_tri3_t_h.html#a7eb49950de56caefcfce43b948303810">More...</a><br /></td></tr>
 <tr class="separator:a7eb49950de56caefcfce43b948303810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1af6caae47e9351bd531b39139622c2"><td class="memItemLeft" align="right" valign="top"><a id="ac1af6caae47e9351bd531b39139622c2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Tri3TH</b> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_in, <a class="el" href="class_nodes.html">Nodes</a> &amp;<a class="el" href="class_nodes.html">Nodes</a>, int iSet)</td></tr>
+<tr class="separator:ac1af6caae47e9351bd531b39139622c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1b2279aad78c2c6eb37a8f04b21f092"><td class="memItemLeft" align="right" valign="top"><a id="af1b2279aad78c2c6eb37a8f04b21f092"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#af1b2279aad78c2c6eb37a8f04b21f092">InitShapeFunc</a> ()</td></tr>
+<tr class="memdesc:af1b2279aad78c2c6eb37a8f04b21f092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the data for the shape functions. <br /></td></tr>
+<tr class="separator:af1b2279aad78c2c6eb37a8f04b21f092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70a662decbc11eb4d0be2c1a24c6e5f7"><td class="memItemLeft" align="right" valign="top">RowVecd3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a70a662decbc11eb4d0be2c1a24c6e5f7">CalcShapeFunc</a> (double xi, double eta)</td></tr>
+<tr class="memdesc:a70a662decbc11eb4d0be2c1a24c6e5f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the shape functions of int-pts in natural coordinates.  <a href="class_tri3_t_h.html#a70a662decbc11eb4d0be2c1a24c6e5f7">More...</a><br /></td></tr>
+<tr class="separator:a70a662decbc11eb4d0be2c1a24c6e5f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e01a95b315c8619063ff20775262548"><td class="memItemLeft" align="right" valign="top">Matd2x3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a9e01a95b315c8619063ff20775262548">CalcShapeFuncDeriv</a> (double xi, double eta)</td></tr>
+<tr class="memdesc:a9e01a95b315c8619063ff20775262548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the shape function derivatives of int-pts in natural coordinates.  <a href="class_tri3_t_h.html#a9e01a95b315c8619063ff20775262548">More...</a><br /></td></tr>
+<tr class="separator:a9e01a95b315c8619063ff20775262548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96561bb5e62ffe34006e2794f42cb05c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a96561bb5e62ffe34006e2794f42cb05c">InitializeElements</a> (<a class="el" href="class_nodes.html">Nodes</a> &amp;<a class="el" href="class_nodes.html">Nodes</a>, <a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_in)</td></tr>
+<tr class="memdesc:a96561bb5e62ffe34006e2794f42cb05c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the data for all elements: <code>elemNodCoord</code>, <code>gaussPtCart</code>, <code>BMat</code>, <code>BuMat</code> and <code>intPtVol</code>.  <a href="class_tri3_t_h.html#a96561bb5e62ffe34006e2794f42cb05c">More...</a><br /></td></tr>
+<tr class="separator:a96561bb5e62ffe34006e2794f42cb05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90c84b9cb6d5008cb292b59c5c7827fb"><td class="memItemLeft" align="right" valign="top">RowVecd2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a90c84b9cb6d5008cb292b59c5c7827fb">getGaussCart</a> (RowVecd3 &amp;sFunc, Matd3x2 &amp;elCoord)</td></tr>
+<tr class="memdesc:a90c84b9cb6d5008cb292b59c5c7827fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the cartesian coordinates of gauss points <code>N_i x_ij</code>.  <a href="class_tri3_t_h.html#a90c84b9cb6d5008cb292b59c5c7827fb">More...</a><br /></td></tr>
+<tr class="separator:a90c84b9cb6d5008cb292b59c5c7827fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69299c96323335ca6df6b29a74e2e081"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a69299c96323335ca6df6b29a74e2e081">CalcCartDeriv</a> (Matd3x2 &amp;elNodCoord, Matd2x3 &amp;sFuncDeriv, const double &amp;wt, double &amp;intVol, Matd2x3 &amp;cartDeriv)</td></tr>
+<tr class="memdesc:a69299c96323335ca6df6b29a74e2e081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates <code>intPtVol</code>, <code>BMat</code> and <code>BuMat</code>.  <a href="class_tri3_t_h.html#a69299c96323335ca6df6b29a74e2e081">More...</a><br /></td></tr>
+<tr class="separator:a69299c96323335ca6df6b29a74e2e081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affd53b1997ab878e47a249a2d76437d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#affd53b1997ab878e47a249a2d76437d5">getInPtCoords</a> (<a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;glIntPtCoords) override</td></tr>
+<tr class="memdesc:affd53b1997ab878e47a249a2d76437d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the int-pt cartesian coordinates.  <a href="class_tri3_t_h.html#affd53b1997ab878e47a249a2d76437d5">More...</a><br /></td></tr>
+<tr class="separator:affd53b1997ab878e47a249a2d76437d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a521712987462ee4187e50d8984f501af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a521712987462ee4187e50d8984f501af">CalcGrad</a> (<a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodGrad, vector&lt; double &gt; &amp;nodCount, double *nodLapPhi) override</td></tr>
+<tr class="memdesc:a521712987462ee4187e50d8984f501af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the gradients of phi at the int-points and maps them to the nodes.  <a href="class_tri3_t_h.html#a521712987462ee4187e50d8984f501af">More...</a><br /></td></tr>
+<tr class="separator:a521712987462ee4187e50d8984f501af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a7daa66e0d7f301d3b1003ad925801f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a4a7daa66e0d7f301d3b1003ad925801f">CalcElemStiffMatx</a> (<a class="el" href="class_base_trapping.html">BaseTrapping</a> *mat, const double T) override</td></tr>
+<tr class="memdesc:a4a7daa66e0d7f301d3b1003ad925801f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the element stiffness and capacitance matrix for all elements.  <a href="class_tri3_t_h.html#a4a7daa66e0d7f301d3b1003ad925801f">More...</a><br /></td></tr>
+<tr class="separator:a4a7daa66e0d7f301d3b1003ad925801f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade3c41ac36f8edccdfe50370c163a925"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#ade3c41ac36f8edccdfe50370c163a925">CalcAvCon</a> (const double *globalBuffer) override</td></tr>
+<tr class="memdesc:ade3c41ac36f8edccdfe50370c163a925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the volume averaged concentration.  <a href="class_tri3_t_h.html#ade3c41ac36f8edccdfe50370c163a925">More...</a><br /></td></tr>
+<tr class="separator:ade3c41ac36f8edccdfe50370c163a925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb49950de56caefcfce43b948303810"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a7eb49950de56caefcfce43b948303810">CalcFlux</a> (<a class="el" href="class_base_trapping.html">BaseTrapping</a> *mat, const double *globalBuffer, <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodFlux, <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;intPtFlux, vector&lt; double &gt; &amp;nodCount, const double T) override</td></tr>
+<tr class="memdesc:a7eb49950de56caefcfce43b948303810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the int-pt flux vector. Also evaluates the flux at the nodes.  <a href="class_tri3_t_h.html#a7eb49950de56caefcfce43b948303810">More...</a><br /></td></tr>
+<tr class="separator:a7eb49950de56caefcfce43b948303810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_base_elem_trap"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_base_elem_trap')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_base_elem_trap.html">BaseElemTrap</a></td></tr>
 <tr class="memitem:a9088f4f52d0e47b60463c0e1bc582c77 inherit pub_methods_class_base_elem_trap"><td class="memItemLeft" align="right" valign="top"><a id="a9088f4f52d0e47b60463c0e1bc582c77"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>BaseElemTrap</b> (int <a class="el" href="class_base_elem_trap.html#ae4eca60e5dc56e134a85acd503c66b70">nElDim</a>, int <a class="el" href="class_base_elem_trap.html#a9629da760143daafa153f0b206795160">nElNodes</a>, int <a class="el" href="class_base_elem_trap.html#a83da047f30311397c61b26ca590cd4d9">nElConDofs</a>, int <a class="el" href="class_base_elem_trap.html#a89914f9d237214355dc31d3f390e57d3">nElGauss</a>)</td></tr>
@@ -158,82 +195,82 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a9916fa9b1e9fb5896bb0567f3daab4c3"><td class="memItemLeft" align="right" valign="top"><a id="a9916fa9b1e9fb5896bb0567f3daab4c3"></a>
-const vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a9916fa9b1e9fb5896bb0567f3daab4c3">wts</a> {1.0/6.0, 1.0/6.0, 1.0/6}</td></tr>
-<tr class="memdesc:a9916fa9b1e9fb5896bb0567f3daab4c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weights of the gauss points [nElGauss]. <br /></td></tr>
-<tr class="separator:a9916fa9b1e9fb5896bb0567f3daab4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05fb71ba8904b18fb4d94e56a6197e9b"><td class="memItemLeft" align="right" valign="top"><a id="a05fb71ba8904b18fb4d94e56a6197e9b"></a>
-vector&lt; RowVecd3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a05fb71ba8904b18fb4d94e56a6197e9b">shapeFunc</a></td></tr>
-<tr class="memdesc:a05fb71ba8904b18fb4d94e56a6197e9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values of the shape functions at integration points in natural coordinates [nElNodes]. <br /></td></tr>
-<tr class="separator:a05fb71ba8904b18fb4d94e56a6197e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a068564111b19c67b6b214311b90d8f0e"><td class="memItemLeft" align="right" valign="top"><a id="a068564111b19c67b6b214311b90d8f0e"></a>
-vector&lt; Matd2x3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a068564111b19c67b6b214311b90d8f0e">shapeFuncDeriv</a></td></tr>
-<tr class="memdesc:a068564111b19c67b6b214311b90d8f0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values of the shape function derivatives at integration points in natural coordinates [nElDim, nElNodes]. <br /></td></tr>
-<tr class="separator:a068564111b19c67b6b214311b90d8f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6b0b7729587799b7769b0c3c0882e4f"><td class="memItemLeft" align="right" valign="top"><a id="ad6b0b7729587799b7769b0c3c0882e4f"></a>
-vector&lt; Matd3x2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#ad6b0b7729587799b7769b0c3c0882e4f">elemNodCoord</a></td></tr>
-<tr class="memdesc:ad6b0b7729587799b7769b0c3c0882e4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Node Coordinates [nElDim, nElNodes]. <br /></td></tr>
-<tr class="separator:ad6b0b7729587799b7769b0c3c0882e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa627c0cebde59da3ca51e885a426ae6"><td class="memItemLeft" align="right" valign="top"><a id="aaa627c0cebde59da3ca51e885a426ae6"></a>
-vector&lt; vector&lt; RowVecd2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#aaa627c0cebde59da3ca51e885a426ae6">gaussPtCart</a></td></tr>
-<tr class="memdesc:aaa627c0cebde59da3ca51e885a426ae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cartesian coordinates of Gauss points for all elements [nElDim]. <br /></td></tr>
-<tr class="separator:aaa627c0cebde59da3ca51e885a426ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ba5cc4be353167ac1a144b76b2e0618"><td class="memItemLeft" align="right" valign="top"><a id="a1ba5cc4be353167ac1a144b76b2e0618"></a>
-vector&lt; vector&lt; ColVecd2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a1ba5cc4be353167ac1a144b76b2e0618">elFlux</a></td></tr>
-<tr class="memdesc:a1ba5cc4be353167ac1a144b76b2e0618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt flux [nElStres]. <br /></td></tr>
-<tr class="separator:a1ba5cc4be353167ac1a144b76b2e0618"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8526f28900b63d0eae9f450c9f7e38a3"><td class="memItemLeft" align="right" valign="top"><a id="a8526f28900b63d0eae9f450c9f7e38a3"></a>
-vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a8526f28900b63d0eae9f450c9f7e38a3">el_gPhi</a></td></tr>
-<tr class="memdesc:a8526f28900b63d0eae9f450c9f7e38a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt phi [nElStres]. <br /></td></tr>
-<tr class="separator:a8526f28900b63d0eae9f450c9f7e38a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35e5c6cbd4619fcec263bc99678c563e"><td class="memItemLeft" align="right" valign="top"><a id="a35e5c6cbd4619fcec263bc99678c563e"></a>
-vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a35e5c6cbd4619fcec263bc99678c563e">el_martensite</a></td></tr>
-<tr class="memdesc:a35e5c6cbd4619fcec263bc99678c563e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt martensite [nElStres]. <br /></td></tr>
-<tr class="separator:a35e5c6cbd4619fcec263bc99678c563e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a936ddf4c4950bd0ad314952779ea9f12"><td class="memItemLeft" align="right" valign="top"><a id="a936ddf4c4950bd0ad314952779ea9f12"></a>
-vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a936ddf4c4950bd0ad314952779ea9f12">el_gPhiMM</a></td></tr>
-<tr class="memdesc:a936ddf4c4950bd0ad314952779ea9f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt gPhiMM [nElStres]. <br /></td></tr>
-<tr class="separator:a936ddf4c4950bd0ad314952779ea9f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d36ab9f365f34add7e3190eb0512897"><td class="memItemLeft" align="right" valign="top"><a id="a3d36ab9f365f34add7e3190eb0512897"></a>
-vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a3d36ab9f365f34add7e3190eb0512897">el_gPhifM</a></td></tr>
-<tr class="memdesc:a3d36ab9f365f34add7e3190eb0512897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt gPhifM [nElStres]. <br /></td></tr>
-<tr class="separator:a3d36ab9f365f34add7e3190eb0512897"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ddaa45ecdbdc81934de1a3eb111203b"><td class="memItemLeft" align="right" valign="top"><a id="a4ddaa45ecdbdc81934de1a3eb111203b"></a>
-vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a4ddaa45ecdbdc81934de1a3eb111203b">el_gPhiff</a></td></tr>
-<tr class="memdesc:a4ddaa45ecdbdc81934de1a3eb111203b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt gPhiff [nElStres]. <br /></td></tr>
-<tr class="separator:a4ddaa45ecdbdc81934de1a3eb111203b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70724600720319f825625ff4b884841e"><td class="memItemLeft" align="right" valign="top"><a id="a70724600720319f825625ff4b884841e"></a>
-vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a70724600720319f825625ff4b884841e">nod_gPhi</a></td></tr>
-<tr class="memdesc:a70724600720319f825625ff4b884841e"><td class="mdescLeft">&#160;</td><td class="mdescRight">nodal values of phi [nTotNodes] <br /></td></tr>
-<tr class="separator:a70724600720319f825625ff4b884841e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93b4fc0807ddf5967f049f79b067d3c1"><td class="memItemLeft" align="right" valign="top"><a id="a93b4fc0807ddf5967f049f79b067d3c1"></a>
-vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a93b4fc0807ddf5967f049f79b067d3c1">nod_martensite</a></td></tr>
-<tr class="memdesc:a93b4fc0807ddf5967f049f79b067d3c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">nodal values of martensite [nTotNodes] <br /></td></tr>
-<tr class="separator:a93b4fc0807ddf5967f049f79b067d3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1d90387c4a10cf6b0557af1a111b4d9"><td class="memItemLeft" align="right" valign="top"><a id="ad1d90387c4a10cf6b0557af1a111b4d9"></a>
-vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#ad1d90387c4a10cf6b0557af1a111b4d9">nod_gPhiMM</a></td></tr>
-<tr class="memdesc:ad1d90387c4a10cf6b0557af1a111b4d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">nodal values of gPhiMM [nTotNodes] <br /></td></tr>
-<tr class="separator:ad1d90387c4a10cf6b0557af1a111b4d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e7a231447155bc6c9015fa5bec9e44c"><td class="memItemLeft" align="right" valign="top"><a id="a6e7a231447155bc6c9015fa5bec9e44c"></a>
-vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a6e7a231447155bc6c9015fa5bec9e44c">nod_gPhifM</a></td></tr>
-<tr class="memdesc:a6e7a231447155bc6c9015fa5bec9e44c"><td class="mdescLeft">&#160;</td><td class="mdescRight">nodal values of gPhifM [nTotNodes] <br /></td></tr>
-<tr class="separator:a6e7a231447155bc6c9015fa5bec9e44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3d78014ce0a3a30241c4e2821f0dc99"><td class="memItemLeft" align="right" valign="top"><a id="ae3d78014ce0a3a30241c4e2821f0dc99"></a>
-vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#ae3d78014ce0a3a30241c4e2821f0dc99">nod_gPhiff</a></td></tr>
-<tr class="memdesc:ae3d78014ce0a3a30241c4e2821f0dc99"><td class="mdescLeft">&#160;</td><td class="mdescRight">nodal values of gPhiff [nTotNodes] <br /></td></tr>
-<tr class="separator:ae3d78014ce0a3a30241c4e2821f0dc99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2325b5a037731d9fc57893d573a6e1a"><td class="memItemLeft" align="right" valign="top"><a id="ae2325b5a037731d9fc57893d573a6e1a"></a>
-vector&lt; vector&lt; Matd2x3 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#ae2325b5a037731d9fc57893d573a6e1a">BMat</a></td></tr>
-<tr class="memdesc:ae2325b5a037731d9fc57893d573a6e1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derivatives (scalar) matrix [nElDim, nElNodes]. <br /></td></tr>
-<tr class="separator:ae2325b5a037731d9fc57893d573a6e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49ecb08e06eac3fe98f4af9f8551e6ac"><td class="memItemLeft" align="right" valign="top"><a id="a49ecb08e06eac3fe98f4af9f8551e6ac"></a>
-vector&lt; Matd3x3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a49ecb08e06eac3fe98f4af9f8551e6ac">elStiffMatx</a></td></tr>
-<tr class="memdesc:a49ecb08e06eac3fe98f4af9f8551e6ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element stiffness matrix [nElDispDofs, nElDispDofs]. <br /></td></tr>
-<tr class="separator:a49ecb08e06eac3fe98f4af9f8551e6ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9ef7f70d74fd14cdbaa736e1978dc65"><td class="memItemLeft" align="right" valign="top"><a id="ad9ef7f70d74fd14cdbaa736e1978dc65"></a>
-vector&lt; Matd3x3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#ad9ef7f70d74fd14cdbaa736e1978dc65">elCapMatx</a></td></tr>
-<tr class="memdesc:ad9ef7f70d74fd14cdbaa736e1978dc65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element capacitance matrix [nElDispDofs, nElDispDofs]. <br /></td></tr>
-<tr class="separator:ad9ef7f70d74fd14cdbaa736e1978dc65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad48daa8b7d4a810123729b37e2289fd0"><td class="memItemLeft" align="right" valign="top"><a id="ad48daa8b7d4a810123729b37e2289fd0"></a>
+const vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#ad48daa8b7d4a810123729b37e2289fd0">wts</a> {1.0/6.0, 1.0/6.0, 1.0/6}</td></tr>
+<tr class="memdesc:ad48daa8b7d4a810123729b37e2289fd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weights of the gauss points [nElGauss]. <br /></td></tr>
+<tr class="separator:ad48daa8b7d4a810123729b37e2289fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab177643b8fb8c2665a9f65115d5df9c6"><td class="memItemLeft" align="right" valign="top"><a id="ab177643b8fb8c2665a9f65115d5df9c6"></a>
+vector&lt; RowVecd3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#ab177643b8fb8c2665a9f65115d5df9c6">shapeFunc</a></td></tr>
+<tr class="memdesc:ab177643b8fb8c2665a9f65115d5df9c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values of the shape functions at integration points in natural coordinates [nElNodes]. <br /></td></tr>
+<tr class="separator:ab177643b8fb8c2665a9f65115d5df9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3adb7a29498d2e3663c7bc3f84465f75"><td class="memItemLeft" align="right" valign="top"><a id="a3adb7a29498d2e3663c7bc3f84465f75"></a>
+vector&lt; Matd2x3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a3adb7a29498d2e3663c7bc3f84465f75">shapeFuncDeriv</a></td></tr>
+<tr class="memdesc:a3adb7a29498d2e3663c7bc3f84465f75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values of the shape function derivatives at integration points in natural coordinates [nElDim, nElNodes]. <br /></td></tr>
+<tr class="separator:a3adb7a29498d2e3663c7bc3f84465f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa69f253b66d1990d2ed43c3acc5874"><td class="memItemLeft" align="right" valign="top"><a id="afaa69f253b66d1990d2ed43c3acc5874"></a>
+vector&lt; Matd3x2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#afaa69f253b66d1990d2ed43c3acc5874">elemNodCoord</a></td></tr>
+<tr class="memdesc:afaa69f253b66d1990d2ed43c3acc5874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Node Coordinates [nElDim, nElNodes]. <br /></td></tr>
+<tr class="separator:afaa69f253b66d1990d2ed43c3acc5874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9432056efd39ccc44648499661097436"><td class="memItemLeft" align="right" valign="top"><a id="a9432056efd39ccc44648499661097436"></a>
+vector&lt; vector&lt; RowVecd2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a9432056efd39ccc44648499661097436">gaussPtCart</a></td></tr>
+<tr class="memdesc:a9432056efd39ccc44648499661097436"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cartesian coordinates of Gauss points for all elements [nElDim]. <br /></td></tr>
+<tr class="separator:a9432056efd39ccc44648499661097436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1504f7a99f253d1d5e95b6495c7efed1"><td class="memItemLeft" align="right" valign="top"><a id="a1504f7a99f253d1d5e95b6495c7efed1"></a>
+vector&lt; vector&lt; ColVecd2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a1504f7a99f253d1d5e95b6495c7efed1">elFlux</a></td></tr>
+<tr class="memdesc:a1504f7a99f253d1d5e95b6495c7efed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt flux [nElStres]. <br /></td></tr>
+<tr class="separator:a1504f7a99f253d1d5e95b6495c7efed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a812e98b6994b292eae3810876a983b7b"><td class="memItemLeft" align="right" valign="top"><a id="a812e98b6994b292eae3810876a983b7b"></a>
+vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a812e98b6994b292eae3810876a983b7b">el_gPhi</a></td></tr>
+<tr class="memdesc:a812e98b6994b292eae3810876a983b7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt phi [nElStres]. <br /></td></tr>
+<tr class="separator:a812e98b6994b292eae3810876a983b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc9f846bbcdd692a379024659f8a77c5"><td class="memItemLeft" align="right" valign="top"><a id="abc9f846bbcdd692a379024659f8a77c5"></a>
+vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#abc9f846bbcdd692a379024659f8a77c5">el_martensite</a></td></tr>
+<tr class="memdesc:abc9f846bbcdd692a379024659f8a77c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt martensite [nElStres]. <br /></td></tr>
+<tr class="separator:abc9f846bbcdd692a379024659f8a77c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85dd177a26ec83ce5017c716c886569d"><td class="memItemLeft" align="right" valign="top"><a id="a85dd177a26ec83ce5017c716c886569d"></a>
+vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a85dd177a26ec83ce5017c716c886569d">el_gPhiMM</a></td></tr>
+<tr class="memdesc:a85dd177a26ec83ce5017c716c886569d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt gPhiMM [nElStres]. <br /></td></tr>
+<tr class="separator:a85dd177a26ec83ce5017c716c886569d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af37b95ea36ebe5bfeba1ad2686319ee6"><td class="memItemLeft" align="right" valign="top"><a id="af37b95ea36ebe5bfeba1ad2686319ee6"></a>
+vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#af37b95ea36ebe5bfeba1ad2686319ee6">el_gPhifM</a></td></tr>
+<tr class="memdesc:af37b95ea36ebe5bfeba1ad2686319ee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt gPhifM [nElStres]. <br /></td></tr>
+<tr class="separator:af37b95ea36ebe5bfeba1ad2686319ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6a19648b160f9cbdaf248d0d4832ebc"><td class="memItemLeft" align="right" valign="top"><a id="aa6a19648b160f9cbdaf248d0d4832ebc"></a>
+vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#aa6a19648b160f9cbdaf248d0d4832ebc">el_gPhiff</a></td></tr>
+<tr class="memdesc:aa6a19648b160f9cbdaf248d0d4832ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt gPhiff [nElStres]. <br /></td></tr>
+<tr class="separator:aa6a19648b160f9cbdaf248d0d4832ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe8c70e1b8f97d8a1aa4a33fefd7a9c8"><td class="memItemLeft" align="right" valign="top"><a id="abe8c70e1b8f97d8a1aa4a33fefd7a9c8"></a>
+vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#abe8c70e1b8f97d8a1aa4a33fefd7a9c8">nod_gPhi</a></td></tr>
+<tr class="memdesc:abe8c70e1b8f97d8a1aa4a33fefd7a9c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">nodal values of phi [nTotNodes] <br /></td></tr>
+<tr class="separator:abe8c70e1b8f97d8a1aa4a33fefd7a9c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71df2b6c469117ecba5ce3aad489773d"><td class="memItemLeft" align="right" valign="top"><a id="a71df2b6c469117ecba5ce3aad489773d"></a>
+vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a71df2b6c469117ecba5ce3aad489773d">nod_martensite</a></td></tr>
+<tr class="memdesc:a71df2b6c469117ecba5ce3aad489773d"><td class="mdescLeft">&#160;</td><td class="mdescRight">nodal values of martensite [nTotNodes] <br /></td></tr>
+<tr class="separator:a71df2b6c469117ecba5ce3aad489773d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e739494a6d00839c2a84311cc3bd5af"><td class="memItemLeft" align="right" valign="top"><a id="a9e739494a6d00839c2a84311cc3bd5af"></a>
+vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a9e739494a6d00839c2a84311cc3bd5af">nod_gPhiMM</a></td></tr>
+<tr class="memdesc:a9e739494a6d00839c2a84311cc3bd5af"><td class="mdescLeft">&#160;</td><td class="mdescRight">nodal values of gPhiMM [nTotNodes] <br /></td></tr>
+<tr class="separator:a9e739494a6d00839c2a84311cc3bd5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15fae5ecb8e60de316b9c08a19915648"><td class="memItemLeft" align="right" valign="top"><a id="a15fae5ecb8e60de316b9c08a19915648"></a>
+vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a15fae5ecb8e60de316b9c08a19915648">nod_gPhifM</a></td></tr>
+<tr class="memdesc:a15fae5ecb8e60de316b9c08a19915648"><td class="mdescLeft">&#160;</td><td class="mdescRight">nodal values of gPhifM [nTotNodes] <br /></td></tr>
+<tr class="separator:a15fae5ecb8e60de316b9c08a19915648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8876fe89b5268d10531a33294cdcff3c"><td class="memItemLeft" align="right" valign="top"><a id="a8876fe89b5268d10531a33294cdcff3c"></a>
+vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a8876fe89b5268d10531a33294cdcff3c">nod_gPhiff</a></td></tr>
+<tr class="memdesc:a8876fe89b5268d10531a33294cdcff3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">nodal values of gPhiff [nTotNodes] <br /></td></tr>
+<tr class="separator:a8876fe89b5268d10531a33294cdcff3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a481ad9fbeddcdb6d973b543e3f67cdd0"><td class="memItemLeft" align="right" valign="top"><a id="a481ad9fbeddcdb6d973b543e3f67cdd0"></a>
+vector&lt; vector&lt; Matd2x3 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a481ad9fbeddcdb6d973b543e3f67cdd0">BMat</a></td></tr>
+<tr class="memdesc:a481ad9fbeddcdb6d973b543e3f67cdd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derivatives (scalar) matrix [nElDim, nElNodes]. <br /></td></tr>
+<tr class="separator:a481ad9fbeddcdb6d973b543e3f67cdd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c717a0fcecc3378b70df39550dbc068"><td class="memItemLeft" align="right" valign="top"><a id="a8c717a0fcecc3378b70df39550dbc068"></a>
+vector&lt; Matd3x3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a8c717a0fcecc3378b70df39550dbc068">elStiffMatx</a></td></tr>
+<tr class="memdesc:a8c717a0fcecc3378b70df39550dbc068"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element stiffness matrix [nElDispDofs, nElDispDofs]. <br /></td></tr>
+<tr class="separator:a8c717a0fcecc3378b70df39550dbc068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc17c6d92c758ee3a412111e647a07d"><td class="memItemLeft" align="right" valign="top"><a id="a4dc17c6d92c758ee3a412111e647a07d"></a>
+vector&lt; Matd3x3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tri3_t_h.html#a4dc17c6d92c758ee3a412111e647a07d">elCapMatx</a></td></tr>
+<tr class="memdesc:a4dc17c6d92c758ee3a412111e647a07d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element capacitance matrix [nElDispDofs, nElDispDofs]. <br /></td></tr>
+<tr class="separator:a4dc17c6d92c758ee3a412111e647a07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -312,7 +349,44 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ade3c41ac36f8edccdfe50370c163a925"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade3c41ac36f8edccdfe50370c163a925">&#9670;&nbsp;</a></span>CalcAvCon()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ade3c41ac36f8edccdfe50370c163a925">&#9670;&nbsp;</a></span>CalcAvCon() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Tri3TH::CalcAvCon </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>globalBuffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the volume averaged concentration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">globalBuffer</td><td>Solution vector </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Volume averaged concentration </dd></dl>
+
+<p>Implements <a class="el" href="class_base_elem_trap.html#a7860ab096090eba3f1b87926bcfff0df">BaseElemTrap</a>.</p>
+
+</div>
+</div>
+<a id="ade3c41ac36f8edccdfe50370c163a925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade3c41ac36f8edccdfe50370c163a925">&#9670;&nbsp;</a></span>CalcAvCon() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -349,7 +423,65 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 </div>
 </div>
 <a id="a69299c96323335ca6df6b29a74e2e081"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69299c96323335ca6df6b29a74e2e081">&#9670;&nbsp;</a></span>CalcCartDeriv()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a69299c96323335ca6df6b29a74e2e081">&#9670;&nbsp;</a></span>CalcCartDeriv() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tri3TH::CalcCartDeriv </td>
+          <td>(</td>
+          <td class="paramtype">Matd3x2 &amp;&#160;</td>
+          <td class="paramname"><em>elNodCoord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Matd2x3 &amp;&#160;</td>
+          <td class="paramname"><em>sFuncDeriv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>wt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>intVol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Matd2x3 &amp;&#160;</td>
+          <td class="paramname"><em>cartDeriv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates <code>intPtVol</code>, <code>BMat</code> and <code>BuMat</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elNodCoord</td><td></td></tr>
+    <tr><td class="paramname">sFuncDeriv</td><td></td></tr>
+    <tr><td class="paramname">intVol</td><td></td></tr>
+    <tr><td class="paramname">cartDeriv</td><td></td></tr>
+    <tr><td class="paramname">strainMat</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a69299c96323335ca6df6b29a74e2e081"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69299c96323335ca6df6b29a74e2e081">&#9670;&nbsp;</a></span>CalcCartDeriv() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -407,7 +539,54 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 </div>
 </div>
 <a id="a4a7daa66e0d7f301d3b1003ad925801f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a7daa66e0d7f301d3b1003ad925801f">&#9670;&nbsp;</a></span>CalcElemStiffMatx()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a7daa66e0d7f301d3b1003ad925801f">&#9670;&nbsp;</a></span>CalcElemStiffMatx() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tri3TH::CalcElemStiffMatx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_base_trapping.html">BaseTrapping</a> *&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>T</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the element stiffness and capacitance matrix for all elements. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>Material </td></tr>
+    <tr><td class="paramname">T</td><td>Current temperature </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_base_elem_trap.html#a9f5ce1289eb6f61ae92c7e07d90bda7f">BaseElemTrap</a>.</p>
+
+</div>
+</div>
+<a id="a4a7daa66e0d7f301d3b1003ad925801f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a7daa66e0d7f301d3b1003ad925801f">&#9670;&nbsp;</a></span>CalcElemStiffMatx() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -454,7 +633,80 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 </div>
 </div>
 <a id="a7eb49950de56caefcfce43b948303810"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7eb49950de56caefcfce43b948303810">&#9670;&nbsp;</a></span>CalcFlux()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eb49950de56caefcfce43b948303810">&#9670;&nbsp;</a></span>CalcFlux() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tri3TH::CalcFlux </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_base_trapping.html">BaseTrapping</a> *&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>globalBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;&#160;</td>
+          <td class="paramname"><em>nodFlux</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;&#160;</td>
+          <td class="paramname"><em>intPtFlux</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>nodCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>T</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Evaluates the int-pt flux vector. Also evaluates the flux at the nodes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">KMatx</td><td></td></tr>
+    <tr><td class="paramname">globalBuffer</td><td></td></tr>
+    <tr><td class="paramname">nodFlux</td><td></td></tr>
+    <tr><td class="paramname">nodCount</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_base_elem_trap.html#a46c87e391cc145d530471600a44e1a9b">BaseElemTrap</a>.</p>
+
+</div>
+</div>
+<a id="a7eb49950de56caefcfce43b948303810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eb49950de56caefcfce43b948303810">&#9670;&nbsp;</a></span>CalcFlux() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -527,7 +779,7 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 </div>
 </div>
 <a id="a521712987462ee4187e50d8984f501af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a521712987462ee4187e50d8984f501af">&#9670;&nbsp;</a></span>CalcGrad()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a521712987462ee4187e50d8984f501af">&#9670;&nbsp;</a></span>CalcGrad() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -580,8 +832,100 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 
 </div>
 </div>
+<a id="a521712987462ee4187e50d8984f501af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a521712987462ee4187e50d8984f501af">&#9670;&nbsp;</a></span>CalcGrad() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tri3TH::CalcGrad </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;&#160;</td>
+          <td class="paramname"><em>nodGrad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>nodCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>nodLapPhi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Evaluates the gradients of phi at the int-points and maps them to the nodes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodGrad</td><td></td></tr>
+    <tr><td class="paramname">nodCount</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Move to <a class="el" href="class_base_elem_trap.html">BaseElemTrap</a>. </dd></dl>
+
+<p>Implements <a class="el" href="class_base_elem_trap.html#ad3765578bfbe804c20dc29382aebe6ce">BaseElemTrap</a>.</p>
+
+</div>
+</div>
 <a id="a70a662decbc11eb4d0be2c1a24c6e5f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70a662decbc11eb4d0be2c1a24c6e5f7">&#9670;&nbsp;</a></span>CalcShapeFunc()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a70a662decbc11eb4d0be2c1a24c6e5f7">&#9670;&nbsp;</a></span>CalcShapeFunc() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RowVecd3 Tri3TH::CalcShapeFunc </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>xi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the shape functions of int-pts in natural coordinates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xi</td><td></td></tr>
+    <tr><td class="paramname">eta</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>RowVecd3 </dd></dl>
+
+</div>
+</div>
+<a id="a70a662decbc11eb4d0be2c1a24c6e5f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70a662decbc11eb4d0be2c1a24c6e5f7">&#9670;&nbsp;</a></span>CalcShapeFunc() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -619,7 +963,45 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 </div>
 </div>
 <a id="a9e01a95b315c8619063ff20775262548"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e01a95b315c8619063ff20775262548">&#9670;&nbsp;</a></span>CalcShapeFuncDeriv()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e01a95b315c8619063ff20775262548">&#9670;&nbsp;</a></span>CalcShapeFuncDeriv() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Matd2x3 Tri3TH::CalcShapeFuncDeriv </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>xi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the shape function derivatives of int-pts in natural coordinates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xi</td><td></td></tr>
+    <tr><td class="paramname">eta</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Matd2x3 </dd></dl>
+
+</div>
+</div>
+<a id="a9e01a95b315c8619063ff20775262548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e01a95b315c8619063ff20775262548">&#9670;&nbsp;</a></span>CalcShapeFuncDeriv() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -657,7 +1039,45 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 </div>
 </div>
 <a id="a90c84b9cb6d5008cb292b59c5c7827fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90c84b9cb6d5008cb292b59c5c7827fb">&#9670;&nbsp;</a></span>getGaussCart()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a90c84b9cb6d5008cb292b59c5c7827fb">&#9670;&nbsp;</a></span>getGaussCart() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RowVecd2 Tri3TH::getGaussCart </td>
+          <td>(</td>
+          <td class="paramtype">RowVecd3 &amp;&#160;</td>
+          <td class="paramname"><em>sFunc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Matd3x2 &amp;&#160;</td>
+          <td class="paramname"><em>elCoord</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the cartesian coordinates of gauss points <code>N_i x_ij</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elCoord</td><td></td></tr>
+    <tr><td class="paramname">sFunc</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>RowVecd2 </dd></dl>
+
+</div>
+</div>
+<a id="a90c84b9cb6d5008cb292b59c5c7827fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90c84b9cb6d5008cb292b59c5c7827fb">&#9670;&nbsp;</a></span>getGaussCart() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -695,7 +1115,43 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 </div>
 </div>
 <a id="affd53b1997ab878e47a249a2d76437d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affd53b1997ab878e47a249a2d76437d5">&#9670;&nbsp;</a></span>getInPtCoords()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#affd53b1997ab878e47a249a2d76437d5">&#9670;&nbsp;</a></span>getInPtCoords() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tri3TH::getInPtCoords </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;&#160;</td>
+          <td class="paramname"><em>glIntPtCoords</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the int-pt cartesian coordinates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">glIntPtCoords</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_base_elem_trap.html#a5fc0e42d7138d8e5095404798edd5c02">BaseElemTrap</a>.</p>
+
+</div>
+</div>
+<a id="affd53b1997ab878e47a249a2d76437d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affd53b1997ab878e47a249a2d76437d5">&#9670;&nbsp;</a></span>getInPtCoords() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -731,7 +1187,43 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 </div>
 </div>
 <a id="a96561bb5e62ffe34006e2794f42cb05c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96561bb5e62ffe34006e2794f42cb05c">&#9670;&nbsp;</a></span>InitializeElements()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a96561bb5e62ffe34006e2794f42cb05c">&#9670;&nbsp;</a></span>InitializeElements() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tri3TH::InitializeElements </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_nodes.html">Nodes</a> &amp;&#160;</td>
+          <td class="paramname"><em>Nodes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_h5_i_o.html">H5IO</a> &amp;&#160;</td>
+          <td class="paramname"><em>H5File_in</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes the data for all elements: <code>elemNodCoord</code>, <code>gaussPtCart</code>, <code>BMat</code>, <code>BuMat</code> and <code>intPtVol</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="class_nodes.html">Nodes</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a96561bb5e62ffe34006e2794f42cb05c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96561bb5e62ffe34006e2794f42cb05c">&#9670;&nbsp;</a></span>InitializeElements() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -768,7 +1260,9 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/include/FiniteElements/Trapping/<a class="el" href="_tri3_t_h_8h_source.html">Tri3TH.h</a></li>
+<li>src/include/FiniteElements/Trapping/<a class="el" href="_tri6_t_h_8h_source.html">Tri6TH.h</a></li>
 <li>src/FiniteElements/Trapping/Tri3TH.cxx</li>
+<li>src/FiniteElements/Trapping/Tri6TH.cxx</li>
 </ul>
 </div><!-- contents -->
 <p>
