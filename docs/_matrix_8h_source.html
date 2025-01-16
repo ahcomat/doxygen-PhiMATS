@@ -90,47 +90,51 @@ $(function() {
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">typedef</span> Eigen::RowVector&lt;double, 2&gt; RowVecd2; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">typedef</span> Eigen::RowVector&lt;double, 3&gt; RowVecd3;             </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">typedef</span> Eigen::RowVector&lt;double, 4&gt; RowVecd4;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">typedef</span> Eigen::RowVector&lt;double, 8&gt; RowVecd8; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 2, 2&gt; Matd2x2;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 3, 3, Eigen::RowMajor&gt; Matd3x3;  <span class="comment">// `RowMajor` for non-symmetric element stiffness matrix.</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 4, 4&gt; Matd4x4; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 6, 6&gt; Matd6x6;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 8, 8&gt; Matd8x8;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 24, 24&gt; Matd24x24; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 4, 2&gt; Matd4x2;           </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 2, 4&gt; Matd2x4;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 2, 3&gt; Matd2x3;            </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 3, 2&gt; Matd3x2;   </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 3, 6&gt; Matd3x6;     </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 3, 8&gt; Matd3x8;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 8, 3&gt; Matd8x3; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">typedef</span> Eigen::RowVector&lt;double, 6&gt; RowVecd6;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">typedef</span> Eigen::RowVector&lt;double, 8&gt; RowVecd8; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 2, 2&gt; Matd2x2;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 3, 3, Eigen::RowMajor&gt; Matd3x3;  <span class="comment">// `RowMajor` for non-symmetric element stiffness matrix.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 4, 4&gt; Matd4x4; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 6, 6&gt; Matd6x6;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 8, 8&gt; Matd8x8;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 24, 24&gt; Matd24x24; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 4, 2&gt; Matd4x2;           </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 2, 4&gt; Matd2x4;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 2, 3&gt; Matd2x3;            </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 3, 2&gt; Matd3x2;   </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 2, 6&gt; Matd2x6;            </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 6, 2&gt; Matd6x2;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 6, 24&gt; Matd6x24; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">// Aliases based on `std::variant`.</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">// NOTE: This is type alias, not variable definition.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 3, 6&gt; Matd3x6;     </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 3, 8&gt; Matd3x8;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 8, 3&gt; Matd8x3; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 6, 24&gt; Matd6x24; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">// For some reason this doesn&#39;t work O.o and makes extremely unexpected behavior </span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">// /**</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">//  * @brief Variants `KMatx`.</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">//  * </span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">//  */</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">// using T_KMatx = std::variant&lt;Matd2x2, Matd3x3&gt;;</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">   83</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">T_DMatx</a> = std::variant&lt;Matd2x2, Matd3x3, Matd6x6&gt;;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="_matrix_8h.html#a523acc52416b58cdb5c9c3b1b29dcbfd">   89</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_matrix_8h.html#a523acc52416b58cdb5c9c3b1b29dcbfd">T_ElStiffMatx</a> = std::variant&lt;vector&lt;Matd3x3&gt;*, vector&lt;Matd4x4&gt;*, vector&lt;Matd6x6&gt;*, vector&lt;Matd8x8&gt;*, vector&lt;Matd24x24&gt;*&gt;;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">   95</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> = std::variant&lt;vector&lt;ColVecd2&gt;, vector&lt;ColVecd3&gt;, vector&lt;ColVecd6&gt;&gt;;</div>
-<div class="ttc" id="a_matrix_8h_html_a523acc52416b58cdb5c9c3b1b29dcbfd"><div class="ttname"><a href="_matrix_8h.html#a523acc52416b58cdb5c9c3b1b29dcbfd">T_ElStiffMatx</a></div><div class="ttdeci">std::variant&lt; vector&lt; Matd3x3 &gt; *, vector&lt; Matd4x4 &gt; *, vector&lt; Matd6x6 &gt; *, vector&lt; Matd8x8 &gt; *, vector&lt; Matd24x24 &gt; * &gt; T_ElStiffMatx</div><div class="ttdoc">Variants elStiffMatx. It is a pointer because we need this to avoid copy in Elements::getElStiffMatx.</div><div class="ttdef"><b>Definition:</b> Matrix.h:89</div></div>
-<div class="ttc" id="a_matrix_8h_html_a779bdf6444b5437f5865e98eaaa0481d"><div class="ttname"><a href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">T_DMatx</a></div><div class="ttdeci">std::variant&lt; Matd2x2, Matd3x3, Matd6x6 &gt; T_DMatx</div><div class="ttdoc">Variants DMatx.</div><div class="ttdef"><b>Definition:</b> Matrix.h:83</div></div>
-<div class="ttc" id="a_matrix_8h_html_aaf467440c68b7f73cf4a9c2b9ce1e1ea"><div class="ttname"><a href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a></div><div class="ttdeci">std::variant&lt; vector&lt; ColVecd2 &gt;, vector&lt; ColVecd3 &gt;, vector&lt; ColVecd6 &gt; &gt; T_nodStres</div><div class="ttdoc">Variants for vector (tensor in Voigt notation) quantities.</div><div class="ttdef"><b>Definition:</b> Matrix.h:95</div></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">// Aliases based on `std::variant`.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">// NOTE: This is type alias, not variable definition.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">// For some reason this doesn&#39;t work O.o and makes extremely unexpected behavior </span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">// /**</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">//  * @brief Variants `KMatx`.</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">//  * </span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">//  */</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">// using T_KMatx = std::variant&lt;Matd2x2, Matd3x3&gt;;</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">   87</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">T_DMatx</a> = std::variant&lt;Matd2x2, Matd3x3, Matd6x6&gt;;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="_matrix_8h.html#a523acc52416b58cdb5c9c3b1b29dcbfd">   93</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_matrix_8h.html#a523acc52416b58cdb5c9c3b1b29dcbfd">T_ElStiffMatx</a> = std::variant&lt;vector&lt;Matd3x3&gt;*, vector&lt;Matd4x4&gt;*, vector&lt;Matd6x6&gt;*, vector&lt;Matd8x8&gt;*, vector&lt;Matd24x24&gt;*&gt;;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">   99</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> = std::variant&lt;vector&lt;ColVecd2&gt;, vector&lt;ColVecd3&gt;, vector&lt;ColVecd6&gt;&gt;;</div>
+<div class="ttc" id="a_matrix_8h_html_a523acc52416b58cdb5c9c3b1b29dcbfd"><div class="ttname"><a href="_matrix_8h.html#a523acc52416b58cdb5c9c3b1b29dcbfd">T_ElStiffMatx</a></div><div class="ttdeci">std::variant&lt; vector&lt; Matd3x3 &gt; *, vector&lt; Matd4x4 &gt; *, vector&lt; Matd6x6 &gt; *, vector&lt; Matd8x8 &gt; *, vector&lt; Matd24x24 &gt; * &gt; T_ElStiffMatx</div><div class="ttdoc">Variants elStiffMatx. It is a pointer because we need this to avoid copy in Elements::getElStiffMatx.</div><div class="ttdef"><b>Definition:</b> Matrix.h:93</div></div>
+<div class="ttc" id="a_matrix_8h_html_a779bdf6444b5437f5865e98eaaa0481d"><div class="ttname"><a href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">T_DMatx</a></div><div class="ttdeci">std::variant&lt; Matd2x2, Matd3x3, Matd6x6 &gt; T_DMatx</div><div class="ttdoc">Variants DMatx.</div><div class="ttdef"><b>Definition:</b> Matrix.h:87</div></div>
+<div class="ttc" id="a_matrix_8h_html_aaf467440c68b7f73cf4a9c2b9ce1e1ea"><div class="ttname"><a href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a></div><div class="ttdeci">std::variant&lt; vector&lt; ColVecd2 &gt;, vector&lt; ColVecd3 &gt;, vector&lt; ColVecd6 &gt; &gt; T_nodStres</div><div class="ttdoc">Variants for vector (tensor in Voigt notation) quantities.</div><div class="ttdef"><b>Definition:</b> Matrix.h:99</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <p>
     Documentation licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. <br>

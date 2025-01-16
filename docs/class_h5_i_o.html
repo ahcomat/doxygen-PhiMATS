@@ -73,9 +73,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a193496bccb96c99a535aa81c39238891"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_h5_i_o.html#a193496bccb96c99a535aa81c39238891">H5IO</a> (string <a class="el" href="class_h5_i_o.html#a5757e1b854680ea08e279b854bf3df47">H5FileName</a>)</td></tr>
-<tr class="memdesc:a193496bccb96c99a535aa81c39238891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. Checks if the file exists.  <a href="class_h5_i_o.html#a193496bccb96c99a535aa81c39238891">More...</a><br /></td></tr>
-<tr class="separator:a193496bccb96c99a535aa81c39238891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84207ad30f876bd38cf9a2bb9301fcbc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_h5_i_o.html#a84207ad30f876bd38cf9a2bb9301fcbc">H5IO</a> (string <a class="el" href="class_h5_i_o.html#a5757e1b854680ea08e279b854bf3df47">H5FileName</a>, <a class="el" href="class_logger.html">Logger</a> &amp;<a class="el" href="class_h5_i_o.html#a061bc50b56e6fce700dc53ef12bac4d7">logger</a>)</td></tr>
+<tr class="memdesc:a84207ad30f876bd38cf9a2bb9301fcbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. Checks if the file exists.  <a href="class_h5_i_o.html#a84207ad30f876bd38cf9a2bb9301fcbc">More...</a><br /></td></tr>
+<tr class="separator:a84207ad30f876bd38cf9a2bb9301fcbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17b4f04e394cbf558b83e2ac722e9b1b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_h5_i_o.html#a17b4f04e394cbf558b83e2ac722e9b1b">ReadScalar</a> (const string &amp;dsetName)</td></tr>
 <tr class="memdesc:a17b4f04e394cbf558b83e2ac722e9b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a scalar input from hdf5 file.  <a href="class_h5_i_o.html#a17b4f04e394cbf558b83e2ac722e9b1b">More...</a><br /></td></tr>
 <tr class="separator:a17b4f04e394cbf558b83e2ac722e9b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,10 +106,14 @@ Private Attributes</h2></td></tr>
 const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_h5_i_o.html#a5757e1b854680ea08e279b854bf3df47">H5FileName</a></td></tr>
 <tr class="memdesc:a5757e1b854680ea08e279b854bf3df47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of HDF file. <br /></td></tr>
 <tr class="separator:a5757e1b854680ea08e279b854bf3df47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a061bc50b56e6fce700dc53ef12bac4d7"><td class="memItemLeft" align="right" valign="top"><a id="a061bc50b56e6fce700dc53ef12bac4d7"></a>
+<a class="el" href="class_logger.html">Logger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_h5_i_o.html#a061bc50b56e6fce700dc53ef12bac4d7">logger</a></td></tr>
+<tr class="memdesc:a061bc50b56e6fce700dc53ef12bac4d7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_logger.html">Logger</a> object for handeling interface messages. <br /></td></tr>
+<tr class="separator:a061bc50b56e6fce700dc53ef12bac4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a193496bccb96c99a535aa81c39238891"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a193496bccb96c99a535aa81c39238891">&#9670;&nbsp;</a></span>H5IO()</h2>
+<a id="a84207ad30f876bd38cf9a2bb9301fcbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84207ad30f876bd38cf9a2bb9301fcbc">&#9670;&nbsp;</a></span>H5IO()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -118,8 +122,18 @@ const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
           <td class="memname">H5IO::H5IO </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>H5FileName</em></td><td>)</td>
+          <td class="paramname"><em>H5FileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="class_logger.html">Logger</a> &amp;&#160;</td>
+          <td class="paramname"><em>logger</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -85,8 +85,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a551f176739f5e40805fd2955150f7674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5850c428936781d0ccd76bc5390d09a3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_e_m__utils_1_1_pre_processing_1_1_pre_processing.html#a5850c428936781d0ccd76bc5390d09a3">CloseFileHDF5</a> (self)</td></tr>
 <tr class="separator:a5850c428936781d0ccd76bc5390d09a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33d53c8a70bb5cf1cf653e93699ebfea"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_e_m__utils_1_1_pre_processing_1_1_pre_processing.html#a33d53c8a70bb5cf1cf653e93699ebfea">WriteOutputFile</a> (self, FName=None, overwrite=False, AvCon=True, ExitFlux=False, TDS=False, Plasticity=True)</td></tr>
-<tr class="separator:a33d53c8a70bb5cf1cf653e93699ebfea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a324f54dd119ca3e2a857956fd82ff8df"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_e_m__utils_1_1_pre_processing_1_1_pre_processing.html#a324f54dd119ca3e2a857956fd82ff8df">WriteOutputFile</a> (self, FName=None, OVERWRITE=False, AVCON=True, FLUX=False, AVFLUX=False, TDS=False, Plasticity=True)</td></tr>
+<tr class="separator:a324f54dd119ca3e2a857956fd82ff8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -296,8 +296,8 @@ Raises:
 </pre> 
 </div>
 </div>
-<a id="a33d53c8a70bb5cf1cf653e93699ebfea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33d53c8a70bb5cf1cf653e93699ebfea">&#9670;&nbsp;</a></span>WriteOutputFile()</h2>
+<a id="a324f54dd119ca3e2a857956fd82ff8df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a324f54dd119ca3e2a857956fd82ff8df">&#9670;&nbsp;</a></span>WriteOutputFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -318,19 +318,25 @@ Raises:
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>overwrite</em> = <code>False</code>, </td>
+          <td class="paramname"><em>OVERWRITE</em> = <code>False</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>AvCon</em> = <code>True</code>, </td>
+          <td class="paramname"><em>AVCON</em> = <code>True</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>ExitFlux</em> = <code>False</code>, </td>
+          <td class="paramname"><em>FLUX</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>AVFLUX</em> = <code>False</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -355,14 +361,15 @@ Raises:
 
 Args:
     FName (str, optional): The base name of the output file. Defaults to `self.Simul`.
-    overwrite (bool, optional): Flag for overwriting the file. Defaults to False.
-    AvCon (bool, optional): Average concentration flag. Defaults to True.
-    ExitFlux (bool, optional): Exit flux flag. Defaults to False.
+    OVERWRITE (bool, optional): Flag for overwriting the file. Defaults to False.
+    AVCON (bool, optional): Average concentration flag. Defaults to True.
+    FLUX (bool, optional): Flux field flag. Defaults to False.
+    AVFLUX (bool, optional): Average flux flag. Defaults to False.
     TDS (bool, optional): TDS simulation flag. Defaults to False.
     Plasticity (bool, optional): Plasticity parameters flag. Defaults to True.
 
 Raises:
-    OSError: If file exists anr overwrite==False</pre> 
+    OSError: If file exists anr OVERWRITE==False</pre> 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

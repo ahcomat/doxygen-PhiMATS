@@ -77,13 +77,13 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad397b14c88da2eec78ddd2d3d5072fd2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_e_m__utils_1_1_post_processing_1_1_write_x_d_m_f.html#ad397b14c88da2eec78ddd2d3d5072fd2">__init__</a> (self, fileName, elementName, nSteps=None, simulationType=None, skip=1)</td></tr>
-<tr class="separator:ad397b14c88da2eec78ddd2d3d5072fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a427fc07e9ae34bbbdf1b2e4fc13cff5d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_e_m__utils_1_1_post_processing_1_1_write_x_d_m_f.html#a427fc07e9ae34bbbdf1b2e4fc13cff5d">__init__</a> (self, fileName, elementName, nSteps, simulationType, START=1, FLUX=False, skip=1)</td></tr>
+<tr class="separator:a427fc07e9ae34bbbdf1b2e4fc13cff5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6170699a6f3552143b4e69c0063ad8df"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_e_m__utils_1_1_post_processing_1_1_write_x_d_m_f.html#a6170699a6f3552143b4e69c0063ad8df">prettify</a> (self, elem)</td></tr>
 <tr class="separator:a6170699a6f3552143b4e69c0063ad8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe217b09bc4d283746bb62e6dddc30b4"><td class="memItemLeft" align="right" valign="top"><a id="abe217b09bc4d283746bb62e6dddc30b4"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>WriteCon2D</b> (self, t)</td></tr>
-<tr class="separator:abe217b09bc4d283746bb62e6dddc30b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73379fb12d801d499d9d329964ac8c51"><td class="memItemLeft" align="right" valign="top"><a id="a73379fb12d801d499d9d329964ac8c51"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>WriteCon2D</b> (self, t, FLUX)</td></tr>
+<tr class="separator:a73379fb12d801d499d9d329964ac8c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3134eb01e8d43a13823d00563bfaaeaf"><td class="memItemLeft" align="right" valign="top"><a id="a3134eb01e8d43a13823d00563bfaaeaf"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>WritePlastic2D</b> (self, t)</td></tr>
 <tr class="separator:a3134eb01e8d43a13823d00563bfaaeaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,6 +108,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ab2350fad0c45aff2f0958bd2150288eb"><td class="memItemLeft" align="right" valign="top"><a id="ab2350fad0c45aff2f0958bd2150288eb"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>nTotElements</b></td></tr>
 <tr class="separator:ab2350fad0c45aff2f0958bd2150288eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ab037733a35f5e17ba61f133592cc6"><td class="memItemLeft" align="right" valign="top"><a id="a94ab037733a35f5e17ba61f133592cc6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>nSteps</b></td></tr>
+<tr class="separator:a94ab037733a35f5e17ba61f133592cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af889556d72fdb8adfaba9a3ff3ea377b"><td class="memItemLeft" align="right" valign="top"><a id="af889556d72fdb8adfaba9a3ff3ea377b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>element_config</b></td></tr>
 <tr class="separator:af889556d72fdb8adfaba9a3ff3ea377b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,8 +131,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aac0e9947e41a59aa18f926dbaeb8fa6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad397b14c88da2eec78ddd2d3d5072fd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad397b14c88da2eec78ddd2d3d5072fd2">&#9670;&nbsp;</a></span>__init__()</h2>
+<a id="a427fc07e9ae34bbbdf1b2e4fc13cff5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a427fc07e9ae34bbbdf1b2e4fc13cff5d">&#9670;&nbsp;</a></span>__init__()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,13 +159,25 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>nSteps</em> = <code>None</code>, </td>
+          <td class="paramname"><em>nSteps</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>simulationType</em> = <code>None</code>, </td>
+          <td class="paramname"><em>simulationType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>START</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>FLUX</em> = <code>False</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -182,8 +197,10 @@ Public Attributes</h2></td></tr>
 Args:
     fileName (str): Base name for the XDMF file.
     elementName (str): Mesh element type (meshio convention).
-    nSteps (int, optional): Number of time steps. If None, reads from the HDF5 file.
-    simulationType (str, optional): Type of simulation. Allowed: ["Transport2D", "Elastic2D", "Elastic3D", "Plastic2D", "Plastic3D"].
+    nSteps (int): Number of time steps.
+    simulationType (str): Type of simulation. Allowed: ["Transport2D", "Elastic2D", "Elastic3D", "Plastic2D", "Plastic3D"].
+    START (int, optional): Initial step number. Defaults to 1.
+    FLUX (bool, optional): Flag for flux field. Defaults to False.
     skip (int, optional): Number of steps to skip when writing outputs. Defaults to 1.
 </pre> 
 </div>

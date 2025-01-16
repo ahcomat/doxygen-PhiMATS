@@ -25,5 +25,6 @@ var searchData=
   ['tri3t_2eh_268',['Tri3T.h',['../_tri3_t_8h.html',1,'']]],
   ['tri3th_269',['Tri3TH',['../class_tri3_t_h.html',1,'']]],
   ['tri3th_2eh_270',['Tri3TH.h',['../_tri3_t_h_8h.html',1,'']]],
-  ['tri6th_2eh_271',['Tri6TH.h',['../_tri6_t_h_8h.html',1,'']]]
+  ['tri6th_271',['Tri6TH',['../class_tri6_t_h.html',1,'']]],
+  ['tri6th_2eh_272',['Tri6TH.h',['../_tri6_t_h_8h.html',1,'']]]
 ];
