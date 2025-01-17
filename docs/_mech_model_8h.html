@@ -73,7 +73,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A class based on mechanical models to interface with PETSc based global stiffness matrix <code>A</code>, solution vector <code>x</code> and RHS <code>a</code>.  
+<p>A class for mechanical models. Interface with <code>PETSc</code>.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;petscvec.h&gt;</code><br />
 <code>#include &lt;petscmat.h&gt;</code><br />
@@ -94,11 +94,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class based on mechanical models to interface with PETSc based global stiffness matrix <code>A</code>, solution vector <code>x</code> and RHS <code>a</code>. </p>
+<div class="textblock"><p>A class for mechanical models. Interface with <code>PETSc</code>. </p>
 <p>Main functions:</p><ul>
 <li>Calls <code><a class="el" href="class_base_elem_mech.html#a4196a7724865338c4f076ae991d2c25c" title="Calculates the element stiffness matrix.">BaseElemMech::CalcElemStiffMatx</a></code> to build the local stiffness matrix.</li>
 <li>Assembles the global stiffness matrix.</li>
 <li>Initializes and applies boundary conditions.</li>
+<li>Manages non-linear solvers through <code>SNES</code>.</li>
 <li><p class="startli">Manages the output by writing to H5file_out.</p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd></dd></dl>
 </li>
