@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Phase-field Multiphysics Materials Simulator: src/include/Solvers/LinearElastic.h File Reference</title>
+<title>Phase-field Multiphysics Materials Simulator: src/include/Version.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,7 +20,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="PhiMATS.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="PHIMATS.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Phase-field Multiphysics Materials Simulator
    </div>
@@ -62,33 +62,51 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b0856f6b0d80ccb263b2f415c91f9e17.html">include</a></li><li class="navelem"><a class="el" href="dir_34d29177ee5ee21a8a7f2f185b2cb9e2.html">Solvers</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b0856f6b0d80ccb263b2f415c91f9e17.html">include</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">LinearElastic.h File Reference</div>  </div>
+<div class="title">Version.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A wrapper for PETSc linear solver <code>ksp</code> mainly for linear elasticity.  
+<p>A header file for centralized control of versions.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;BaseSolver.h&quot;</code><br />
-</div>
-<p><a href="_solvers_2_linear_elastic_8h_source.html">Go to the source code of this file.</a></p>
+
+<p><a href="_version_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_linear_elastic.html">LinearElastic</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a1a53b724b6de666faa8a9e0d06d1055f"><td class="memItemLeft" align="right" valign="top"><a id="a1a53b724b6de666faa8a9e0d06d1055f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION_MAJOR</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a1a53b724b6de666faa8a9e0d06d1055f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0cb52afb79b185b1bf82c7e235f682b"><td class="memItemLeft" align="right" valign="top"><a id="ae0cb52afb79b185b1bf82c7e235f682b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION_MINOR</b>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:ae0cb52afb79b185b1bf82c7e235f682b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a901edadf17488bb6be1ac9a1e3cfea7a"><td class="memItemLeft" align="right" valign="top"><a id="a901edadf17488bb6be1ac9a1e3cfea7a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION_PATCH</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a901edadf17488bb6be1ac9a1e3cfea7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a698acb89e1bf5837b33c30ef35c30044"><td class="memItemLeft" align="right" valign="top"><a id="a698acb89e1bf5837b33c30ef35c30044"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION_STRING</b>&#160;&#160;&#160;&quot;v0.4.0&quot;</td></tr>
+<tr class="separator:a698acb89e1bf5837b33c30ef35c30044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ee35570b8aaef9829b3b69a049ab039"><td class="memItemLeft" align="right" valign="top"><a id="a2ee35570b8aaef9829b3b69a049ab039"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION_DATE</b>&#160;&#160;&#160;&quot;2025-01-15&quot;</td></tr>
+<tr class="separator:a2ee35570b8aaef9829b3b69a049ab039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7a403421a720d9d5b310910fd652022"><td class="memItemLeft" align="right" valign="top"><a id="aa7a403421a720d9d5b310910fd652022"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PROJECT_WEBSITE</b>&#160;&#160;&#160;&quot;https://comp-mat.com/phimats&quot;</td></tr>
+<tr class="separator:aa7a403421a720d9d5b310910fd652022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec8869555902e013c4e3250de0c9b90"><td class="memItemLeft" align="right" valign="top"><a id="a5ec8869555902e013c4e3250de0c9b90"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PROJECT_CITATION</b>&#160;&#160;&#160;&quot;Your Name, PhiMATS, 2025, DOI:10.xxxx/phiMATS&quot;</td></tr>
+<tr class="separator:a5ec8869555902e013c4e3250de0c9b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A wrapper for PETSc linear solver <code>ksp</code> mainly for linear elasticity. </p>
+<div class="textblock"><p>A header file for centralized control of versions. </p>
 <dl class="section author"><dt>Author</dt><dd>Abdelrahman Hussein (<a href="#" onclick="location.href='mai'+'lto:'+'a.h'+'.a'+'.hu'+'ss'+'ein'+'@o'+'utl'+'oo'+'k.c'+'om'; return false;">a.h.a<span style="display: none;">.nosp@m.</span>.hus<span style="display: none;">.nosp@m.</span>sein@<span style="display: none;">.nosp@m.</span>outl<span style="display: none;">.nosp@m.</span>ook.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2024-05-28</dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (C) 2024 Abdelrahman Hussein</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025-01-10</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (C) 2025 Abdelrahman Hussein</dd></dl>
 <p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
 <p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
 <p>You should have received a copy of the GNU General Public License along with this program. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>. </p>
