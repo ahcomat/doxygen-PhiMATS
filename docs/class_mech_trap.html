@@ -83,17 +83,23 @@ Inheritance diagram for MechTrap:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae2ff90d40246f6ed98e7bb1f462339a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#ae2ff90d40246f6ed98e7bb1f462339a5">MechTrap</a> (string dimensions, <a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File, int iSet)</td></tr>
-<tr class="memdesc:ae2ff90d40246f6ed98e7bb1f462339a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor, reads mechanical trapping parameters from hdf5 file.  <a href="class_mech_trap.html#ae2ff90d40246f6ed98e7bb1f462339a5">More...</a><br /></td></tr>
-<tr class="separator:ae2ff90d40246f6ed98e7bb1f462339a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4cff52ad268ac7d915b3cd5c569c57d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#ad4cff52ad268ac7d915b3cd5c569c57d">MechTrap</a> (string dimensions, <a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File, int iSet, <a class="el" href="class_logger.html">Logger</a> &amp;<a class="el" href="class_mech_trap.html#a1419844dc399712a4734af73db50971c">logger</a>)</td></tr>
+<tr class="memdesc:ad4cff52ad268ac7d915b3cd5c569c57d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor, reads mechanical trapping parameters from HDF5 file.  <a href="class_mech_trap.html#ad4cff52ad268ac7d915b3cd5c569c57d">More...</a><br /></td></tr>
+<tr class="separator:ad4cff52ad268ac7d915b3cd5c569c57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a699e51dd1865e47ff32bf3cd330a00eb"><td class="memItemLeft" align="right" valign="top"><a id="a699e51dd1865e47ff32bf3cd330a00eb"></a>
 <a class="el" href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">T_DMatx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#a699e51dd1865e47ff32bf3cd330a00eb">CalcKMatx</a> (const double T)</td></tr>
-<tr class="memdesc:a699e51dd1865e47ff32bf3cd330a00eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the phase-field dependent diffusivity matrix. <br /></td></tr>
+<tr class="memdesc:a699e51dd1865e47ff32bf3cd330a00eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the diffusivity matrix. <br /></td></tr>
 <tr class="separator:a699e51dd1865e47ff32bf3cd330a00eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46d0807886d3b7bb8dab7d62ba052aeb"><td class="memItemLeft" align="right" valign="top"><a id="a46d0807886d3b7bb8dab7d62ba052aeb"></a>
 <a class="el" href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">T_DMatx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#a46d0807886d3b7bb8dab7d62ba052aeb">CalcTMatx</a> (const double T)</td></tr>
-<tr class="memdesc:a46d0807886d3b7bb8dab7d62ba052aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the phase-field dependent trapping matrix. <br /></td></tr>
+<tr class="memdesc:a46d0807886d3b7bb8dab7d62ba052aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the dislocation trapping matrix. <br /></td></tr>
 <tr class="separator:a46d0807886d3b7bb8dab7d62ba052aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2f824125bafec7f904a79b6ec5d28e2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#af2f824125bafec7f904a79b6ec5d28e2">getDiffRatio</a> () const</td></tr>
+<tr class="memdesc:af2f824125bafec7f904a79b6ec5d28e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the diffusivity ratio <code>m</code>.  <a href="class_mech_trap.html#af2f824125bafec7f904a79b6ec5d28e2">More...</a><br /></td></tr>
+<tr class="separator:af2f824125bafec7f904a79b6ec5d28e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed7de6befb2cccb2e8d2edc801ac4907"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#aed7de6befb2cccb2e8d2edc801ac4907">getTrappingCapacity</a> () const</td></tr>
+<tr class="memdesc:aed7de6befb2cccb2e8d2edc801ac4907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the trapping capacity <code>s</code>.  <a href="class_mech_trap.html#aed7de6befb2cccb2e8d2edc801ac4907">More...</a><br /></td></tr>
+<tr class="separator:aed7de6befb2cccb2e8d2edc801ac4907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_base_trapping"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_base_trapping')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_base_trapping.html">BaseTrapping</a></td></tr>
 <tr class="memitem:a0eb018bde240add0cb2eb1c20fd09795 inherit pub_methods_class_base_trapping"><td class="memItemLeft" align="right" valign="top"><a id="a0eb018bde240add0cb2eb1c20fd09795"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>BaseTrapping</b> (string dimensions)</td></tr>
@@ -108,23 +114,43 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>getDims</b> ()</td>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ad68482f4ef9a65aed43df60bba560b36"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#ad68482f4ef9a65aed43df60bba560b36">D0x1</a></td></tr>
-<tr class="memdesc:ad68482f4ef9a65aed43df60bba560b36"><td class="mdescLeft">&#160;</td><td class="mdescRight">@ brief diffusivity parameters  <a href="class_mech_trap.html#ad68482f4ef9a65aed43df60bba560b36">More...</a><br /></td></tr>
-<tr class="separator:ad68482f4ef9a65aed43df60bba560b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba6c193bca8efeb296a0ac84fe20978f"><td class="memItemLeft" align="right" valign="top"><a id="aba6c193bca8efeb296a0ac84fe20978f"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>D0y1</b></td></tr>
-<tr class="separator:aba6c193bca8efeb296a0ac84fe20978f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93a1c032fd79d486325ea8538ef14071"><td class="memItemLeft" align="right" valign="top"><a id="a93a1c032fd79d486325ea8538ef14071"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>DQx1</b></td></tr>
-<tr class="separator:a93a1c032fd79d486325ea8538ef14071"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27859a8befd5353b15915f77fda9ccae"><td class="memItemLeft" align="right" valign="top"><a id="a27859a8befd5353b15915f77fda9ccae"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>DQy1</b></td></tr>
-<tr class="separator:a27859a8befd5353b15915f77fda9ccae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1419844dc399712a4734af73db50971c"><td class="memItemLeft" align="right" valign="top"><a id="a1419844dc399712a4734af73db50971c"></a>
+<a class="el" href="class_logger.html">Logger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#a1419844dc399712a4734af73db50971c">logger</a></td></tr>
+<tr class="memdesc:a1419844dc399712a4734af73db50971c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_logger.html">Logger</a> object for handeling interface messages. <br /></td></tr>
+<tr class="separator:a1419844dc399712a4734af73db50971c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b7fa5ff414365176d045baa977f422"><td class="memItemLeft" align="right" valign="top"><a id="ae1b7fa5ff414365176d045baa977f422"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#ae1b7fa5ff414365176d045baa977f422">D0x</a></td></tr>
+<tr class="memdesc:ae1b7fa5ff414365176d045baa977f422"><td class="mdescLeft">&#160;</td><td class="mdescRight">Anisotropic diffusivity parameters. <br /></td></tr>
+<tr class="separator:ae1b7fa5ff414365176d045baa977f422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac1adda92205b4a0eda4d79c0812ea6"><td class="memItemLeft" align="right" valign="top"><a id="a2ac1adda92205b4a0eda4d79c0812ea6"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>D0y</b></td></tr>
+<tr class="separator:a2ac1adda92205b4a0eda4d79c0812ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2429423256c5e2ac4857b0bd07fb1ccc"><td class="memItemLeft" align="right" valign="top"><a id="a2429423256c5e2ac4857b0bd07fb1ccc"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>D0z</b></td></tr>
+<tr class="separator:a2429423256c5e2ac4857b0bd07fb1ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3da583db734cbf3da600e10904847bd7"><td class="memItemLeft" align="right" valign="top"><a id="a3da583db734cbf3da600e10904847bd7"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>DQx</b></td></tr>
+<tr class="separator:a3da583db734cbf3da600e10904847bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae8ac48ade4643f95f78e1061f7b9b41"><td class="memItemLeft" align="right" valign="top"><a id="aae8ac48ade4643f95f78e1061f7b9b41"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>DQy</b></td></tr>
+<tr class="separator:aae8ac48ade4643f95f78e1061f7b9b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a883658a5e5f034e4f26dafeb28c06632"><td class="memItemLeft" align="right" valign="top"><a id="a883658a5e5f034e4f26dafeb28c06632"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>DQz</b></td></tr>
+<tr class="separator:a883658a5e5f034e4f26dafeb28c06632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35dd9a2efa9bdd24e8d2c5ab3c5340f0"><td class="memItemLeft" align="right" valign="top"><a id="a35dd9a2efa9bdd24e8d2c5ab3c5340f0"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#a35dd9a2efa9bdd24e8d2c5ab3c5340f0">Vh</a></td></tr>
-<tr class="memdesc:a35dd9a2efa9bdd24e8d2c5ab3c5340f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Phase trapping parameter <br  />
- <br /></td></tr>
+<tr class="memdesc:a35dd9a2efa9bdd24e8d2c5ab3c5340f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Partial molar volume for hydrogen [m]. <br /></td></tr>
 <tr class="separator:a35dd9a2efa9bdd24e8d2c5ab3c5340f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f233faa9ac2dbdbdeda4a3028d0302"><td class="memItemLeft" align="right" valign="top"><a id="a45f233faa9ac2dbdbdeda4a3028d0302"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#a45f233faa9ac2dbdbdeda4a3028d0302">m</a></td></tr>
+<tr class="memdesc:a45f233faa9ac2dbdbdeda4a3028d0302"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dislocation to lattice diffusivity ratio <br  />
+ <br /></td></tr>
+<tr class="separator:a45f233faa9ac2dbdbdeda4a3028d0302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e1ffbdafea1974ea6235e3aedd04c18"><td class="memItemLeft" align="right" valign="top"><a id="a0e1ffbdafea1974ea6235e3aedd04c18"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#a0e1ffbdafea1974ea6235e3aedd04c18">s</a></td></tr>
+<tr class="memdesc:a0e1ffbdafea1974ea6235e3aedd04c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trapping capacity <br  />
+ <br /></td></tr>
+<tr class="separator:a0e1ffbdafea1974ea6235e3aedd04c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -138,8 +164,8 @@ const string&#160;</td><td class="memItemRight" valign="bottom"><b>dims</b></td>
 <tr class="separator:ae00f808549cc2824f7c61216f3b01a81 inherit pro_attribs_class_base_material"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae2ff90d40246f6ed98e7bb1f462339a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2ff90d40246f6ed98e7bb1f462339a5">&#9670;&nbsp;</a></span>MechTrap()</h2>
+<a id="ad4cff52ad268ac7d915b3cd5c569c57d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4cff52ad268ac7d915b3cd5c569c57d">&#9670;&nbsp;</a></span>MechTrap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,7 +186,13 @@ const string&#160;</td><td class="memItemRight" valign="bottom"><b>dims</b></td>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iSet</em>&#160;</td>
+          <td class="paramname"><em>iSet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_logger.html">Logger</a> &amp;&#160;</td>
+          <td class="paramname"><em>logger</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -170,40 +202,57 @@ const string&#160;</td><td class="memItemRight" valign="bottom"><b>dims</b></td>
       </table>
 </div><div class="memdoc">
 
-<p>Constructor, reads mechanical trapping parameters from hdf5 file. </p>
+<p>Constructor, reads mechanical trapping parameters from HDF5 file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">H5File</td><td>Input file. </td></tr>
-    <tr><td class="paramname">matType</td><td>Material isotropy. </td></tr>
+    <tr><td class="paramname">dimensions</td><td>Dimensions of the model. Options ["2D" or "3D"]. </td></tr>
+    <tr><td class="paramname">H5File</td><td>Input HDF5 file. </td></tr>
+    <tr><td class="paramname">iSet</td><td>Set number. </td></tr>
+    <tr><td class="paramname">logger</td><td><a class="el" href="class_logger.html">Logger</a> object. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad68482f4ef9a65aed43df60bba560b36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad68482f4ef9a65aed43df60bba560b36">&#9670;&nbsp;</a></span>D0x1</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="af2f824125bafec7f904a79b6ec5d28e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2f824125bafec7f904a79b6ec5d28e2">&#9670;&nbsp;</a></span>getDiffRatio()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double MechTrap::D0x1</td>
+          <td class="memname">double MechTrap::getDiffRatio </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>@ brief diffusivity parameters </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>have to modify </dd></dl>
+<p>Get the diffusivity ratio <code>m</code>. </p>
+<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
+
+</div>
+</div>
+<a id="aed7de6befb2cccb2e8d2edc801ac4907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed7de6befb2cccb2e8d2edc801ac4907">&#9670;&nbsp;</a></span>getTrappingCapacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double MechTrap::getTrappingCapacity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the trapping capacity <code>s</code>. </p>
+<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
 
 </div>
 </div>
