@@ -71,6 +71,7 @@ $(function() {
 <li>CalcAvCon()
 : <a class="el" href="class_base_elem_transport.html#a951affbd3991c766649d7ef70a39403d">BaseElemTransport</a>
 , <a class="el" href="class_base_elem_trap.html#a7860ab096090eba3f1b87926bcfff0df">BaseElemTrap</a>
+, <a class="el" href="class_quad4_t_h.html#a85983510abc17a7e9fbc86f8890c6710">Quad4TH</a>
 , <a class="el" href="class_tri3_t.html#aa91d149806601b99197d18400128a468">Tri3T</a>
 , <a class="el" href="class_tri3_t_h.html#ade3c41ac36f8edccdfe50370c163a925">Tri3TH</a>
 , <a class="el" href="class_tri6_t_h.html#aad27a085228404a42b62b086a2863afd">Tri6TH</a>
@@ -86,8 +87,10 @@ $(function() {
 , <a class="el" href="class_tri6_t_h.html#a14f4bda5dbbd4eccdfa8c2a153d1c2bf">Tri6TH</a>
 </li>
 <li>CalcDMatx()
-: <a class="el" href="class_trap_g_b.html#a4801c6dec7d09156e0cf5a15a8e62bdb">TrapGB</a>
-, <a class="el" href="class_trap_phase.html#ad51d3973c7eda5d6cc3397d92174ea3e">TrapPhase</a>
+: <a class="el" href="class_base_trapping.html#a7bb30843673cc64516123b7e6c008824">BaseTrapping</a>
+, <a class="el" href="class_mech_trap.html#a3a006fe1545b829215610cd56244ba22">MechTrap</a>
+, <a class="el" href="class_trap_g_b.html#ab6899719af3851a78efe8ca0231c55cb">TrapGB</a>
+, <a class="el" href="class_trap_phase.html#a979fed19e6b2b6652a92b9eb665a5715">TrapPhase</a>
 </li>
 <li>CalcElDStran()
 : <a class="el" href="class_base_elem_mech.html#a4dd611f8fd87b343c25d560025ce2fcc">BaseElemMech</a>
@@ -103,7 +106,6 @@ $(function() {
 , <a class="el" href="class_base_elem_trap.html#a9f5ce1289eb6f61ae92c7e07d90bda7f">BaseElemTrap</a>
 , <a class="el" href="class_hex8.html#a6f7a6d0fd6731aef682c9891fedd3b50">Hex8</a>
 , <a class="el" href="class_mech_model.html#a722290ac8b56fc683e2c54b92e68cbfb">MechModel</a>
-, <a class="el" href="class_mech_trap_model.html#a4f1b0c20cda103442ec5940953cbed13">MechTrapModel</a>
 , <a class="el" href="class_quad4.html#aa060df81df8b285715c13d520c1e0d60">Quad4</a>
 , <a class="el" href="class_quad4_t.html#aa53c557f946890fdccdb4c39d3741bd1">Quad4T</a>
 , <a class="el" href="class_quad4_t_h.html#ad9158a903541e34918f65c6a0d130d3c">Quad4TH</a>
@@ -128,7 +130,6 @@ $(function() {
 <li>CalcFlux()
 : <a class="el" href="class_base_elem_transport.html#a20422781676cdcf57f862084d225b510">BaseElemTransport</a>
 , <a class="el" href="class_base_elem_trap.html#a46c87e391cc145d530471600a44e1a9b">BaseElemTrap</a>
-, <a class="el" href="class_mech_trap_model.html#a0aeb23b527441edd163ee4e6d743f31c">MechTrapModel</a>
 , <a class="el" href="class_quad4_t.html#a464394283d23ebfdfb0e90045c863568">Quad4T</a>
 , <a class="el" href="class_quad4_t_h.html#a666577cb3b357068710e59556f2bc110">Quad4TH</a>
 , <a class="el" href="class_transport_model.html#a49ce35e509f8dc4e6a3b1e019f4c2c36">TransportModel</a>
@@ -137,21 +138,12 @@ $(function() {
 , <a class="el" href="class_tri3_t_h.html#a7eb49950de56caefcfce43b948303810">Tri3TH</a>
 , <a class="el" href="class_tri6_t_h.html#acc8f48c445f19c6d2746cdf1d83a1661">Tri6TH</a>
 </li>
-<li>CalcGrad()
-: <a class="el" href="class_base_elem_trap.html#ad3765578bfbe804c20dc29382aebe6ce">BaseElemTrap</a>
-, <a class="el" href="class_quad4_t_h.html#a007ca4c22c79dcf03e8df6079cf99051">Quad4TH</a>
-, <a class="el" href="class_tri3_t_h.html#a521712987462ee4187e50d8984f501af">Tri3TH</a>
-, <a class="el" href="class_tri6_t_h.html#af8b4a2ad2b0125158f29935cca4fe0b2">Tri6TH</a>
-</li>
-<li>CalcKMatx()
-: <a class="el" href="class_mech_trap.html#a699e51dd1865e47ff32bf3cd330a00eb">MechTrap</a>
-</li>
 <li>CalcNodVals()
-: <a class="el" href="class_base_elem_mech.html#a42dade57dc5471145a747a79e7364385">BaseElemMech</a>
-, <a class="el" href="class_hex8.html#a6d110c9479f3d3a1facf4949c1db63b7">Hex8</a>
+: <a class="el" href="class_base_elem_mech.html#a20dd5026771f411131c02850a0829432">BaseElemMech</a>
+, <a class="el" href="class_hex8.html#a378d6ccd8225a7fb9a4673f9c46d1332">Hex8</a>
 , <a class="el" href="class_mech_model.html#afa5f07a7749058a9a3037c7ed95b2880">MechModel</a>
-, <a class="el" href="class_quad4.html#ab8f7949513452bac9498d0d6b48d3417">Quad4</a>
-, <a class="el" href="class_tri3.html#a4cab10eaa08e5c24cd98618ca4c5819d">Tri3</a>
+, <a class="el" href="class_quad4.html#a7d703825e4b1d16860fad5d8afbdd222">Quad4</a>
+, <a class="el" href="class_tri3.html#ae2713d077c30cdc7303a4aac613c169f">Tri3</a>
 </li>
 <li>CalcResidual()
 : <a class="el" href="class_mech_model.html#a7729508e0630870626134f86811a4172">MechModel</a>
@@ -190,8 +182,7 @@ $(function() {
 , <a class="el" href="class_tri3.html#ae6d4a745d0a73e12c1f111fb662cbe73">Tri3</a>
 </li>
 <li>CalcTMatx()
-: <a class="el" href="class_mech_trap.html#a46d0807886d3b7bb8dab7d62ba052aeb">MechTrap</a>
-, <a class="el" href="class_trap_g_b.html#a8a77b98f0849711f74df0a2c4acdc0be">TrapGB</a>
+: <a class="el" href="class_trap_g_b.html#a8a77b98f0849711f74df0a2c4acdc0be">TrapGB</a>
 </li>
 <li>CloseFileHDF5()
 : <a class="el" href="class_f_e_m__utils_1_1_pre_processing_1_1_pre_processing.html#a5850c428936781d0ccd76bc5390d09a3">FEM_utils.PreProcessing.PreProcessing</a>

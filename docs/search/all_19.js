@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['zeta_5fff_313',['zeta_ff',['../class_trap_phase.html#ae789a77e1c46fb44ee145ed75d25f731',1,'TrapPhase']]],
-  ['zeta_5ffm_314',['zeta_fM',['../class_trap_phase.html#a2344b7d3510a3b12bc7528860c751ff9',1,'TrapPhase']]],
-  ['zeta_5fmm_315',['zeta_MM',['../class_trap_phase.html#a020b0d36fce93b766ddaeba23498093d',1,'TrapPhase']]]
+  ['zeta_5fii_306',['zeta_ii',['../class_trap_phase.html#a3837886c7a826dbd310bfad5341fd183',1,'TrapPhase']]],
+  ['zeta_5fij_307',['zeta_ij',['../class_trap_phase.html#ac6adfcd6d40cc8b589db8f3fa8cecfc4',1,'TrapPhase']]],
+  ['zeta_5fjj_308',['zeta_jj',['../class_trap_phase.html#ab8c50a7b59d5849f6f20fea5072c1da7',1,'TrapPhase']]]
 ];

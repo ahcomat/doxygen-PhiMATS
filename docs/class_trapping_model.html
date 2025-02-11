@@ -92,9 +92,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a085b18efeebee6cfa5dc32ed2ddab853"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a085b18efeebee6cfa5dc32ed2ddab853">InitializePETSc</a> (vector&lt; <a class="el" href="class_base_elem_trap.html">BaseElemTrap</a> * &gt; elements)</td></tr>
 <tr class="memdesc:a085b18efeebee6cfa5dc32ed2ddab853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes and preallocates the RHS <code>F</code>, solution <code>x</code> and conductivity matrix <code>K_D</code> and capacitance matrix <code>C</code>.  <a href="class_trapping_model.html#a085b18efeebee6cfa5dc32ed2ddab853">More...</a><br /></td></tr>
 <tr class="separator:a085b18efeebee6cfa5dc32ed2ddab853"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79faa03f6c21bc1dffa2eead0f560b44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a79faa03f6c21bc1dffa2eead0f560b44">WriteGradPhi</a> (vector&lt; <a class="el" href="class_base_elem_trap.html">BaseElemTrap</a> * &gt; elements, <a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_out)</td></tr>
-<tr class="memdesc:a79faa03f6c21bc1dffa2eead0f560b44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the gradients of phi and writes them in <code>H5File_out</code>  <a href="class_trapping_model.html#a79faa03f6c21bc1dffa2eead0f560b44">More...</a><br /></td></tr>
-<tr class="separator:a79faa03f6c21bc1dffa2eead0f560b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebbba4ae3cf6a46e53db5bb56760c720"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#aebbba4ae3cf6a46e53db5bb56760c720">ReadInitialCon</a> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File, const int iStep)</td></tr>
+<tr class="memdesc:aebbba4ae3cf6a46e53db5bb56760c720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads initial conditions from hdf5 file. Mainly for TDS.  <a href="class_trapping_model.html#aebbba4ae3cf6a46e53db5bb56760c720">More...</a><br /></td></tr>
+<tr class="separator:aebbba4ae3cf6a46e53db5bb56760c720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5bd8f4079dfe09eaf75c4bcdee26774"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#ad5bd8f4079dfe09eaf75c4bcdee26774">setUniformCon</a> (double uniformCon)</td></tr>
+<tr class="memdesc:ad5bd8f4079dfe09eaf75c4bcdee26774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set initial uniform concntration. Mainly for mechanics.  <a href="class_trapping_model.html#ad5bd8f4079dfe09eaf75c4bcdee26774">More...</a><br /></td></tr>
+<tr class="separator:ad5bd8f4079dfe09eaf75c4bcdee26774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b6eb505918fcccef1abaed1051ba0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a20b6eb505918fcccef1abaed1051ba0b">InitializeBC</a> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_in)</td></tr>
+<tr class="memdesc:a20b6eb505918fcccef1abaed1051ba0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads and initializes boundary conditions.  <a href="class_trapping_model.html#a20b6eb505918fcccef1abaed1051ba0b">More...</a><br /></td></tr>
+<tr class="separator:a20b6eb505918fcccef1abaed1051ba0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd3813f116f8adbd07b7f33bdbd8ce4d"><td class="memItemLeft" align="right" valign="top"><a id="acd3813f116f8adbd07b7f33bdbd8ce4d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#acd3813f116f8adbd07b7f33bdbd8ce4d">setBC</a> ()</td></tr>
+<tr class="memdesc:acd3813f116f8adbd07b7f33bdbd8ce4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Dirichlet boundary conditions in the RHS <code>b</code> and global stiffness matrix <code>A</code>. <br /></td></tr>
+<tr class="separator:acd3813f116f8adbd07b7f33bdbd8ce4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fd042740b03edab5dc0518fbe672df2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a3fd042740b03edab5dc0518fbe672df2">UpdateTemp</a> (const int iStep, double HR)</td></tr>
 <tr class="memdesc:a3fd042740b03edab5dc0518fbe672df2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the temperature according the the heating rate HR.  <a href="class_trapping_model.html#a3fd042740b03edab5dc0518fbe672df2">More...</a><br /></td></tr>
 <tr class="separator:a3fd042740b03edab5dc0518fbe672df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,16 +123,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a067fb59d1a42c88311f5ce03cde705b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a067fb59d1a42c88311f5ce03cde705b2">Assemble</a> (vector&lt; <a class="el" href="class_base_elem_trap.html">BaseElemTrap</a> * &gt; elements, bool assembleM=true)</td></tr>
 <tr class="memdesc:a067fb59d1a42c88311f5ce03cde705b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assemble the global stiffness matrix.  <a href="class_trapping_model.html#a067fb59d1a42c88311f5ce03cde705b2">More...</a><br /></td></tr>
 <tr class="separator:a067fb59d1a42c88311f5ce03cde705b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebbba4ae3cf6a46e53db5bb56760c720"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#aebbba4ae3cf6a46e53db5bb56760c720">ReadInitialCon</a> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File, const int iStep)</td></tr>
-<tr class="memdesc:aebbba4ae3cf6a46e53db5bb56760c720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads initial conditions from H5File.  <a href="class_trapping_model.html#aebbba4ae3cf6a46e53db5bb56760c720">More...</a><br /></td></tr>
-<tr class="separator:aebbba4ae3cf6a46e53db5bb56760c720"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3f8294d782cc61ec5170f7ecd3d91d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#ad3f8294d782cc61ec5170f7ecd3d91d4">InitializeDirichBC</a> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_in)</td></tr>
-<tr class="memdesc:ad3f8294d782cc61ec5170f7ecd3d91d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads and initializes Dirichlet BCs.  <a href="class_trapping_model.html#ad3f8294d782cc61ec5170f7ecd3d91d4">More...</a><br /></td></tr>
-<tr class="separator:ad3f8294d782cc61ec5170f7ecd3d91d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49e3610c8b69846cd2c882d51070acab"><td class="memItemLeft" align="right" valign="top"><a id="a49e3610c8b69846cd2c882d51070acab"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a49e3610c8b69846cd2c882d51070acab">setDirichBC</a> ()</td></tr>
-<tr class="memdesc:a49e3610c8b69846cd2c882d51070acab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Dirichlet boundary conditions in the RHS <code>b</code> and global stiffness matrix <code>A</code>. <br /></td></tr>
-<tr class="separator:a49e3610c8b69846cd2c882d51070acab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa46b31e855b502a2a96342aecc9367f1"><td class="memItemLeft" align="right" valign="top"><a id="aa46b31e855b502a2a96342aecc9367f1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#aa46b31e855b502a2a96342aecc9367f1">Update_F</a> ()</td></tr>
 <tr class="memdesc:aa46b31e855b502a2a96342aecc9367f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for updating <code>F</code>. <br /></td></tr>
@@ -196,11 +196,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memdesc:a3235cf70e00bb46d914e14c5c8d6ffcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of integration points. <br /></td></tr>
 <tr class="separator:a3235cf70e00bb46d914e14c5c8d6ffcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4acbcc1eae4ebc9d598eb870df2567dd"><td class="memItemLeft" align="right" valign="top"><a id="a4acbcc1eae4ebc9d598eb870df2567dd"></a>
-<a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a4acbcc1eae4ebc9d598eb870df2567dd">intPtFlux</a></td></tr>
+<a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a4acbcc1eae4ebc9d598eb870df2567dd">intPtFlux</a></td></tr>
 <tr class="memdesc:a4acbcc1eae4ebc9d598eb870df2567dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">int-pt flux. <br /></td></tr>
 <tr class="separator:a4acbcc1eae4ebc9d598eb870df2567dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a468d6aac47db1d574a913483f3ba3c3a"><td class="memItemLeft" align="right" valign="top"><a id="a468d6aac47db1d574a913483f3ba3c3a"></a>
-<a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a468d6aac47db1d574a913483f3ba3c3a">nodFlux</a></td></tr>
+<a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a468d6aac47db1d574a913483f3ba3c3a">nodFlux</a></td></tr>
 <tr class="memdesc:a468d6aac47db1d574a913483f3ba3c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodal flux. <br /></td></tr>
 <tr class="separator:a468d6aac47db1d574a913483f3ba3c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab245ed9215f45779a5be577f287b306f"><td class="memItemLeft" align="right" valign="top"><a id="ab245ed9215f45779a5be577f287b306f"></a>
@@ -525,14 +525,14 @@ PetscScalar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 
 </div>
 </div>
-<a id="ad3f8294d782cc61ec5170f7ecd3d91d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3f8294d782cc61ec5170f7ecd3d91d4">&#9670;&nbsp;</a></span>InitializeDirichBC()</h2>
+<a id="a20b6eb505918fcccef1abaed1051ba0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20b6eb505918fcccef1abaed1051ba0b">&#9670;&nbsp;</a></span>InitializeBC()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TrappingModel::InitializeDirichBC </td>
+          <td class="memname">void TrappingModel::InitializeBC </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_h5_i_o.html">H5IO</a> &amp;&#160;</td>
           <td class="paramname"><em>H5File_in</em></td><td>)</td>
@@ -541,7 +541,7 @@ PetscScalar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
       </table>
 </div><div class="memdoc">
 
-<p>Reads and initializes Dirichlet BCs. </p>
+<p>Reads and initializes boundary conditions. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">H5File_in</td><td></td></tr>
@@ -603,11 +603,37 @@ PetscScalar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
       </table>
 </div><div class="memdoc">
 
-<p>Reads initial conditions from H5File. </p>
+<p>Reads initial conditions from hdf5 file. Mainly for TDS. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">H5File</td><td></td></tr>
     <tr><td class="paramname">iStep</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad5bd8f4079dfe09eaf75c4bcdee26774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5bd8f4079dfe09eaf75c4bcdee26774">&#9670;&nbsp;</a></span>setUniformCon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrappingModel::setUniformCon </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>uniformCon</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set initial uniform concntration. Mainly for mechanics. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uniformCon</td><td>Concentration value. </td></tr>
   </table>
   </dd>
 </dl>
@@ -799,43 +825,6 @@ PetscScalar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
   <table class="params">
     <tr><td class="paramname">H5File_out</td><td></td></tr>
     <tr><td class="paramname">iStep</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a79faa03f6c21bc1dffa2eead0f560b44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79faa03f6c21bc1dffa2eead0f560b44">&#9670;&nbsp;</a></span>WriteGradPhi()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TrappingModel::WriteGradPhi </td>
-          <td>(</td>
-          <td class="paramtype">vector&lt; <a class="el" href="class_base_elem_trap.html">BaseElemTrap</a> * &gt;&#160;</td>
-          <td class="paramname"><em>elements</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_h5_i_o.html">H5IO</a> &amp;&#160;</td>
-          <td class="paramname"><em>H5File_out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calculates the gradients of phi and writes them in <code>H5File_out</code> </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">elements</td><td></td></tr>
-    <tr><td class="paramname">H5File_out</td><td></td></tr>
   </table>
   </dd>
 </dl>

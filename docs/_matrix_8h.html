@@ -173,10 +173,10 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ma
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix_8h.html#a523acc52416b58cdb5c9c3b1b29dcbfd">T_ElStiffMatx</a> = std::variant&lt; vector&lt; Matd3x3 &gt; *, vector&lt; Matd4x4 &gt; *, vector&lt; Matd6x6 &gt; *, vector&lt; Matd8x8 &gt; *, vector&lt; Matd24x24 &gt; * &gt;</td></tr>
 <tr class="memdesc:a523acc52416b58cdb5c9c3b1b29dcbfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variants <code>elStiffMatx</code>. It is a pointer because we need this to avoid copy in <code>Elements::getElStiffMatx</code>. <br /></td></tr>
 <tr class="separator:a523acc52416b58cdb5c9c3b1b29dcbfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf467440c68b7f73cf4a9c2b9ce1e1ea"><td class="memItemLeft" align="right" valign="top"><a id="aaf467440c68b7f73cf4a9c2b9ce1e1ea"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> = std::variant&lt; vector&lt; ColVecd2 &gt;, vector&lt; ColVecd3 &gt;, vector&lt; ColVecd6 &gt; &gt;</td></tr>
-<tr class="memdesc:aaf467440c68b7f73cf4a9c2b9ce1e1ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variants for vector (tensor in Voigt notation) quantities. <br /></td></tr>
-<tr class="separator:aaf467440c68b7f73cf4a9c2b9ce1e1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a496040d313deadbbae697c8ce33c5f03"><td class="memItemLeft" align="right" valign="top"><a id="a496040d313deadbbae697c8ce33c5f03"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> = std::variant&lt; vector&lt; ColVecd2 &gt;, vector&lt; ColVecd3 &gt;, vector&lt; ColVecd4 &gt;, vector&lt; ColVecd6 &gt; &gt;</td></tr>
+<tr class="memdesc:a496040d313deadbbae697c8ce33c5f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variants for vector (tensor in Voigt notation) quantities. <br /></td></tr>
+<tr class="separator:a496040d313deadbbae697c8ce33c5f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file includes custom type aliases based on the library <code>Eigen</code>. It also contains <code>std::variant</code> return types based on these aliases to be used for derived classes. <br  />
