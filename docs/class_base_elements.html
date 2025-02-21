@@ -92,6 +92,9 @@ Inheritance diagram for BaseElements:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ab9eca7a08ea2a38d09b5d11499bb874e"><td class="memItemLeft" align="right" valign="top"><a id="ab9eca7a08ea2a38d09b5d11499bb874e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BaseElements</b> (int <a class="el" href="class_base_elements.html#a634ddcdce412939695748ddfebc36d1b">nElDim</a>, int <a class="el" href="class_base_elements.html#a8fb22a745dc6630fa99496762f8e4cdd">nElNodes</a>, int <a class="el" href="class_base_elements.html#a9c1ae8edd69c44097f282ed1870f7653">nElGauss</a>, <a class="el" href="class_logger.html">Logger</a> &amp;<a class="el" href="class_base_elements.html#a03dcb2562d473a40e1e36fac8d5f7a69">logger</a>)</td></tr>
+<tr class="separator:ab9eca7a08ea2a38d09b5d11499bb874e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dc6a8e8255a649a5e37583423df40e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a1dc6a8e8255a649a5e37583423df40e2">get_nDof</a> () const</td></tr>
 <tr class="memdesc:a1dc6a8e8255a649a5e37583423df40e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of DOfs for element set.  <a href="class_base_elements.html#a1dc6a8e8255a649a5e37583423df40e2">More...</a><br /></td></tr>
 <tr class="separator:a1dc6a8e8255a649a5e37583423df40e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -104,6 +107,23 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:af770ec3ef92ef906768210bec8bab25a"><td class="memItemLeft" align="right" valign="top"><a id="af770ec3ef92ef906768210bec8bab25a"></a>
+const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#af770ec3ef92ef906768210bec8bab25a">R</a> = 8.31446261815324</td></tr>
+<tr class="memdesc:af770ec3ef92ef906768210bec8bab25a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Universal gas constant [J/mol.K]. <br /></td></tr>
+<tr class="separator:af770ec3ef92ef906768210bec8bab25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a634ddcdce412939695748ddfebc36d1b"><td class="memItemLeft" align="right" valign="top"><a id="a634ddcdce412939695748ddfebc36d1b"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a634ddcdce412939695748ddfebc36d1b">nElDim</a></td></tr>
+<tr class="memdesc:a634ddcdce412939695748ddfebc36d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spatial dimensions of the element. <br /></td></tr>
+<tr class="separator:a634ddcdce412939695748ddfebc36d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb22a745dc6630fa99496762f8e4cdd"><td class="memItemLeft" align="right" valign="top"><a id="a8fb22a745dc6630fa99496762f8e4cdd"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a8fb22a745dc6630fa99496762f8e4cdd">nElNodes</a></td></tr>
+<tr class="memdesc:a8fb22a745dc6630fa99496762f8e4cdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of nodes per element. <br  />
+ <br /></td></tr>
+<tr class="separator:a8fb22a745dc6630fa99496762f8e4cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c1ae8edd69c44097f282ed1870f7653"><td class="memItemLeft" align="right" valign="top"><a id="a9c1ae8edd69c44097f282ed1870f7653"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a9c1ae8edd69c44097f282ed1870f7653">nElGauss</a></td></tr>
+<tr class="memdesc:a9c1ae8edd69c44097f282ed1870f7653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of gauss points. <br /></td></tr>
+<tr class="separator:a9c1ae8edd69c44097f282ed1870f7653"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32f7fac66e1d3289c10f5b0dea2359c6"><td class="memItemLeft" align="right" valign="top"><a id="a32f7fac66e1d3289c10f5b0dea2359c6"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a32f7fac66e1d3289c10f5b0dea2359c6">nElements</a></td></tr>
 <tr class="memdesc:a32f7fac66e1d3289c10f5b0dea2359c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of elements in element set. <br /></td></tr>
@@ -116,6 +136,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a41786282398145462d779ad3f49bb221">nDof</a></td></tr>
 <tr class="memdesc:a41786282398145462d779ad3f49bb221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of DOFs for element set. <br /></td></tr>
 <tr class="separator:a41786282398145462d779ad3f49bb221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03dcb2562d473a40e1e36fac8d5f7a69"><td class="memItemLeft" align="right" valign="top"><a id="a03dcb2562d473a40e1e36fac8d5f7a69"></a>
+<a class="el" href="class_logger.html">Logger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a03dcb2562d473a40e1e36fac8d5f7a69">logger</a></td></tr>
+<tr class="memdesc:a03dcb2562d473a40e1e36fac8d5f7a69"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_logger.html">Logger</a> object for handeling interface messages. <br /></td></tr>
+<tr class="separator:a03dcb2562d473a40e1e36fac8d5f7a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b84fa28a4960b718a14e5160a943ba"><td class="memItemLeft" align="right" valign="top"><a id="a26b84fa28a4960b718a14e5160a943ba"></a>
+vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a26b84fa28a4960b718a14e5160a943ba">intPtVol</a></td></tr>
+<tr class="memdesc:a26b84fa28a4960b718a14e5160a943ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt volume. <br /></td></tr>
+<tr class="separator:a26b84fa28a4960b718a14e5160a943ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48cfa56a6087781cf0d12e2b6b54b0fb"><td class="memItemLeft" align="right" valign="top"><a id="a48cfa56a6087781cf0d12e2b6b54b0fb"></a>
 vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a48cfa56a6087781cf0d12e2b6b54b0fb">gaussPts</a></td></tr>
 <tr class="memdesc:a48cfa56a6087781cf0d12e2b6b54b0fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gauss points in natural coordinates. <br /></td></tr>

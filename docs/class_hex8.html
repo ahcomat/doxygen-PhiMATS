@@ -83,9 +83,9 @@ Inheritance diagram for Hex8:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a761f268114c1ab27918afc060f8543e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a761f268114c1ab27918afc060f8543e0">Hex8</a> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_in, <a class="el" href="class_nodes.html">Nodes</a> &amp;<a class="el" href="class_nodes.html">Nodes</a>, int iSet, string matModel)</td></tr>
-<tr class="memdesc:a761f268114c1ab27918afc060f8543e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. Reads data for element set <code>iSet</code> in the elements vector and initializes the element set attributes.  <a href="class_hex8.html#a761f268114c1ab27918afc060f8543e0">More...</a><br /></td></tr>
-<tr class="separator:a761f268114c1ab27918afc060f8543e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5c52232d6d4df286209424d3ee867e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#ad5c52232d6d4df286209424d3ee867e5">Hex8</a> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_in, <a class="el" href="class_nodes.html">Nodes</a> &amp;<a class="el" href="class_nodes.html">Nodes</a>, int iSet, string matModel, <a class="el" href="class_logger.html">Logger</a> &amp;<a class="el" href="class_base_elements.html#a03dcb2562d473a40e1e36fac8d5f7a69">logger</a>)</td></tr>
+<tr class="memdesc:ad5c52232d6d4df286209424d3ee867e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. Reads data for element set <code>iSet</code> in the elements vector and initializes the element set attributes.  <a href="class_hex8.html#ad5c52232d6d4df286209424d3ee867e5">More...</a><br /></td></tr>
+<tr class="separator:ad5c52232d6d4df286209424d3ee867e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7385abee766eb7016e4fe7be86efb708"><td class="memItemLeft" align="right" valign="top"><a id="a7385abee766eb7016e4fe7be86efb708"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a7385abee766eb7016e4fe7be86efb708">InitShapeFunc</a> ()</td></tr>
 <tr class="memdesc:a7385abee766eb7016e4fe7be86efb708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the data for the shape functions. <br /></td></tr>
@@ -109,12 +109,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a6f7a6d0fd6731aef682c9891fedd3b50">CalcElemStiffMatx</a> (<a class="el" href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">T_DMatx</a> DMatx) override</td></tr>
 <tr class="memdesc:a6f7a6d0fd6731aef682c9891fedd3b50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the element stiffness matrix. <br /></td></tr>
 <tr class="separator:a6f7a6d0fd6731aef682c9891fedd3b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef898865da57419802e0c1deb8ea8c94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#aef898865da57419802e0c1deb8ea8c94">CalcStres</a> (<a class="el" href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">T_DMatx</a> DMatx, const double *globalBuffer, double *Fint, <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodStres, <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodStran, vector&lt; int &gt; &amp;nodCount) override</td></tr>
+<tr class="memitem:aef898865da57419802e0c1deb8ea8c94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#aef898865da57419802e0c1deb8ea8c94">CalcStres</a> (<a class="el" href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">T_DMatx</a> DMatx, const double *globalBuffer, double *Fint, <a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;nodStres, <a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;nodStran, vector&lt; int &gt; &amp;nodCount) override</td></tr>
 <tr class="memdesc:aef898865da57419802e0c1deb8ea8c94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the <code>Fint</code>, strains and stresses. Also evaluates the stress nodal values.  <a href="class_hex8.html#aef898865da57419802e0c1deb8ea8c94">More...</a><br /></td></tr>
 <tr class="separator:aef898865da57419802e0c1deb8ea8c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d110c9479f3d3a1facf4949c1db63b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a6d110c9479f3d3a1facf4949c1db63b7">CalcNodVals</a> (<a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodStres, <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodStran, <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodStran_e, <a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;nodStran_p, vector&lt; double &gt; &amp;nodStran_eq, vector&lt; double &gt; &amp;nodStres_eq, vector&lt; int &gt; &amp;nodCount) override</td></tr>
-<tr class="memdesc:a6d110c9479f3d3a1facf4949c1db63b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for mapping int-point values to nodal points.  <a href="class_hex8.html#a6d110c9479f3d3a1facf4949c1db63b7">More...</a><br /></td></tr>
-<tr class="separator:a6d110c9479f3d3a1facf4949c1db63b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a378d6ccd8225a7fb9a4673f9c46d1332"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a378d6ccd8225a7fb9a4673f9c46d1332">CalcNodVals</a> (<a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;nodStres, <a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;nodStran, <a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;nodStran_e, <a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;nodStran_p, vector&lt; double &gt; &amp;nodStran_eq, vector&lt; double &gt; &amp;nodStres_eq, vector&lt; double &gt; &amp;nodStres_h, vector&lt; int &gt; &amp;nodCount) override</td></tr>
+<tr class="memdesc:a378d6ccd8225a7fb9a4673f9c46d1332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for mapping int-point values to nodal points.  <a href="class_hex8.html#a378d6ccd8225a7fb9a4673f9c46d1332">More...</a><br /></td></tr>
+<tr class="separator:a378d6ccd8225a7fb9a4673f9c46d1332"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bddbf93342cc76ca1fca2f08962ed16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a5bddbf93342cc76ca1fca2f08962ed16">CalcElDStran</a> (const double *globalBuffer) override</td></tr>
 <tr class="memdesc:a5bddbf93342cc76ca1fca2f08962ed16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the int-pt strain increment.  <a href="class_hex8.html#a5bddbf93342cc76ca1fca2f08962ed16">More...</a><br /></td></tr>
 <tr class="separator:a5bddbf93342cc76ca1fca2f08962ed16"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,9 +132,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a7592a95d58efc0d3f40855d8bce2e5ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updated _old values. <br /></td></tr>
 <tr class="separator:a7592a95d58efc0d3f40855d8bce2e5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_base_elem_mech"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_base_elem_mech')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_base_elem_mech.html">BaseElemMech</a></td></tr>
-<tr class="memitem:a3279b5ba0205151225f9ca310058bad7 inherit pub_methods_class_base_elem_mech"><td class="memItemLeft" align="right" valign="top"><a id="a3279b5ba0205151225f9ca310058bad7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BaseElemMech</b> (int <a class="el" href="class_base_elem_mech.html#aadfd4d95acd4af2874a1a104fe53a5b4">nElDim</a>, int <a class="el" href="class_base_elem_mech.html#a2c46355ba53414d0f4e976b98ca2cc03">nElNodes</a>, int <a class="el" href="class_base_elem_mech.html#acc7f98e9f671d70196a0a35e2905c9d6">dispDofs</a>, int <a class="el" href="class_base_elem_mech.html#a02981bb70996c57d7b00bb2b173d15b8">nElStres</a>, int <a class="el" href="class_base_elem_mech.html#ac16c657347044385ea67fde4b2803e7f">nElDispDofs</a>, int nElGauss2, string matModel)</td></tr>
-<tr class="separator:a3279b5ba0205151225f9ca310058bad7 inherit pub_methods_class_base_elem_mech"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47d1157b0f178b1c3882fcf888c5166c inherit pub_methods_class_base_elem_mech"><td class="memItemLeft" align="right" valign="top"><a id="a47d1157b0f178b1c3882fcf888c5166c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BaseElemMech</b> (int <a class="el" href="class_base_elements.html#a634ddcdce412939695748ddfebc36d1b">nElDim</a>, int <a class="el" href="class_base_elements.html#a8fb22a745dc6630fa99496762f8e4cdd">nElNodes</a>, int <a class="el" href="class_base_elements.html#a9c1ae8edd69c44097f282ed1870f7653">nElGauss</a>, int <a class="el" href="class_base_elem_mech.html#acc7f98e9f671d70196a0a35e2905c9d6">dispDofs</a>, int <a class="el" href="class_base_elem_mech.html#a02981bb70996c57d7b00bb2b173d15b8">nElStres</a>, int <a class="el" href="class_base_elem_mech.html#ac16c657347044385ea67fde4b2803e7f">nElDispDofs</a>, string matModel, <a class="el" href="class_logger.html">Logger</a> &amp;<a class="el" href="class_base_elements.html#a03dcb2562d473a40e1e36fac8d5f7a69">logger</a>)</td></tr>
+<tr class="separator:a47d1157b0f178b1c3882fcf888c5166c inherit pub_methods_class_base_elem_mech"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5baa3568cebd69fbbd163935886b51b inherit pub_methods_class_base_elem_mech"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_mech.html#ab5baa3568cebd69fbbd163935886b51b">get_nDim</a> () const</td></tr>
 <tr class="memdesc:ab5baa3568cebd69fbbd163935886b51b inherit pub_methods_class_base_elem_mech"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get dimensions of the element.  <a href="class_base_elem_mech.html#ab5baa3568cebd69fbbd163935886b51b">More...</a><br /></td></tr>
 <tr class="separator:ab5baa3568cebd69fbbd163935886b51b inherit pub_methods_class_base_elem_mech"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +151,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a8171a8817379b251c840e9a580e7da30 inherit pub_methods_class_base_elem_mech"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the displacement dofs associated with element <code>iElem</code>.  <a href="class_base_elem_mech.html#a8171a8817379b251c840e9a580e7da30">More...</a><br /></td></tr>
 <tr class="separator:a8171a8817379b251c840e9a580e7da30 inherit pub_methods_class_base_elem_mech"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_base_elements"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_base_elements')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_base_elements.html">BaseElements</a></td></tr>
+<tr class="memitem:ab9eca7a08ea2a38d09b5d11499bb874e inherit pub_methods_class_base_elements"><td class="memItemLeft" align="right" valign="top"><a id="ab9eca7a08ea2a38d09b5d11499bb874e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BaseElements</b> (int <a class="el" href="class_base_elements.html#a634ddcdce412939695748ddfebc36d1b">nElDim</a>, int <a class="el" href="class_base_elements.html#a8fb22a745dc6630fa99496762f8e4cdd">nElNodes</a>, int <a class="el" href="class_base_elements.html#a9c1ae8edd69c44097f282ed1870f7653">nElGauss</a>, <a class="el" href="class_logger.html">Logger</a> &amp;<a class="el" href="class_base_elements.html#a03dcb2562d473a40e1e36fac8d5f7a69">logger</a>)</td></tr>
+<tr class="separator:ab9eca7a08ea2a38d09b5d11499bb874e inherit pub_methods_class_base_elements"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dc6a8e8255a649a5e37583423df40e2 inherit pub_methods_class_base_elements"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a1dc6a8e8255a649a5e37583423df40e2">get_nDof</a> () const</td></tr>
 <tr class="memdesc:a1dc6a8e8255a649a5e37583423df40e2 inherit pub_methods_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of DOfs for element set.  <a href="class_base_elements.html#a1dc6a8e8255a649a5e37583423df40e2">More...</a><br /></td></tr>
 <tr class="separator:a1dc6a8e8255a649a5e37583423df40e2 inherit pub_methods_class_base_elements"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,14 +206,6 @@ vector&lt; vector&lt; ColVecd6 &gt; &gt;&#160;</td><td class="memItemRight" vali
 vector&lt; vector&lt; ColVecd6 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a5368f863e7fe075d3bcde0500113b8a1">elStran_p</a></td></tr>
 <tr class="memdesc:a5368f863e7fe075d3bcde0500113b8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt plastic strain [nElStres]. <br /></td></tr>
 <tr class="separator:a5368f863e7fe075d3bcde0500113b8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5025c0629ad4b63e3d366e61a31fc5ef"><td class="memItemLeft" align="right" valign="top"><a id="a5025c0629ad4b63e3d366e61a31fc5ef"></a>
-vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a5025c0629ad4b63e3d366e61a31fc5ef">elStran_eq</a></td></tr>
-<tr class="memdesc:a5025c0629ad4b63e3d366e61a31fc5ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt equivalent plastic strain [nElStres]. <br /></td></tr>
-<tr class="separator:a5025c0629ad4b63e3d366e61a31fc5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b36cc4c850777ed1f6ac0a6ad0580c5"><td class="memItemLeft" align="right" valign="top"><a id="a1b36cc4c850777ed1f6ac0a6ad0580c5"></a>
-vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a1b36cc4c850777ed1f6ac0a6ad0580c5">elStres_eq</a></td></tr>
-<tr class="memdesc:a1b36cc4c850777ed1f6ac0a6ad0580c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt equivalent stress (von Mises) [nElStres]. <br /></td></tr>
-<tr class="separator:a1b36cc4c850777ed1f6ac0a6ad0580c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37359ae001beee6970bbf7f5d78da547"><td class="memItemLeft" align="right" valign="top"><a id="a37359ae001beee6970bbf7f5d78da547"></a>
 vector&lt; vector&lt; ColVecd6 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a37359ae001beee6970bbf7f5d78da547">elStran_e_old</a></td></tr>
 <tr class="memdesc:a37359ae001beee6970bbf7f5d78da547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt elastic strain (last convergged increment) [nElStres]. <br /></td></tr>
@@ -231,10 +226,6 @@ vector&lt; vector&lt; Matd3x8 &gt; &gt;&#160;</td><td class="memItemRight" valig
 vector&lt; vector&lt; Matd6x24 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a1f8a44d056c3d934f43d929e7c9cdb82">BuMat</a></td></tr>
 <tr class="memdesc:a1f8a44d056c3d934f43d929e7c9cdb82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strain matrix [nElStres, nElDispDofs]. <br /></td></tr>
 <tr class="separator:a1f8a44d056c3d934f43d929e7c9cdb82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a514d72c055c743a232fb57bbfd7ff7cf"><td class="memItemLeft" align="right" valign="top"><a id="a514d72c055c743a232fb57bbfd7ff7cf"></a>
-vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a514d72c055c743a232fb57bbfd7ff7cf">intPtVol</a></td></tr>
-<tr class="memdesc:a514d72c055c743a232fb57bbfd7ff7cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt volume. <br /></td></tr>
-<tr class="separator:a514d72c055c743a232fb57bbfd7ff7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a893aa567b3d1f1290413cf680e977603"><td class="memItemLeft" align="right" valign="top"><a id="a893aa567b3d1f1290413cf680e977603"></a>
 vector&lt; Matd24x24 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hex8.html#a893aa567b3d1f1290413cf680e977603">elStiffMatx</a></td></tr>
 <tr class="memdesc:a893aa567b3d1f1290413cf680e977603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element stiffness matrix [nElDispDofs, nElDispDofs]. <br /></td></tr>
@@ -243,15 +234,6 @@ vector&lt; Matd24x24 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a 
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_base_elem_mech"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_base_elem_mech')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_base_elem_mech.html">BaseElemMech</a></td></tr>
-<tr class="memitem:aadfd4d95acd4af2874a1a104fe53a5b4 inherit pro_attribs_class_base_elem_mech"><td class="memItemLeft" align="right" valign="top"><a id="aadfd4d95acd4af2874a1a104fe53a5b4"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_mech.html#aadfd4d95acd4af2874a1a104fe53a5b4">nElDim</a></td></tr>
-<tr class="memdesc:aadfd4d95acd4af2874a1a104fe53a5b4 inherit pro_attribs_class_base_elem_mech"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spatial dimensions of the element. <br /></td></tr>
-<tr class="separator:aadfd4d95acd4af2874a1a104fe53a5b4 inherit pro_attribs_class_base_elem_mech"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c46355ba53414d0f4e976b98ca2cc03 inherit pro_attribs_class_base_elem_mech"><td class="memItemLeft" align="right" valign="top"><a id="a2c46355ba53414d0f4e976b98ca2cc03"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_mech.html#a2c46355ba53414d0f4e976b98ca2cc03">nElNodes</a></td></tr>
-<tr class="memdesc:a2c46355ba53414d0f4e976b98ca2cc03 inherit pro_attribs_class_base_elem_mech"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of nodes per element. <br  />
- <br /></td></tr>
-<tr class="separator:a2c46355ba53414d0f4e976b98ca2cc03 inherit pro_attribs_class_base_elem_mech"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc7f98e9f671d70196a0a35e2905c9d6 inherit pro_attribs_class_base_elem_mech"><td class="memItemLeft" align="right" valign="top"><a id="acc7f98e9f671d70196a0a35e2905c9d6"></a>
 const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_mech.html#acc7f98e9f671d70196a0a35e2905c9d6">dispDofs</a></td></tr>
 <tr class="memdesc:acc7f98e9f671d70196a0a35e2905c9d6 inherit pro_attribs_class_base_elem_mech"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of displacement dofs per node. <br /></td></tr>
@@ -264,10 +246,6 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_mech.html#ac16c657347044385ea67fde4b2803e7f">nElDispDofs</a></td></tr>
 <tr class="memdesc:ac16c657347044385ea67fde4b2803e7f inherit pro_attribs_class_base_elem_mech"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of element displacement dofs. <br /></td></tr>
 <tr class="separator:ac16c657347044385ea67fde4b2803e7f inherit pro_attribs_class_base_elem_mech"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21244e5db7c35c293c178e8d81062341 inherit pro_attribs_class_base_elem_mech"><td class="memItemLeft" align="right" valign="top"><a id="a21244e5db7c35c293c178e8d81062341"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_mech.html#a21244e5db7c35c293c178e8d81062341">nElGauss</a></td></tr>
-<tr class="memdesc:a21244e5db7c35c293c178e8d81062341 inherit pro_attribs_class_base_elem_mech"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of gauss points. <br /></td></tr>
-<tr class="separator:a21244e5db7c35c293c178e8d81062341 inherit pro_attribs_class_base_elem_mech"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af562acf4ca0be34275c8169a351b1c4f inherit pro_attribs_class_base_elem_mech"><td class="memItemLeft" align="right" valign="top"><a id="af562acf4ca0be34275c8169a351b1c4f"></a>
 const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_mech.html#af562acf4ca0be34275c8169a351b1c4f">materialModel</a></td></tr>
 <tr class="memdesc:af562acf4ca0be34275c8169a351b1c4f inherit pro_attribs_class_base_elem_mech"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag for material model [<code>Elastic</code>, <code>ElastoPlastic</code>]. <br /></td></tr>
@@ -276,7 +254,36 @@ const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 vector&lt; vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_mech.html#a321cf19d4b78fc7b062c98ce8c0641f5">elemDispDof</a></td></tr>
 <tr class="memdesc:a321cf19d4b78fc7b062c98ce8c0641f5 inherit pro_attribs_class_base_elem_mech"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element displacement dofs. <br /></td></tr>
 <tr class="separator:a321cf19d4b78fc7b062c98ce8c0641f5 inherit pro_attribs_class_base_elem_mech"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a929e9e50102fe34d903c7eb39fc807ca inherit pro_attribs_class_base_elem_mech"><td class="memItemLeft" align="right" valign="top"><a id="a929e9e50102fe34d903c7eb39fc807ca"></a>
+vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_mech.html#a929e9e50102fe34d903c7eb39fc807ca">elStran_eq</a></td></tr>
+<tr class="memdesc:a929e9e50102fe34d903c7eb39fc807ca inherit pro_attribs_class_base_elem_mech"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt equivalent plastic strain [nElStres]. <br /></td></tr>
+<tr class="separator:a929e9e50102fe34d903c7eb39fc807ca inherit pro_attribs_class_base_elem_mech"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83e37f2b4fd07b455673e248dd84e41c inherit pro_attribs_class_base_elem_mech"><td class="memItemLeft" align="right" valign="top"><a id="a83e37f2b4fd07b455673e248dd84e41c"></a>
+vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_mech.html#a83e37f2b4fd07b455673e248dd84e41c">elStres_eq</a></td></tr>
+<tr class="memdesc:a83e37f2b4fd07b455673e248dd84e41c inherit pro_attribs_class_base_elem_mech"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt equivalent stress (von Mises) [nElStres]. <br /></td></tr>
+<tr class="separator:a83e37f2b4fd07b455673e248dd84e41c inherit pro_attribs_class_base_elem_mech"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e5ba248007bb22617c3e9ea9d0a3ffd inherit pro_attribs_class_base_elem_mech"><td class="memItemLeft" align="right" valign="top"><a id="a1e5ba248007bb22617c3e9ea9d0a3ffd"></a>
+vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_mech.html#a1e5ba248007bb22617c3e9ea9d0a3ffd">elStres_h</a></td></tr>
+<tr class="memdesc:a1e5ba248007bb22617c3e9ea9d0a3ffd inherit pro_attribs_class_base_elem_mech"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt hydrostatic stress [nElStres]. <br /></td></tr>
+<tr class="separator:a1e5ba248007bb22617c3e9ea9d0a3ffd inherit pro_attribs_class_base_elem_mech"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_base_elements"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_base_elements')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_base_elements.html">BaseElements</a></td></tr>
+<tr class="memitem:af770ec3ef92ef906768210bec8bab25a inherit pro_attribs_class_base_elements"><td class="memItemLeft" align="right" valign="top"><a id="af770ec3ef92ef906768210bec8bab25a"></a>
+const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#af770ec3ef92ef906768210bec8bab25a">R</a> = 8.31446261815324</td></tr>
+<tr class="memdesc:af770ec3ef92ef906768210bec8bab25a inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Universal gas constant [J/mol.K]. <br /></td></tr>
+<tr class="separator:af770ec3ef92ef906768210bec8bab25a inherit pro_attribs_class_base_elements"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a634ddcdce412939695748ddfebc36d1b inherit pro_attribs_class_base_elements"><td class="memItemLeft" align="right" valign="top"><a id="a634ddcdce412939695748ddfebc36d1b"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a634ddcdce412939695748ddfebc36d1b">nElDim</a></td></tr>
+<tr class="memdesc:a634ddcdce412939695748ddfebc36d1b inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spatial dimensions of the element. <br /></td></tr>
+<tr class="separator:a634ddcdce412939695748ddfebc36d1b inherit pro_attribs_class_base_elements"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb22a745dc6630fa99496762f8e4cdd inherit pro_attribs_class_base_elements"><td class="memItemLeft" align="right" valign="top"><a id="a8fb22a745dc6630fa99496762f8e4cdd"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a8fb22a745dc6630fa99496762f8e4cdd">nElNodes</a></td></tr>
+<tr class="memdesc:a8fb22a745dc6630fa99496762f8e4cdd inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of nodes per element. <br  />
+ <br /></td></tr>
+<tr class="separator:a8fb22a745dc6630fa99496762f8e4cdd inherit pro_attribs_class_base_elements"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c1ae8edd69c44097f282ed1870f7653 inherit pro_attribs_class_base_elements"><td class="memItemLeft" align="right" valign="top"><a id="a9c1ae8edd69c44097f282ed1870f7653"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a9c1ae8edd69c44097f282ed1870f7653">nElGauss</a></td></tr>
+<tr class="memdesc:a9c1ae8edd69c44097f282ed1870f7653 inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of gauss points. <br /></td></tr>
+<tr class="separator:a9c1ae8edd69c44097f282ed1870f7653 inherit pro_attribs_class_base_elements"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32f7fac66e1d3289c10f5b0dea2359c6 inherit pro_attribs_class_base_elements"><td class="memItemLeft" align="right" valign="top"><a id="a32f7fac66e1d3289c10f5b0dea2359c6"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a32f7fac66e1d3289c10f5b0dea2359c6">nElements</a></td></tr>
 <tr class="memdesc:a32f7fac66e1d3289c10f5b0dea2359c6 inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of elements in element set. <br /></td></tr>
@@ -289,6 +296,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a41786282398145462d779ad3f49bb221">nDof</a></td></tr>
 <tr class="memdesc:a41786282398145462d779ad3f49bb221 inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of DOFs for element set. <br /></td></tr>
 <tr class="separator:a41786282398145462d779ad3f49bb221 inherit pro_attribs_class_base_elements"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03dcb2562d473a40e1e36fac8d5f7a69 inherit pro_attribs_class_base_elements"><td class="memItemLeft" align="right" valign="top"><a id="a03dcb2562d473a40e1e36fac8d5f7a69"></a>
+<a class="el" href="class_logger.html">Logger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a03dcb2562d473a40e1e36fac8d5f7a69">logger</a></td></tr>
+<tr class="memdesc:a03dcb2562d473a40e1e36fac8d5f7a69 inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_logger.html">Logger</a> object for handeling interface messages. <br /></td></tr>
+<tr class="separator:a03dcb2562d473a40e1e36fac8d5f7a69 inherit pro_attribs_class_base_elements"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b84fa28a4960b718a14e5160a943ba inherit pro_attribs_class_base_elements"><td class="memItemLeft" align="right" valign="top"><a id="a26b84fa28a4960b718a14e5160a943ba"></a>
+vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a26b84fa28a4960b718a14e5160a943ba">intPtVol</a></td></tr>
+<tr class="memdesc:a26b84fa28a4960b718a14e5160a943ba inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt volume. <br /></td></tr>
+<tr class="separator:a26b84fa28a4960b718a14e5160a943ba inherit pro_attribs_class_base_elements"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48cfa56a6087781cf0d12e2b6b54b0fb inherit pro_attribs_class_base_elements"><td class="memItemLeft" align="right" valign="top"><a id="a48cfa56a6087781cf0d12e2b6b54b0fb"></a>
 vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#a48cfa56a6087781cf0d12e2b6b54b0fb">gaussPts</a></td></tr>
 <tr class="memdesc:a48cfa56a6087781cf0d12e2b6b54b0fb inherit pro_attribs_class_base_elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gauss points in natural coordinates. <br /></td></tr>
@@ -307,8 +322,8 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 <tr class="separator:a63df30869ec3c409c7e634b6f1283319 inherit pro_attribs_class_base_elements"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a761f268114c1ab27918afc060f8543e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a761f268114c1ab27918afc060f8543e0">&#9670;&nbsp;</a></span>Hex8()</h2>
+<a id="ad5c52232d6d4df286209424d3ee867e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5c52232d6d4df286209424d3ee867e5">&#9670;&nbsp;</a></span>Hex8()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -335,7 +350,13 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>matModel</em>&#160;</td>
+          <td class="paramname"><em>matModel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_logger.html">Logger</a> &amp;&#160;</td>
+          <td class="paramname"><em>logger</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -531,8 +552,8 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 
 </div>
 </div>
-<a id="a6d110c9479f3d3a1facf4949c1db63b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d110c9479f3d3a1facf4949c1db63b7">&#9670;&nbsp;</a></span>CalcNodVals()</h2>
+<a id="a378d6ccd8225a7fb9a4673f9c46d1332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a378d6ccd8225a7fb9a4673f9c46d1332">&#9670;&nbsp;</a></span>CalcNodVals()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -543,25 +564,25 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
         <tr>
           <td class="memname">void Hex8::CalcNodVals </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;&#160;</td>
           <td class="paramname"><em>nodStres</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;&#160;</td>
           <td class="paramname"><em>nodStran</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;&#160;</td>
           <td class="paramname"><em>nodStran_e</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;&#160;</td>
           <td class="paramname"><em>nodStran_p</em>, </td>
         </tr>
         <tr>
@@ -575,6 +596,12 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
           <td></td>
           <td class="paramtype">vector&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>nodStres_eq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>nodStres_h</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -604,12 +631,14 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
     <tr><td class="paramname">nodStran_p</td><td></td></tr>
     <tr><td class="paramname">nodStran_eq</td><td></td></tr>
     <tr><td class="paramname">nodStres_eq</td><td></td></tr>
+    <tr><td class="paramname">nodStres_h</td><td><br  />
+ </td></tr>
     <tr><td class="paramname">nodCount</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="class_base_elem_mech.html#a42dade57dc5471145a747a79e7364385">BaseElemMech</a>.</p>
+<p>Implements <a class="el" href="class_base_elem_mech.html#a20dd5026771f411131c02850a0829432">BaseElemMech</a>.</p>
 
 </div>
 </div>
@@ -785,13 +814,13 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;&#160;</td>
           <td class="paramname"><em>nodStres</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_matrix_8h.html#aaf467440c68b7f73cf4a9c2b9ce1e1ea">T_nodStres</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;&#160;</td>
           <td class="paramname"><em>nodStran</em>, </td>
         </tr>
         <tr>

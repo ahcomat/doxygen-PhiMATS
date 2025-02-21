@@ -81,7 +81,7 @@ $(function() {
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<a class="code" href="class_base_mechanics.html">BaseMechanics</a>(<span class="keywordtype">string</span> dimensions): <a class="code" href="class_base_material.html">BaseMaterial</a>(dimensions) {};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<a class="code" href="class_base_mechanics.html">BaseMechanics</a>(<span class="keywordtype">string</span> dimensions, <a class="code" href="class_logger.html">Logger</a>&amp; <a class="code" href="class_base_material.html#a6a18f1e6cf383764676cada9cea18e43">logger</a>): <a class="code" href="class_base_material.html">BaseMaterial</a>(dimensions, <a class="code" href="class_base_material.html#a6a18f1e6cf383764676cada9cea18e43">logger</a>) {};</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_base_mechanics.html#a95619c841e7719630f70d011d30636aa">   41</a></span>&#160;<span class="keyword">virtual</span> <a class="code" href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">T_DMatx</a> <a class="code" href="class_base_mechanics.html#a95619c841e7719630f70d011d30636aa">getDMatx</a>() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
@@ -90,9 +90,11 @@ $(function() {
 <div class="ttc" id="a_base_material_8h_html"><div class="ttname"><a href="_base_material_8h.html">BaseMaterial.h</a></div><div class="ttdoc">The base class for material types.</div></div>
 <div class="ttc" id="a_matrix_8h_html"><div class="ttname"><a href="_matrix_8h.html">Matrix.h</a></div><div class="ttdoc">This file includes custom type aliases based on the library Eigen. It also contains std::variant retu...</div></div>
 <div class="ttc" id="a_matrix_8h_html_a779bdf6444b5437f5865e98eaaa0481d"><div class="ttname"><a href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">T_DMatx</a></div><div class="ttdeci">std::variant&lt; Matd2x2, Matd3x3, Matd6x6 &gt; T_DMatx</div><div class="ttdoc">Variants DMatx.</div><div class="ttdef"><b>Definition:</b> Matrix.h:87</div></div>
-<div class="ttc" id="aclass_base_material_html"><div class="ttname"><a href="class_base_material.html">BaseMaterial</a></div><div class="ttdef"><b>Definition:</b> BaseMaterial.h:31</div></div>
+<div class="ttc" id="aclass_base_material_html"><div class="ttname"><a href="class_base_material.html">BaseMaterial</a></div><div class="ttdef"><b>Definition:</b> BaseMaterial.h:33</div></div>
+<div class="ttc" id="aclass_base_material_html_a6a18f1e6cf383764676cada9cea18e43"><div class="ttname"><a href="class_base_material.html#a6a18f1e6cf383764676cada9cea18e43">BaseMaterial::logger</a></div><div class="ttdeci">Logger &amp; logger</div><div class="ttdoc">Dimensions of the material model.</div><div class="ttdef"><b>Definition:</b> BaseMaterial.h:47</div></div>
 <div class="ttc" id="aclass_base_mechanics_html"><div class="ttname"><a href="class_base_mechanics.html">BaseMechanics</a></div><div class="ttdef"><b>Definition:</b> BaseMechanics.h:30</div></div>
 <div class="ttc" id="aclass_base_mechanics_html_a95619c841e7719630f70d011d30636aa"><div class="ttname"><a href="class_base_mechanics.html#a95619c841e7719630f70d011d30636aa">BaseMechanics::getDMatx</a></div><div class="ttdeci">virtual T_DMatx getDMatx() const =0</div><div class="ttdoc">Returns a stiffness matrix variant.</div></div>
+<div class="ttc" id="aclass_logger_html"><div class="ttname"><a href="class_logger.html">Logger</a></div><div class="ttdef"><b>Definition:</b> Logger.h:39</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <p>
     Documentation licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. <br>

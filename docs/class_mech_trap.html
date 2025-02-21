@@ -83,41 +83,32 @@ Inheritance diagram for MechTrap:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad4cff52ad268ac7d915b3cd5c569c57d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#ad4cff52ad268ac7d915b3cd5c569c57d">MechTrap</a> (string dimensions, <a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File, int iSet, <a class="el" href="class_logger.html">Logger</a> &amp;<a class="el" href="class_mech_trap.html#a1419844dc399712a4734af73db50971c">logger</a>)</td></tr>
+<tr class="memitem:ad4cff52ad268ac7d915b3cd5c569c57d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#ad4cff52ad268ac7d915b3cd5c569c57d">MechTrap</a> (string dimensions, <a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File, int iSet, <a class="el" href="class_logger.html">Logger</a> &amp;<a class="el" href="class_base_material.html#a6a18f1e6cf383764676cada9cea18e43">logger</a>)</td></tr>
 <tr class="memdesc:ad4cff52ad268ac7d915b3cd5c569c57d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor, reads mechanical trapping parameters from HDF5 file.  <a href="class_mech_trap.html#ad4cff52ad268ac7d915b3cd5c569c57d">More...</a><br /></td></tr>
 <tr class="separator:ad4cff52ad268ac7d915b3cd5c569c57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a699e51dd1865e47ff32bf3cd330a00eb"><td class="memItemLeft" align="right" valign="top"><a id="a699e51dd1865e47ff32bf3cd330a00eb"></a>
-<a class="el" href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">T_DMatx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#a699e51dd1865e47ff32bf3cd330a00eb">CalcKMatx</a> (const double T)</td></tr>
-<tr class="memdesc:a699e51dd1865e47ff32bf3cd330a00eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the diffusivity matrix. <br /></td></tr>
-<tr class="separator:a699e51dd1865e47ff32bf3cd330a00eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46d0807886d3b7bb8dab7d62ba052aeb"><td class="memItemLeft" align="right" valign="top"><a id="a46d0807886d3b7bb8dab7d62ba052aeb"></a>
-<a class="el" href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">T_DMatx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#a46d0807886d3b7bb8dab7d62ba052aeb">CalcTMatx</a> (const double T)</td></tr>
-<tr class="memdesc:a46d0807886d3b7bb8dab7d62ba052aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the dislocation trapping matrix. <br /></td></tr>
-<tr class="separator:a46d0807886d3b7bb8dab7d62ba052aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2f824125bafec7f904a79b6ec5d28e2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#af2f824125bafec7f904a79b6ec5d28e2">getDiffRatio</a> () const</td></tr>
-<tr class="memdesc:af2f824125bafec7f904a79b6ec5d28e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the diffusivity ratio <code>m</code>.  <a href="class_mech_trap.html#af2f824125bafec7f904a79b6ec5d28e2">More...</a><br /></td></tr>
-<tr class="separator:af2f824125bafec7f904a79b6ec5d28e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed7de6befb2cccb2e8d2edc801ac4907"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#aed7de6befb2cccb2e8d2edc801ac4907">getTrappingCapacity</a> () const</td></tr>
-<tr class="memdesc:aed7de6befb2cccb2e8d2edc801ac4907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the trapping capacity <code>s</code>.  <a href="class_mech_trap.html#aed7de6befb2cccb2e8d2edc801ac4907">More...</a><br /></td></tr>
-<tr class="separator:aed7de6befb2cccb2e8d2edc801ac4907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a006fe1545b829215610cd56244ba22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">T_DMatx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#a3a006fe1545b829215610cd56244ba22">CalcDMatx</a> (const double phi, const double T) override</td></tr>
+<tr class="memdesc:a3a006fe1545b829215610cd56244ba22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the spatially varying diffusivity matrix.  <a href="class_mech_trap.html#a3a006fe1545b829215610cd56244ba22">More...</a><br /></td></tr>
+<tr class="separator:a3a006fe1545b829215610cd56244ba22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b93fd818706250a7b2dd45e9a45136c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#a4b93fd818706250a7b2dd45e9a45136c">get_s</a> () const</td></tr>
+<tr class="memdesc:a4b93fd818706250a7b2dd45e9a45136c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the trapping capacity <code>s</code>.  <a href="class_mech_trap.html#a4b93fd818706250a7b2dd45e9a45136c">More...</a><br /></td></tr>
+<tr class="separator:a4b93fd818706250a7b2dd45e9a45136c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9789ce7e7f5b60e560b85e4217653bf2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#a9789ce7e7f5b60e560b85e4217653bf2">get_Vh</a> () const</td></tr>
+<tr class="memdesc:a9789ce7e7f5b60e560b85e4217653bf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the partial molar volume <code>Vh</code>.  <a href="class_mech_trap.html#a9789ce7e7f5b60e560b85e4217653bf2">More...</a><br /></td></tr>
+<tr class="separator:a9789ce7e7f5b60e560b85e4217653bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_base_trapping"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_base_trapping')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_base_trapping.html">BaseTrapping</a></td></tr>
-<tr class="memitem:a0eb018bde240add0cb2eb1c20fd09795 inherit pub_methods_class_base_trapping"><td class="memItemLeft" align="right" valign="top"><a id="a0eb018bde240add0cb2eb1c20fd09795"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BaseTrapping</b> (string dimensions)</td></tr>
-<tr class="separator:a0eb018bde240add0cb2eb1c20fd09795 inherit pub_methods_class_base_trapping"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae155ccf6a8ad5953b605d00d3f9f8259 inherit pub_methods_class_base_trapping"><td class="memItemLeft" align="right" valign="top"><a id="ae155ccf6a8ad5953b605d00d3f9f8259"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BaseTrapping</b> (string dimensions, <a class="el" href="class_logger.html">Logger</a> &amp;<a class="el" href="class_base_material.html#a6a18f1e6cf383764676cada9cea18e43">logger</a>)</td></tr>
+<tr class="separator:ae155ccf6a8ad5953b605d00d3f9f8259 inherit pub_methods_class_base_trapping"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_base_material"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_base_material')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_base_material.html">BaseMaterial</a></td></tr>
-<tr class="memitem:a06e6d137ac6a6f12ec6cd7e75a90fd3b inherit pub_methods_class_base_material"><td class="memItemLeft" align="right" valign="top"><a id="a06e6d137ac6a6f12ec6cd7e75a90fd3b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BaseMaterial</b> (string dimensions)</td></tr>
-<tr class="separator:a06e6d137ac6a6f12ec6cd7e75a90fd3b inherit pub_methods_class_base_material"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a766b945a9a45322272ebde993b004847 inherit pub_methods_class_base_material"><td class="memItemLeft" align="right" valign="top"><a id="a766b945a9a45322272ebde993b004847"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BaseMaterial</b> (string dimensions, <a class="el" href="class_logger.html">Logger</a> &amp;<a class="el" href="class_base_material.html#a6a18f1e6cf383764676cada9cea18e43">logger</a>)</td></tr>
+<tr class="separator:a766b945a9a45322272ebde993b004847 inherit pub_methods_class_base_material"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad823cf723de92c025efbc91bbfe12ada inherit pub_methods_class_base_material"><td class="memItemLeft" align="right" valign="top"><a id="ad823cf723de92c025efbc91bbfe12ada"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>getDims</b> ()</td></tr>
 <tr class="separator:ad823cf723de92c025efbc91bbfe12ada inherit pub_methods_class_base_material"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a1419844dc399712a4734af73db50971c"><td class="memItemLeft" align="right" valign="top"><a id="a1419844dc399712a4734af73db50971c"></a>
-<a class="el" href="class_logger.html">Logger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#a1419844dc399712a4734af73db50971c">logger</a></td></tr>
-<tr class="memdesc:a1419844dc399712a4734af73db50971c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_logger.html">Logger</a> object for handeling interface messages. <br /></td></tr>
-<tr class="separator:a1419844dc399712a4734af73db50971c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1b7fa5ff414365176d045baa977f422"><td class="memItemLeft" align="right" valign="top"><a id="ae1b7fa5ff414365176d045baa977f422"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_trap.html#ae1b7fa5ff414365176d045baa977f422">D0x</a></td></tr>
 <tr class="memdesc:ae1b7fa5ff414365176d045baa977f422"><td class="mdescLeft">&#160;</td><td class="mdescRight">Anisotropic diffusivity parameters. <br /></td></tr>
@@ -162,6 +153,9 @@ const double&#160;</td><td class="memItemRight" valign="bottom"><b>R</b> = 8.314
 <tr class="memitem:ae00f808549cc2824f7c61216f3b01a81 inherit pro_attribs_class_base_material"><td class="memItemLeft" align="right" valign="top"><a id="ae00f808549cc2824f7c61216f3b01a81"></a>
 const string&#160;</td><td class="memItemRight" valign="bottom"><b>dims</b></td></tr>
 <tr class="separator:ae00f808549cc2824f7c61216f3b01a81 inherit pro_attribs_class_base_material"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a18f1e6cf383764676cada9cea18e43 inherit pro_attribs_class_base_material"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_logger.html">Logger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_material.html#a6a18f1e6cf383764676cada9cea18e43">logger</a></td></tr>
+<tr class="memdesc:a6a18f1e6cf383764676cada9cea18e43 inherit pro_attribs_class_base_material"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dimensions of the material model.  <a href="class_base_material.html#a6a18f1e6cf383764676cada9cea18e43">More...</a><br /></td></tr>
+<tr class="separator:a6a18f1e6cf383764676cada9cea18e43 inherit pro_attribs_class_base_material"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad4cff52ad268ac7d915b3cd5c569c57d"></a>
@@ -216,42 +210,106 @@ const string&#160;</td><td class="memItemRight" valign="bottom"><b>dims</b></td>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af2f824125bafec7f904a79b6ec5d28e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2f824125bafec7f904a79b6ec5d28e2">&#9670;&nbsp;</a></span>getDiffRatio()</h2>
+<a id="a3a006fe1545b829215610cd56244ba22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a006fe1545b829215610cd56244ba22">&#9670;&nbsp;</a></span>CalcDMatx()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double MechTrap::getDiffRatio </td>
+          <td class="memname"><a class="el" href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">T_DMatx</a> MechTrap::CalcDMatx </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>phi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>T</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the spatially varying diffusivity matrix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phi</td><td>Spatial field parameter. </td></tr>
+    <tr><td class="paramname">T</td><td>Temperature [K]. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>T_DMatx Diffusivity variant. </dd></dl>
+
+<p>Implements <a class="el" href="class_base_trapping.html#a7bb30843673cc64516123b7e6c008824">BaseTrapping</a>.</p>
+
+</div>
+</div>
+<a id="a4b93fd818706250a7b2dd45e9a45136c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b93fd818706250a7b2dd45e9a45136c">&#9670;&nbsp;</a></span>get_s()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double MechTrap::get_s </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Get the diffusivity ratio <code>m</code>. </p>
+<p>Get the trapping capacity <code>s</code>. </p>
 <dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
 
 </div>
 </div>
-<a id="aed7de6befb2cccb2e8d2edc801ac4907"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed7de6befb2cccb2e8d2edc801ac4907">&#9670;&nbsp;</a></span>getTrappingCapacity()</h2>
+<a id="a9789ce7e7f5b60e560b85e4217653bf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9789ce7e7f5b60e560b85e4217653bf2">&#9670;&nbsp;</a></span>get_Vh()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double MechTrap::getTrappingCapacity </td>
+          <td class="memname">double MechTrap::get_Vh </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Get the trapping capacity <code>s</code>. </p>
+<p>Get the partial molar volume <code>Vh</code>. </p>
 <dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
 
 </div>
