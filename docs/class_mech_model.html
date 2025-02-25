@@ -90,9 +90,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad5ab75313f340e016d09cb11893c33af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#ad5ab75313f340e016d09cb11893c33af">MechModel</a> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_in, const int NR_update=3)</td></tr>
-<tr class="memdesc:ad5ab75313f340e016d09cb11893c33af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. Reads main data from hdf5 file.  <a href="class_mech_model.html#ad5ab75313f340e016d09cb11893c33af">More...</a><br /></td></tr>
-<tr class="separator:ad5ab75313f340e016d09cb11893c33af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61d582150747bd014c6f303b28b4801b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#a61d582150747bd014c6f303b28b4801b">MechModel</a> (vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt; elements, <a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_in, <a class="el" href="class_logger.html">Logger</a> &amp;<a class="el" href="class_mech_model.html#ac1282703b80b9e5fc0e273d380e5aeb8">logger</a>, const int NR_update=3)</td></tr>
+<tr class="memdesc:a61d582150747bd014c6f303b28b4801b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. Reads main data from hdf5 file.  <a href="class_mech_model.html#a61d582150747bd014c6f303b28b4801b">More...</a><br /></td></tr>
+<tr class="separator:a61d582150747bd014c6f303b28b4801b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac817624fd2e0893f251e3d0f9eacc29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#aac817624fd2e0893f251e3d0f9eacc29">InitializeDirichBC</a> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_in)</td></tr>
 <tr class="memdesc:aac817624fd2e0893f251e3d0f9eacc29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads and initializes Dirichlet BCs.  <a href="class_mech_model.html#aac817624fd2e0893f251e3d0f9eacc29">More...</a><br /></td></tr>
 <tr class="separator:aac817624fd2e0893f251e3d0f9eacc29"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,13 +155,17 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:ac1282703b80b9e5fc0e273d380e5aeb8"><td class="memItemLeft" align="right" valign="top"><a id="ac1282703b80b9e5fc0e273d380e5aeb8"></a>
+<a class="el" href="class_logger.html">Logger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#ac1282703b80b9e5fc0e273d380e5aeb8">logger</a></td></tr>
+<tr class="memdesc:ac1282703b80b9e5fc0e273d380e5aeb8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_logger.html">Logger</a> object for handeling interface messages. <br /></td></tr>
+<tr class="separator:ac1282703b80b9e5fc0e273d380e5aeb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8d35396489406be1f03b6c81a882011"><td class="memItemLeft" align="right" valign="top"><a id="ac8d35396489406be1f03b6c81a882011"></a>
 const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#ac8d35396489406be1f03b6c81a882011">max_iter</a> = 10</td></tr>
 <tr class="memdesc:ac8d35396489406be1f03b6c81a882011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of iterations. <br /></td></tr>
 <tr class="separator:ac8d35396489406be1f03b6c81a882011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8e63e956a62c5babd281013dd1c338a"><td class="memItemLeft" align="right" valign="top"><a id="ae8e63e956a62c5babd281013dd1c338a"></a>
 const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#ae8e63e956a62c5babd281013dd1c338a">NR_freq</a></td></tr>
-<tr class="memdesc:ae8e63e956a62c5babd281013dd1c338a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frequency of updating the stiffness matrix. <br /></td></tr>
+<tr class="memdesc:ae8e63e956a62c5babd281013dd1c338a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frequency of updating the stiffness matrix within Newton-Raphson iterations. <br /></td></tr>
 <tr class="separator:ae8e63e956a62c5babd281013dd1c338a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff06429e132ea4aa72aa1d09c7a62b64"><td class="memItemLeft" align="right" valign="top"><a id="aff06429e132ea4aa72aa1d09c7a62b64"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mech_model.html#aff06429e132ea4aa72aa1d09c7a62b64">iterCounter</a> = 0</td></tr>
@@ -317,8 +321,8 @@ PetscScalar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <tr class="separator:a49c717def1182a1012ac6287129d8080 inherit pro_attribs_class_base_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad5ab75313f340e016d09cb11893c33af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5ab75313f340e016d09cb11893c33af">&#9670;&nbsp;</a></span>MechModel()</h2>
+<a id="a61d582150747bd014c6f303b28b4801b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61d582150747bd014c6f303b28b4801b">&#9670;&nbsp;</a></span>MechModel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -326,8 +330,20 @@ PetscScalar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
         <tr>
           <td class="memname">MechModel::MechModel </td>
           <td>(</td>
+          <td class="paramtype">vector&lt; <a class="el" href="class_base_elem_mech.html">BaseElemMech</a> * &gt;&#160;</td>
+          <td class="paramname"><em>elements</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="class_h5_i_o.html">H5IO</a> &amp;&#160;</td>
           <td class="paramname"><em>H5File_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_logger.html">Logger</a> &amp;&#160;</td>
+          <td class="paramname"><em>logger</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -347,14 +363,7 @@ PetscScalar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">H5File_in</td><td>Input hdf5 file. </td></tr>
-    <tr><td class="paramname">NR_update</td><td>Frequency of updating the Jacobian and its predonditioner.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Construct a new Mech Model object</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">H5File_in</td><td></td></tr>
+    <tr><td class="paramname">NR_update</td><td>Frequency of updating the Jacobian and its predonditioner. </td></tr>
   </table>
   </dd>
 </dl>

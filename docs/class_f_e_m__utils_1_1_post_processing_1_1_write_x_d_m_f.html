@@ -77,13 +77,13 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac704fc81e63acd0c6ddd57783209572d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_e_m__utils_1_1_post_processing_1_1_write_x_d_m_f.html#ac704fc81e63acd0c6ddd57783209572d">__init__</a> (self, fileName, elementName, nSteps, simulationType, START=0, FLUX=False, tOut=1)</td></tr>
-<tr class="separator:ac704fc81e63acd0c6ddd57783209572d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1184cd4b06a037415e630eb65857a937"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_e_m__utils_1_1_post_processing_1_1_write_x_d_m_f.html#a1184cd4b06a037415e630eb65857a937">__init__</a> (self, fileName, elementName, nSteps, simulationType, START=0, FLUX=False, tOut=1, TDS=False)</td></tr>
+<tr class="separator:a1184cd4b06a037415e630eb65857a937"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6170699a6f3552143b4e69c0063ad8df"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_e_m__utils_1_1_post_processing_1_1_write_x_d_m_f.html#a6170699a6f3552143b4e69c0063ad8df">prettify</a> (self, elem)</td></tr>
 <tr class="separator:a6170699a6f3552143b4e69c0063ad8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73379fb12d801d499d9d329964ac8c51"><td class="memItemLeft" align="right" valign="top"><a id="a73379fb12d801d499d9d329964ac8c51"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>WriteCon2D</b> (self, t, FLUX)</td></tr>
-<tr class="separator:a73379fb12d801d499d9d329964ac8c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27dba8097d7263903641c1446d0bc61b"><td class="memItemLeft" align="right" valign="top"><a id="a27dba8097d7263903641c1446d0bc61b"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>WriteCon2D</b> (self, t, FLUX, TDS)</td></tr>
+<tr class="separator:a27dba8097d7263903641c1446d0bc61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39fc83733ba3e63d4be064c289bb0d9e"><td class="memItemLeft" align="right" valign="top"><a id="a39fc83733ba3e63d4be064c289bb0d9e"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>WriteElastic2D</b> (self, t)</td></tr>
 <tr class="separator:a39fc83733ba3e63d4be064c289bb0d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,8 +134,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aac0e9947e41a59aa18f926dbaeb8fa6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac704fc81e63acd0c6ddd57783209572d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac704fc81e63acd0c6ddd57783209572d">&#9670;&nbsp;</a></span>__init__()</h2>
+<a id="a1184cd4b06a037415e630eb65857a937"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1184cd4b06a037415e630eb65857a937">&#9670;&nbsp;</a></span>__init__()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,7 +186,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>tOut</em> = <code>1</code>&#160;</td>
+          <td class="paramname"><em>tOut</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>TDS</em> = <code>False</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -205,6 +211,7 @@ Args:
     START (int, optional): Initial step number. Defaults to 1.
     FLUX (bool, optional): Flag for flux field. Defaults to False.
     tOut (int, optional): Number of steps to tOut when writing outputs. Defaults to 1.
+    TDS (bool, optional): Flag for writing Temp in TDS. 
 </pre> 
 </div>
 </div>
