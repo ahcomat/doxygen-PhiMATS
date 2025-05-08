@@ -93,12 +93,12 @@ $(function() {
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">typedef</span> Eigen::RowVector&lt;double, 6&gt; RowVecd6;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">typedef</span> Eigen::RowVector&lt;double, 8&gt; RowVecd8; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 2, 2&gt; Matd2x2;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 2, 2, Eigen::RowMajor&gt; Matd2x2;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 3, 3, Eigen::RowMajor&gt; Matd3x3;  <span class="comment">// `RowMajor` for non-symmetric element stiffness matrix.</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 4, 4&gt; Matd4x4; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 6, 6&gt; Matd6x6;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 8, 8&gt; Matd8x8;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 24, 24&gt; Matd24x24; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 4, 4, Eigen::RowMajor&gt; Matd4x4; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 6, 6, Eigen::RowMajor&gt; Matd6x6;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 8, 8, Eigen::RowMajor&gt; Matd8x8;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 24, 24, Eigen::RowMajor&gt; Matd24x24; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 4, 2&gt; Matd4x2;           </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">typedef</span> Eigen::Matrix&lt;double, 2, 4&gt; Matd2x4;</div>
