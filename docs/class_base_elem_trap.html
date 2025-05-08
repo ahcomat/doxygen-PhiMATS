@@ -106,15 +106,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a52d9886f690aee28ac9ebebe5b245ea4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_trap.html#a52d9886f690aee28ac9ebebe5b245ea4">ReadElementsData</a> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_in, int iSet)</td></tr>
 <tr class="memdesc:a52d9886f690aee28ac9ebebe5b245ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the data <code>nElements</code>, <code>nElementSets</code> and <code>elemNodeConn</code> from hdf5 file.  <a href="class_base_elem_trap.html#a52d9886f690aee28ac9ebebe5b245ea4">More...</a><br /></td></tr>
 <tr class="separator:a52d9886f690aee28ac9ebebe5b245ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52813128a7f589c59105f964c9a88952"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_trap.html#a52813128a7f589c59105f964c9a88952">ReadNodalStress</a> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_stress, int iStep)</td></tr>
+<tr class="memdesc:a52813128a7f589c59105f964c9a88952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to read the nodal stresses and normalized dislocation density.  <a href="class_base_elem_trap.html#a52813128a7f589c59105f964c9a88952">More...</a><br /></td></tr>
+<tr class="separator:a52813128a7f589c59105f964c9a88952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6015afef234984a5a6a3dbacc09dc526"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_trap.html#a6015afef234984a5a6a3dbacc09dc526">setEquilibriumBC</a> (<a class="el" href="class_base_trapping.html">BaseTrapping</a> *mat, double *presVals, int *presDofs, const int nPresDofs, const double conB, const double T)</td></tr>
+<tr class="memdesc:a6015afef234984a5a6a3dbacc09dc526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set equilibrium concentration at boundary nodes.  <a href="class_base_elem_trap.html#a6015afef234984a5a6a3dbacc09dc526">More...</a><br /></td></tr>
+<tr class="separator:a6015afef234984a5a6a3dbacc09dc526"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f3b2cb8d7ca0b9393b01a86a8498408"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_matrix_8h.html#a523acc52416b58cdb5c9c3b1b29dcbfd">T_ElStiffMatx</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_trap.html#a7f3b2cb8d7ca0b9393b01a86a8498408">getElCapMatx</a> () const</td></tr>
 <tr class="memdesc:a7f3b2cb8d7ca0b9393b01a86a8498408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return const reference to the vector of element capacitance matrix c_ii.  <a href="class_base_elem_trap.html#a7f3b2cb8d7ca0b9393b01a86a8498408">More...</a><br /></td></tr>
 <tr class="separator:a7f3b2cb8d7ca0b9393b01a86a8498408"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fc0e42d7138d8e5095404798edd5c02"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_trap.html#a5fc0e42d7138d8e5095404798edd5c02">getInPtCoords</a> (<a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;glIntPtCoords)=0</td></tr>
 <tr class="memdesc:a5fc0e42d7138d8e5095404798edd5c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the int-pt coordinates.  <a href="class_base_elem_trap.html#a5fc0e42d7138d8e5095404798edd5c02">More...</a><br /></td></tr>
 <tr class="separator:a5fc0e42d7138d8e5095404798edd5c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad761ca90074f7f7bf618a0f16f93311d"><td class="memItemLeft" align="right" valign="top"><a id="ad761ca90074f7f7bf618a0f16f93311d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadNodalStress</b> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_stress, int iStep)=0</td></tr>
-<tr class="separator:ad761ca90074f7f7bf618a0f16f93311d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f5ce1289eb6f61ae92c7e07d90bda7f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_trap.html#a9f5ce1289eb6f61ae92c7e07d90bda7f">CalcElemStiffMatx</a> (<a class="el" href="class_base_trapping.html">BaseTrapping</a> *mat, const double T)=0</td></tr>
 <tr class="memdesc:a9f5ce1289eb6f61ae92c7e07d90bda7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the element stiffness and capacitances matrix.  <a href="class_base_elem_trap.html#a9f5ce1289eb6f61ae92c7e07d90bda7f">More...</a><br /></td></tr>
 <tr class="separator:a9f5ce1289eb6f61ae92c7e07d90bda7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,6 +200,10 @@ vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a cla
 vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_trap.html#a39b767fe1bfae45666031aa95416d9a8">nod_sigma_h</a></td></tr>
 <tr class="memdesc:a39b767fe1bfae45666031aa95416d9a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">nodal values of hydrostatic stress [nTotNodes] <br /></td></tr>
 <tr class="separator:a39b767fe1bfae45666031aa95416d9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7950592126c42bd2496fff91402f88e6"><td class="memItemLeft" align="right" valign="top"><a id="a7950592126c42bd2496fff91402f88e6"></a>
+vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_trap.html#a7950592126c42bd2496fff91402f88e6">nod_rho</a></td></tr>
+<tr class="memdesc:a7950592126c42bd2496fff91402f88e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">nodal values of normalized dislocation density [nTotNodes] <br /></td></tr>
+<tr class="separator:a7950592126c42bd2496fff91402f88e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ca1f2b45bf9ae1c59d7447712f2168d"><td class="memItemLeft" align="right" valign="top"><a id="a7ca1f2b45bf9ae1c59d7447712f2168d"></a>
 vector&lt; vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_trap.html#a7ca1f2b45bf9ae1c59d7447712f2168d">elemConDof</a></td></tr>
 <tr class="memdesc:a7ca1f2b45bf9ae1c59d7447712f2168d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element concentration (temperature) dofs. In this case, it is identical to <code>elemNodeConn</code>. <br /></td></tr>
@@ -631,6 +638,43 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 
 </div>
 </div>
+<a id="a52813128a7f589c59105f964c9a88952"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52813128a7f589c59105f964c9a88952">&#9670;&nbsp;</a></span>ReadNodalStress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BaseElemTrap::ReadNodalStress </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_h5_i_o.html">H5IO</a> &amp;&#160;</td>
+          <td class="paramname"><em>H5File_stress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iStep</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to read the nodal stresses and normalized dislocation density. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">H5File_stress</td><td>Output HDF5 file from mechanical simulation. </td></tr>
+    <tr><td class="paramname">iStep</td><td>Time step to read. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad163004520265e963834a6b11445d746"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad163004520265e963834a6b11445d746">&#9670;&nbsp;</a></span>set_dt()</h2>
 
@@ -659,6 +703,71 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dtNew</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6015afef234984a5a6a3dbacc09dc526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6015afef234984a5a6a3dbacc09dc526">&#9670;&nbsp;</a></span>setEquilibriumBC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BaseElemTrap::setEquilibriumBC </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_base_trapping.html">BaseTrapping</a> *&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>presVals</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>presDofs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>nPresDofs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>conB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>T</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set equilibrium concentration at boundary nodes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>Trapping material pointer. </td></tr>
+    <tr><td class="paramname">presVals</td><td>double* prescribed nodal values. </td></tr>
+    <tr><td class="paramname">presDofs</td><td>int* container for the degrees of freedom of the boundary nodes. </td></tr>
+    <tr><td class="paramname">nPresDofs</td><td>int total number of degrees of freedom. </td></tr>
+    <tr><td class="paramname">conB</td><td>double constant boundary concentration. </td></tr>
+    <tr><td class="paramname">T</td><td>double temperature. </td></tr>
   </table>
   </dd>
 </dl>

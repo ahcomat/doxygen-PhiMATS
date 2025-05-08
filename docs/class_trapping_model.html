@@ -101,9 +101,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a20b6eb505918fcccef1abaed1051ba0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a20b6eb505918fcccef1abaed1051ba0b">InitializeBC</a> (<a class="el" href="class_h5_i_o.html">H5IO</a> &amp;H5File_in)</td></tr>
 <tr class="memdesc:a20b6eb505918fcccef1abaed1051ba0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads and initializes boundary conditions.  <a href="class_trapping_model.html#a20b6eb505918fcccef1abaed1051ba0b">More...</a><br /></td></tr>
 <tr class="separator:a20b6eb505918fcccef1abaed1051ba0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a963df17aa1a68617e2e4385e72da2bf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a963df17aa1a68617e2e4385e72da2bf3">setEquilibriumBC</a> (vector&lt; <a class="el" href="class_base_elem_trap.html">BaseElemTrap</a> * &gt; elements, vector&lt; <a class="el" href="class_base_trapping.html">BaseTrapping</a> * &gt; mats)</td></tr>
+<tr class="memdesc:a963df17aa1a68617e2e4385e72da2bf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set equilibrium concentration boundary conditions.  <a href="class_trapping_model.html#a963df17aa1a68617e2e4385e72da2bf3">More...</a><br /></td></tr>
+<tr class="separator:a963df17aa1a68617e2e4385e72da2bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd3813f116f8adbd07b7f33bdbd8ce4d"><td class="memItemLeft" align="right" valign="top"><a id="acd3813f116f8adbd07b7f33bdbd8ce4d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#acd3813f116f8adbd07b7f33bdbd8ce4d">setBC</a> ()</td></tr>
-<tr class="memdesc:acd3813f116f8adbd07b7f33bdbd8ce4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Dirichlet boundary conditions in the RHS <code>b</code> and global stiffness matrix <code>A</code>. <br /></td></tr>
+<tr class="memdesc:acd3813f116f8adbd07b7f33bdbd8ce4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Dirichlet boundary conditions in the RHS <code>vecF</code> and global stiffness matrix <code>matA</code>. <br /></td></tr>
 <tr class="separator:acd3813f116f8adbd07b7f33bdbd8ce4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fd042740b03edab5dc0518fbe672df2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a3fd042740b03edab5dc0518fbe672df2">UpdateTemp</a> (const int iStep, double HR)</td></tr>
 <tr class="memdesc:a3fd042740b03edab5dc0518fbe672df2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the temperature according the the heating rate HR.  <a href="class_trapping_model.html#a3fd042740b03edab5dc0518fbe672df2">More...</a><br /></td></tr>
@@ -187,6 +190,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a221f7357c8660b1329c711715c2d6596">T</a></td></tr>
 <tr class="memdesc:a221f7357c8660b1329c711715c2d6596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current temperature. <br /></td></tr>
 <tr class="separator:a221f7357c8660b1329c711715c2d6596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a286eeaf0dc47b1e7537cd3c6d972bc93"><td class="memItemLeft" align="right" valign="top"><a id="a286eeaf0dc47b1e7537cd3c6d972bc93"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a286eeaf0dc47b1e7537cd3c6d972bc93">conB</a> = 0</td></tr>
+<tr class="memdesc:a286eeaf0dc47b1e7537cd3c6d972bc93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boundary concentration. <br /></td></tr>
+<tr class="separator:a286eeaf0dc47b1e7537cd3c6d972bc93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c780799956f9729613bd0a3fbed1541"><td class="memItemLeft" align="right" valign="top"><a id="a3c780799956f9729613bd0a3fbed1541"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_trapping_model.html#a3c780799956f9729613bd0a3fbed1541">TotTime</a> = 0</td></tr>
 <tr class="memdesc:a3c780799956f9729613bd0a3fbed1541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total time. <br /></td></tr>
@@ -608,6 +615,43 @@ PetscScalar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
   <table class="params">
     <tr><td class="paramname">H5File</td><td></td></tr>
     <tr><td class="paramname">iStep</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a963df17aa1a68617e2e4385e72da2bf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a963df17aa1a68617e2e4385e72da2bf3">&#9670;&nbsp;</a></span>setEquilibriumBC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrappingModel::setEquilibriumBC </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; <a class="el" href="class_base_elem_trap.html">BaseElemTrap</a> * &gt;&#160;</td>
+          <td class="paramname"><em>elements</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="class_base_trapping.html">BaseTrapping</a> * &gt;&#160;</td>
+          <td class="paramname"><em>mats</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set equilibrium concentration boundary conditions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elements</td><td>Vector of element pointers </td></tr>
+    <tr><td class="paramname">mats</td><td>Vector of material pointers </td></tr>
   </table>
   </dd>
 </dl>

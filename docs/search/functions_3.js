@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fieldoutput_399',['FieldOutput',['../class_logger.html#a9640c4c2919dc209c6370323ec0148d7',1,'Logger']]]
+  ['exitmessage_416',['ExitMessage',['../class_logger.html#a77c8aeb163390cba97ca0a9c8d1ddfe5',1,'Logger']]]
 ];

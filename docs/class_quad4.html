@@ -111,9 +111,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:acf209e92707393be6befe2efcd7008a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quad4.html#acf209e92707393be6befe2efcd7008a0">CalcStres</a> (<a class="el" href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">T_DMatx</a> DMatx, const double *globalBuffer, double *Fint, <a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;nodStres, <a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;nodStran, vector&lt; int &gt; &amp;nodCount) override</td></tr>
 <tr class="memdesc:acf209e92707393be6befe2efcd7008a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the <code>Fint</code>, strains and stresses. Also evaluates the stress nodal values.  <a href="class_quad4.html#acf209e92707393be6befe2efcd7008a0">More...</a><br /></td></tr>
 <tr class="separator:acf209e92707393be6befe2efcd7008a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d703825e4b1d16860fad5d8afbdd222"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quad4.html#a7d703825e4b1d16860fad5d8afbdd222">CalcNodVals</a> (<a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;nodStres, <a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;nodStran, <a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;nodStran_e, <a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;nodStran_p, vector&lt; double &gt; &amp;nodStran_eq, vector&lt; double &gt; &amp;nodStres_eq, vector&lt; double &gt; &amp;nodStres_h, vector&lt; int &gt; &amp;nodCount) override</td></tr>
-<tr class="memdesc:a7d703825e4b1d16860fad5d8afbdd222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for mapping int-point values to nodal points.  <a href="class_quad4.html#a7d703825e4b1d16860fad5d8afbdd222">More...</a><br /></td></tr>
-<tr class="separator:a7d703825e4b1d16860fad5d8afbdd222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a049a0118d9f1bb0af069698583f6db8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quad4.html#a049a0118d9f1bb0af069698583f6db8a">CalcNodVals</a> (<a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;nodStres, <a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;nodStran, <a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;nodStran_e, <a class="el" href="_matrix_8h.html#a496040d313deadbbae697c8ce33c5f03">T_nodStres</a> &amp;nodStran_p, vector&lt; double &gt; &amp;nodStran_eq, vector&lt; double &gt; &amp;nodStres_eq, vector&lt; double &gt; &amp;nodStres_h, vector&lt; double &gt; &amp;nodRho, vector&lt; int &gt; &amp;nodCount) override</td></tr>
+<tr class="memdesc:a049a0118d9f1bb0af069698583f6db8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for mapping int-point values to nodal points.  <a href="class_quad4.html#a049a0118d9f1bb0af069698583f6db8a">More...</a><br /></td></tr>
+<tr class="separator:a049a0118d9f1bb0af069698583f6db8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2197726abfb0207fc981814e1ba6eb64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quad4.html#a2197726abfb0207fc981814e1ba6eb64">CalcElDStran</a> (const double *globalBuffer) override</td></tr>
 <tr class="memdesc:a2197726abfb0207fc981814e1ba6eb64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the int-pt strain increment.  <a href="class_quad4.html#a2197726abfb0207fc981814e1ba6eb64">More...</a><br /></td></tr>
 <tr class="separator:a2197726abfb0207fc981814e1ba6eb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,10 +213,6 @@ vector&lt; vector&lt; ColVecd3 &gt; &gt;&#160;</td><td class="memItemRight" vali
 vector&lt; vector&lt; ColVecd3 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quad4.html#a77b00cf9acb4239f61d5b3fde7e7d2c1">elStran_p_old</a></td></tr>
 <tr class="memdesc:a77b00cf9acb4239f61d5b3fde7e7d2c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt plastic strain (last convergged increment) [nElStres]. <br /></td></tr>
 <tr class="separator:a77b00cf9acb4239f61d5b3fde7e7d2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa13c4d0fe6d835a852efb3afd271727a"><td class="memItemLeft" align="right" valign="top"><a id="aa13c4d0fe6d835a852efb3afd271727a"></a>
-vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quad4.html#aa13c4d0fe6d835a852efb3afd271727a">elStran_eq_old</a></td></tr>
-<tr class="memdesc:aa13c4d0fe6d835a852efb3afd271727a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt equivalent plastic strain (last convergged increment) [nElStres]. <br /></td></tr>
-<tr class="separator:aa13c4d0fe6d835a852efb3afd271727a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08d2e12167bdcb654d76aa66e7444721"><td class="memItemLeft" align="right" valign="top"><a id="a08d2e12167bdcb654d76aa66e7444721"></a>
 vector&lt; vector&lt; Matd2x4 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quad4.html#a08d2e12167bdcb654d76aa66e7444721">BMat</a></td></tr>
 <tr class="memdesc:a08d2e12167bdcb654d76aa66e7444721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derivatives (scalar) matrix [nElDim, nElNodes]. <br /></td></tr>
@@ -257,6 +253,10 @@ vector&lt; vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="b
 vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_mech.html#a929e9e50102fe34d903c7eb39fc807ca">elStran_eq</a></td></tr>
 <tr class="memdesc:a929e9e50102fe34d903c7eb39fc807ca inherit pro_attribs_class_base_elem_mech"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt equivalent plastic strain [nElStres]. <br /></td></tr>
 <tr class="separator:a929e9e50102fe34d903c7eb39fc807ca inherit pro_attribs_class_base_elem_mech"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a228373e59bac04552515f7da379eb710 inherit pro_attribs_class_base_elem_mech"><td class="memItemLeft" align="right" valign="top"><a id="a228373e59bac04552515f7da379eb710"></a>
+vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_mech.html#a228373e59bac04552515f7da379eb710">elStran_eq_old</a></td></tr>
+<tr class="memdesc:a228373e59bac04552515f7da379eb710 inherit pro_attribs_class_base_elem_mech"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt equivalent plastic strain (last convergged increment) [nElStres]. <br /></td></tr>
+<tr class="separator:a228373e59bac04552515f7da379eb710 inherit pro_attribs_class_base_elem_mech"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83e37f2b4fd07b455673e248dd84e41c inherit pro_attribs_class_base_elem_mech"><td class="memItemLeft" align="right" valign="top"><a id="a83e37f2b4fd07b455673e248dd84e41c"></a>
 vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_mech.html#a83e37f2b4fd07b455673e248dd84e41c">elStres_eq</a></td></tr>
 <tr class="memdesc:a83e37f2b4fd07b455673e248dd84e41c inherit pro_attribs_class_base_elem_mech"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt equivalent stress (von Mises) [nElStres]. <br /></td></tr>
@@ -265,6 +265,10 @@ vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign
 vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_mech.html#a1e5ba248007bb22617c3e9ea9d0a3ffd">elStres_h</a></td></tr>
 <tr class="memdesc:a1e5ba248007bb22617c3e9ea9d0a3ffd inherit pro_attribs_class_base_elem_mech"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt hydrostatic stress [nElStres]. <br /></td></tr>
 <tr class="separator:a1e5ba248007bb22617c3e9ea9d0a3ffd inherit pro_attribs_class_base_elem_mech"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49afd418aaf59d33426300b6c30f1414 inherit pro_attribs_class_base_elem_mech"><td class="memItemLeft" align="right" valign="top"><a id="a49afd418aaf59d33426300b6c30f1414"></a>
+vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elem_mech.html#a49afd418aaf59d33426300b6c30f1414">elRho</a></td></tr>
+<tr class="memdesc:a49afd418aaf59d33426300b6c30f1414 inherit pro_attribs_class_base_elem_mech"><td class="mdescLeft">&#160;</td><td class="mdescRight">Int-pt normalized dislocation density [nElStres]. <br /></td></tr>
+<tr class="separator:a49afd418aaf59d33426300b6c30f1414 inherit pro_attribs_class_base_elem_mech"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_base_elements"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_base_elements')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_base_elements.html">BaseElements</a></td></tr>
 <tr class="memitem:af770ec3ef92ef906768210bec8bab25a inherit pro_attribs_class_base_elements"><td class="memItemLeft" align="right" valign="top"><a id="af770ec3ef92ef906768210bec8bab25a"></a>
 const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_elements.html#af770ec3ef92ef906768210bec8bab25a">R</a> = 8.31446261815324</td></tr>
@@ -529,8 +533,8 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
 
 </div>
 </div>
-<a id="a7d703825e4b1d16860fad5d8afbdd222"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d703825e4b1d16860fad5d8afbdd222">&#9670;&nbsp;</a></span>CalcNodVals()</h2>
+<a id="a049a0118d9f1bb0af069698583f6db8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a049a0118d9f1bb0af069698583f6db8a">&#9670;&nbsp;</a></span>CalcNodVals()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -583,6 +587,12 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>nodRho</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">vector&lt; int &gt; &amp;&#160;</td>
           <td class="paramname"><em>nodCount</em>&#160;</td>
         </tr>
@@ -615,7 +625,7 @@ vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class=
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="class_base_elem_mech.html#a20dd5026771f411131c02850a0829432">BaseElemMech</a>.</p>
+<p>Implements <a class="el" href="class_base_elem_mech.html#abf74652cafd0c374a0addb0223c33666">BaseElemMech</a>.</p>
 
 </div>
 </div>

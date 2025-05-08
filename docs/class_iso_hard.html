@@ -94,6 +94,7 @@ Public Types</h2></td></tr>
 <tr class="separator:afaf65158055afd764a9d6fa71148d0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0509984bb52af5e56aa096ee8a9b218"><td class="memItemLeft" align="right" valign="top"><a id="ad0509984bb52af5e56aa096ee8a9b218"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>HardeningLaw</b> { <b>PowerLaw</b>
 , <b>Voce</b>
+, <b>KME</b>
  }</td></tr>
 <tr class="separator:ad0509984bb52af5e56aa096ee8a9b218"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -105,12 +106,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aabc311f27028b7b16eae26caef7040b4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#aabc311f27028b7b16eae26caef7040b4">Mises3D</a> (const ColVecd6 &amp;sig3D)</td></tr>
 <tr class="memdesc:aabc311f27028b7b16eae26caef7040b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Von Mises stress for 3D models.  <a href="class_iso_hard.html#aabc311f27028b7b16eae26caef7040b4">More...</a><br /></td></tr>
 <tr class="separator:aabc311f27028b7b16eae26caef7040b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6042968ee1342ddcb4a7a295b15432aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#a6042968ee1342ddcb4a7a295b15432aa">ReturnMapping3D</a> (ColVecd6 &amp;deps, ColVecd6 &amp;sig, ColVecd6 &amp;eps_e, ColVecd6 &amp;eps_p, double &amp;eps_eq, double &amp;sig_eq, double &amp;sig_h, const ColVecd6 &amp;eps_e_old, const ColVecd6 &amp;eps_p_old, const double &amp;eps_eq_old, const int iStep)</td></tr>
-<tr class="memdesc:a6042968ee1342ddcb4a7a295b15432aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return mapping algorithm for 3D isotropic hardening plasticity.  <a href="class_iso_hard.html#a6042968ee1342ddcb4a7a295b15432aa">More...</a><br /></td></tr>
-<tr class="separator:a6042968ee1342ddcb4a7a295b15432aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed575ff382abe5a7f2b78fc26fcb7554"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#aed575ff382abe5a7f2b78fc26fcb7554">ReturnMapping2D</a> (ColVecd3 &amp;deps, ColVecd3 &amp;sig, ColVecd3 &amp;eps_e, ColVecd3 &amp;eps_p, double &amp;eps_eq, double &amp;sig_eq, double &amp;sig_h, const ColVecd3 &amp;eps_e_old, const ColVecd3 &amp;eps_p_old, const double &amp;eps_eq_old, const int iStep)</td></tr>
-<tr class="memdesc:aed575ff382abe5a7f2b78fc26fcb7554"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return mapping algorithm for 2D isotropic hardening plasticity.  <a href="class_iso_hard.html#aed575ff382abe5a7f2b78fc26fcb7554">More...</a><br /></td></tr>
-<tr class="separator:aed575ff382abe5a7f2b78fc26fcb7554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e095e3c4c9a4b16d5e712f1b8ae39c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#a51e095e3c4c9a4b16d5e712f1b8ae39c">ReturnMapping3D</a> (ColVecd6 &amp;deps, ColVecd6 &amp;sig, ColVecd6 &amp;eps_e, ColVecd6 &amp;eps_p, double &amp;eps_eq, double &amp;sig_eq, double &amp;sig_h, double &amp;rho, const ColVecd6 &amp;eps_e_old, const ColVecd6 &amp;eps_p_old, const double &amp;eps_eq_old, const int iStep)</td></tr>
+<tr class="memdesc:a51e095e3c4c9a4b16d5e712f1b8ae39c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return mapping algorithm for 3D isotropic hardening plasticity.  <a href="class_iso_hard.html#a51e095e3c4c9a4b16d5e712f1b8ae39c">More...</a><br /></td></tr>
+<tr class="separator:a51e095e3c4c9a4b16d5e712f1b8ae39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34bdafa548ecfa83b3e70a6a9645c5c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#a34bdafa548ecfa83b3e70a6a9645c5c1">ReturnMapping2D</a> (ColVecd3 &amp;deps, ColVecd3 &amp;sig, ColVecd3 &amp;eps_e, ColVecd3 &amp;eps_p, double &amp;eps_eq, double &amp;sig_eq, double &amp;sig_h, double &amp;rho, const ColVecd3 &amp;eps_e_old, const ColVecd3 &amp;eps_p_old, const double &amp;eps_eq_old, const int iStep)</td></tr>
+<tr class="memdesc:a34bdafa548ecfa83b3e70a6a9645c5c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return mapping algorithm for 2D isotropic hardening plasticity.  <a href="class_iso_hard.html#a34bdafa548ecfa83b3e70a6a9645c5c1">More...</a><br /></td></tr>
+<tr class="separator:a34bdafa548ecfa83b3e70a6a9645c5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7152986007a171569d11e3b733a09760"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">T_DMatx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#a7152986007a171569d11e3b733a09760">getDMatx</a> () const override</td></tr>
 <tr class="memdesc:a7152986007a171569d11e3b733a09760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stiffness matrix in Voigt notation.  <a href="class_iso_hard.html#a7152986007a171569d11e3b733a09760">More...</a><br /></td></tr>
 <tr class="separator:a7152986007a171569d11e3b733a09760"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,23 +142,23 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>getDims</b> ()</td>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a00337b38e281ec8a773d82c772392a29"><td class="memItemLeft" align="right" valign="top"><a id="a00337b38e281ec8a773d82c772392a29"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>RM3DFn</b> = void(IsoHard::*)(ColVecd6 &amp;, ColVecd6 &amp;, ColVecd6 &amp;, ColVecd6 &amp;, double &amp;, double &amp;, double &amp;, const ColVecd6 &amp;, const ColVecd6 &amp;, const double &amp;, const int)</td></tr>
-<tr class="separator:a00337b38e281ec8a773d82c772392a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae70e43cd454d1c95f67df40548e8b7fa"><td class="memItemLeft" align="right" valign="top"><a id="ae70e43cd454d1c95f67df40548e8b7fa"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>RM2DFn</b> = void(IsoHard::*)(ColVecd3 &amp;, ColVecd3 &amp;, ColVecd3 &amp;, ColVecd3 &amp;, double &amp;, double &amp;, double &amp;, const ColVecd3 &amp;, const ColVecd3 &amp;, const double &amp;, const int)</td></tr>
-<tr class="separator:ae70e43cd454d1c95f67df40548e8b7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a191fb26adba3e9ace931ccdfdf8de924"><td class="memItemLeft" align="right" valign="top"><a id="a191fb26adba3e9ace931ccdfdf8de924"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>RM3DFn</b> = void(IsoHard::*)(ColVecd6 &amp;, ColVecd6 &amp;, ColVecd6 &amp;, ColVecd6 &amp;, double &amp;, double &amp;, double &amp;, double &amp;, const ColVecd6 &amp;, const ColVecd6 &amp;, const double &amp;, const int)</td></tr>
+<tr class="separator:a191fb26adba3e9ace931ccdfdf8de924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3161af8a350c2851facba4d48515a472"><td class="memItemLeft" align="right" valign="top"><a id="a3161af8a350c2851facba4d48515a472"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>RM2DFn</b> = void(IsoHard::*)(ColVecd3 &amp;, ColVecd3 &amp;, ColVecd3 &amp;, ColVecd3 &amp;, double &amp;, double &amp;, double &amp;, double &amp;, const ColVecd3 &amp;, const ColVecd3 &amp;, const double &amp;, const int)</td></tr>
+<tr class="separator:a3161af8a350c2851facba4d48515a472"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a7c12638b7e4146612929cc9c50104313"><td class="memTemplParams" colspan="2">template&lt;typename HardeningLaw &gt; </td></tr>
-<tr class="memitem:a7c12638b7e4146612929cc9c50104313"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#a7c12638b7e4146612929cc9c50104313">UHard</a> (const double &amp;eqpl, double &amp;syield, double &amp;hard)</td></tr>
-<tr class="memdesc:a7c12638b7e4146612929cc9c50104313"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate update in plastic stress and hardening modulus.  <a href="class_iso_hard.html#a7c12638b7e4146612929cc9c50104313">More...</a><br /></td></tr>
-<tr class="separator:a7c12638b7e4146612929cc9c50104313"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adccf738b59927c53710eb91328307975"><td class="memTemplParams" colspan="2">template&lt;typename HardeningLaw &gt; </td></tr>
-<tr class="memitem:adccf738b59927c53710eb91328307975"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#adccf738b59927c53710eb91328307975">RM3D</a> (ColVecd6 &amp;deps, ColVecd6 &amp;sig, ColVecd6 &amp;eps_e, ColVecd6 &amp;eps_p, double &amp;eps_eq, double &amp;sig_eq, double &amp;sig_h, const ColVecd6 &amp;eps_e_old, const ColVecd6 &amp;eps_p_old, const double &amp;eps_eq_old, const int iStep)</td></tr>
-<tr class="memdesc:adccf738b59927c53710eb91328307975"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D Return-mapping to handle different hardening laws  <a href="class_iso_hard.html#adccf738b59927c53710eb91328307975">More...</a><br /></td></tr>
-<tr class="separator:adccf738b59927c53710eb91328307975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11e08f54ffaba48d5ad11e7605310333"><td class="memTemplParams" colspan="2">template&lt;typename HardeningLaw &gt; </td></tr>
+<tr class="memitem:a11e08f54ffaba48d5ad11e7605310333"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#a11e08f54ffaba48d5ad11e7605310333">UHard</a> (const double &amp;eqpl, double &amp;syield, double &amp;rho, double &amp;hard)</td></tr>
+<tr class="memdesc:a11e08f54ffaba48d5ad11e7605310333"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to calculate update in plastic stress and hardening modulus.  <a href="class_iso_hard.html#a11e08f54ffaba48d5ad11e7605310333">More...</a><br /></td></tr>
+<tr class="separator:a11e08f54ffaba48d5ad11e7605310333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b8ea500826332bb54ab18fee392e53d"><td class="memTemplParams" colspan="2">template&lt;typename HardeningLaw &gt; </td></tr>
+<tr class="memitem:a2b8ea500826332bb54ab18fee392e53d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#a2b8ea500826332bb54ab18fee392e53d">RM3D</a> (ColVecd6 &amp;deps, ColVecd6 &amp;sig, ColVecd6 &amp;eps_e, ColVecd6 &amp;eps_p, double &amp;eps_eq, double &amp;sig_eq, double &amp;sig_h, double &amp;rho, const ColVecd6 &amp;eps_e_old, const ColVecd6 &amp;eps_p_old, const double &amp;eps_eq_old, const int iStep)</td></tr>
+<tr class="memdesc:a2b8ea500826332bb54ab18fee392e53d"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D Return-mapping to handle different hardening laws  <a href="class_iso_hard.html#a2b8ea500826332bb54ab18fee392e53d">More...</a><br /></td></tr>
+<tr class="separator:a2b8ea500826332bb54ab18fee392e53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf591629d4c2c294808d4e58a777997b"><td class="memTemplParams" colspan="2">template&lt;typename AnalysisType &gt; </td></tr>
 <tr class="memitem:adf591629d4c2c294808d4e58a777997b"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#adf591629d4c2c294808d4e58a777997b">Mises2D</a> (const ColVecd3 &amp;sig2D)</td></tr>
 <tr class="memdesc:adf591629d4c2c294808d4e58a777997b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template for 2D von Mises stress. Works for plane stress and plane strain. <br  />
@@ -168,10 +169,10 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:ab6fb51b0df8dd780a785a97333c74fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template for 2D hydrostatic stress. Works for plane stress and plane strain. <br  />
   <a href="class_iso_hard.html#ab6fb51b0df8dd780a785a97333c74fef">More...</a><br /></td></tr>
 <tr class="separator:ab6fb51b0df8dd780a785a97333c74fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3df9920f60c5a543470ed25b7ba65faf"><td class="memTemplParams" colspan="2"><a id="a3df9920f60c5a543470ed25b7ba65faf"></a>
+<tr class="memitem:ae8097bddd16cef4afabde21f8d55620f"><td class="memTemplParams" colspan="2"><a id="ae8097bddd16cef4afabde21f8d55620f"></a>
 template&lt;typename AnalysisType , typename HardeningLaw &gt; </td></tr>
-<tr class="memitem:a3df9920f60c5a543470ed25b7ba65faf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>RM2D</b> (ColVecd3 &amp;deps, ColVecd3 &amp;sig, ColVecd3 &amp;eps_e, ColVecd3 &amp;eps_p, double &amp;eps_eq, double &amp;sig_eq, double &amp;sig_h, const ColVecd3 &amp;eps_e_old, const ColVecd3 &amp;eps_p_old, const double &amp;eps_eq_old, const int iStep)</td></tr>
-<tr class="separator:a3df9920f60c5a543470ed25b7ba65faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8097bddd16cef4afabde21f8d55620f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>RM2D</b> (ColVecd3 &amp;deps, ColVecd3 &amp;sig, ColVecd3 &amp;eps_e, ColVecd3 &amp;eps_p, double &amp;eps_eq, double &amp;sig_eq, double &amp;sig_h, double &amp;rho, const ColVecd3 &amp;eps_e_old, const ColVecd3 &amp;eps_p_old, const double &amp;eps_eq_old, const int iStep)</td></tr>
+<tr class="separator:ae8097bddd16cef4afabde21f8d55620f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
@@ -229,6 +230,38 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#a53220ea7e7353751e6e6931b7f96ea45">n_pow</a> = 0.0</td></tr>
 <tr class="memdesc:a53220ea7e7353751e6e6931b7f96ea45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strain hardening exponent. <br /></td></tr>
 <tr class="separator:a53220ea7e7353751e6e6931b7f96ea45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0efb6963ac14435426addb4d794401e4"><td class="memItemLeft" align="right" valign="top"><a id="a0efb6963ac14435426addb4d794401e4"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#a0efb6963ac14435426addb4d794401e4">rho_0</a> = 0.0</td></tr>
+<tr class="memdesc:a0efb6963ac14435426addb4d794401e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initial dislocation density. <br /></td></tr>
+<tr class="separator:a0efb6963ac14435426addb4d794401e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfa14b43b1f81b2c5cc531b7acee714a"><td class="memItemLeft" align="right" valign="top"><a id="adfa14b43b1f81b2c5cc531b7acee714a"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#adfa14b43b1f81b2c5cc531b7acee714a">M</a> = 0.0</td></tr>
+<tr class="memdesc:adfa14b43b1f81b2c5cc531b7acee714a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Taylor factor. <br /></td></tr>
+<tr class="separator:adfa14b43b1f81b2c5cc531b7acee714a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c97e71aae15b629ff69ff0268c646c"><td class="memItemLeft" align="right" valign="top"><a id="ae3c97e71aae15b629ff69ff0268c646c"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#ae3c97e71aae15b629ff69ff0268c646c">alpha</a> = 0.0</td></tr>
+<tr class="memdesc:ae3c97e71aae15b629ff69ff0268c646c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dislocation interaction constant. <br /></td></tr>
+<tr class="separator:ae3c97e71aae15b629ff69ff0268c646c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3072b74f80f3dc55615a629cf5e11980"><td class="memItemLeft" align="right" valign="top"><a id="a3072b74f80f3dc55615a629cf5e11980"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#a3072b74f80f3dc55615a629cf5e11980">b</a> = 2.5e-10</td></tr>
+<tr class="memdesc:a3072b74f80f3dc55615a629cf5e11980"><td class="mdescLeft">&#160;</td><td class="mdescRight">Burgers vector. <br /></td></tr>
+<tr class="separator:a3072b74f80f3dc55615a629cf5e11980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3960f2229996d350edd25c4ecca48a60"><td class="memItemLeft" align="right" valign="top"><a id="a3960f2229996d350edd25c4ecca48a60"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#a3960f2229996d350edd25c4ecca48a60">k1</a> = 0.0</td></tr>
+<tr class="memdesc:a3960f2229996d350edd25c4ecca48a60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dislocation multiplication coefficient. <br /></td></tr>
+<tr class="separator:a3960f2229996d350edd25c4ecca48a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c94c5f331d822e125499ad85d921e80"><td class="memItemLeft" align="right" valign="top"><a id="a7c94c5f331d822e125499ad85d921e80"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#a7c94c5f331d822e125499ad85d921e80">k2</a> = 0.0</td></tr>
+<tr class="memdesc:a7c94c5f331d822e125499ad85d921e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dislocation recovery coefficient. <br /></td></tr>
+<tr class="separator:a7c94c5f331d822e125499ad85d921e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28d6d1a398e425db92301819f10f5887"><td class="memItemLeft" align="right" valign="top"><a id="a28d6d1a398e425db92301819f10f5887"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#a28d6d1a398e425db92301819f10f5887">rho_s</a> = 0.0</td></tr>
+<tr class="memdesc:a28d6d1a398e425db92301819f10f5887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saturation dislocation density. <br /></td></tr>
+<tr class="separator:a28d6d1a398e425db92301819f10f5887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d07ca44f89084cf16a0ff4fc8bcf1e"><td class="memItemLeft" align="right" valign="top"><a id="a17d07ca44f89084cf16a0ff4fc8bcf1e"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#a17d07ca44f89084cf16a0ff4fc8bcf1e">C_prime</a> = 0.0</td></tr>
+<tr class="memdesc:a17d07ca44f89084cf16a0ff4fc8bcf1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant for KME model. <br /></td></tr>
+<tr class="separator:a17d07ca44f89084cf16a0ff4fc8bcf1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadb1a726e228441d2a8e0210ce34ea36"><td class="memItemLeft" align="right" valign="top"><a id="aadb1a726e228441d2a8e0210ce34ea36"></a>
 <a class="el" href="_matrix_8h.html#a779bdf6444b5437f5865e98eaaa0481d">T_DMatx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_iso_hard.html#aadb1a726e228441d2a8e0210ce34ea36">DMatx_ep</a></td></tr>
 <tr class="memdesc:aadb1a726e228441d2a8e0210ce34ea36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elastioplastic stiffness matrix in Voigt notation. <br /></td></tr>
@@ -435,8 +468,8 @@ template&lt;typename AnalysisType &gt; </div>
 
 </div>
 </div>
-<a id="aed575ff382abe5a7f2b78fc26fcb7554"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed575ff382abe5a7f2b78fc26fcb7554">&#9670;&nbsp;</a></span>ReturnMapping2D()</h2>
+<a id="a34bdafa548ecfa83b3e70a6a9645c5c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34bdafa548ecfa83b3e70a6a9645c5c1">&#9670;&nbsp;</a></span>ReturnMapping2D()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -486,6 +519,12 @@ template&lt;typename AnalysisType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>rho</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const ColVecd3 &amp;&#160;</td>
           <td class="paramname"><em>eps_e_old</em>, </td>
         </tr>
@@ -526,6 +565,7 @@ template&lt;typename AnalysisType &gt; </div>
     <tr><td class="paramname">eps_eq</td><td>Equivalent plastic strain </td></tr>
     <tr><td class="paramname">sig_eq</td><td>Equivalent stress. </td></tr>
     <tr><td class="paramname">sig_h</td><td>Hydrostatic stress. </td></tr>
+    <tr><td class="paramname">rho</td><td>Normalized dislocation density. </td></tr>
     <tr><td class="paramname">eps_e_old</td><td></td></tr>
     <tr><td class="paramname">eps_p_old</td><td></td></tr>
     <tr><td class="paramname">eps_eq_old</td><td></td></tr>
@@ -536,8 +576,8 @@ template&lt;typename AnalysisType &gt; </div>
 
 </div>
 </div>
-<a id="a6042968ee1342ddcb4a7a295b15432aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6042968ee1342ddcb4a7a295b15432aa">&#9670;&nbsp;</a></span>ReturnMapping3D()</h2>
+<a id="a51e095e3c4c9a4b16d5e712f1b8ae39c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51e095e3c4c9a4b16d5e712f1b8ae39c">&#9670;&nbsp;</a></span>ReturnMapping3D()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -587,6 +627,12 @@ template&lt;typename AnalysisType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>rho</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const ColVecd6 &amp;&#160;</td>
           <td class="paramname"><em>eps_e_old</em>, </td>
         </tr>
@@ -626,6 +672,7 @@ template&lt;typename AnalysisType &gt; </div>
     <tr><td class="paramname">eqp</td><td>Equivalent plastic strain </td></tr>
     <tr><td class="paramname">sig_eq</td><td>Equivalent stress. </td></tr>
     <tr><td class="paramname">sig_h</td><td>Hydrostatic stress. </td></tr>
+    <tr><td class="paramname">rho</td><td>Normalized dislocation density. </td></tr>
     <tr><td class="paramname">sig_old</td><td></td></tr>
     <tr><td class="paramname">eps_e_old</td><td></td></tr>
     <tr><td class="paramname">eps_p_old</td><td></td></tr>
@@ -637,8 +684,8 @@ template&lt;typename AnalysisType &gt; </div>
 
 </div>
 </div>
-<a id="adccf738b59927c53710eb91328307975"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adccf738b59927c53710eb91328307975">&#9670;&nbsp;</a></span>RM3D()</h2>
+<a id="a2b8ea500826332bb54ab18fee392e53d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b8ea500826332bb54ab18fee392e53d">&#9670;&nbsp;</a></span>RM3D()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -689,6 +736,12 @@ template&lt;typename HardeningLaw &gt; </div>
           <td></td>
           <td class="paramtype">double &amp;&#160;</td>
           <td class="paramname"><em>sig_h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>rho</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -796,8 +849,8 @@ template&lt;typename AnalysisType &gt; </div>
 
 </div>
 </div>
-<a id="a7c12638b7e4146612929cc9c50104313"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c12638b7e4146612929cc9c50104313">&#9670;&nbsp;</a></span>UHard()</h2>
+<a id="a11e08f54ffaba48d5ad11e7605310333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11e08f54ffaba48d5ad11e7605310333">&#9670;&nbsp;</a></span>UHard()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -818,6 +871,12 @@ template&lt;typename HardeningLaw &gt; </div>
           <td></td>
           <td class="paramtype">double &amp;&#160;</td>
           <td class="paramname"><em>syield</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>rho</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -849,6 +908,7 @@ template&lt;typename HardeningLaw &gt; </div>
   <table class="params">
     <tr><td class="paramname">eqpl</td><td>Equivalent plastic strain </td></tr>
     <tr><td class="paramname">syield</td><td>Current yield stress </td></tr>
+    <tr><td class="paramname">rho</td><td>Current dislocaiton density </td></tr>
     <tr><td class="paramname">hard</td><td>Hardening modulus </td></tr>
   </table>
   </dd>
